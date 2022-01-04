@@ -1,5 +1,9 @@
 # Compétitions sportives
 
+Ce dépôt représente un projet universitaire portant sur l'unité d'enseignement "Conception orientée objet" du premier semestre de ma troisième année de Licence.  
+Ce dépôt contient les copies des fichiers relatifs au projet (readme, codes sources, ...). Par conséquent, les historiques git (commits, branches, ...) ne sont pas copiés.
+
+
 ## Auteurs
 
 Zo Tahina Ratefiarivony
