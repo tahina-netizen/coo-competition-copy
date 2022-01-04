@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_CLQ8ECoHEeybK-I2B-fBEg" name="competition">
+  <elementImport xmi:id="_CMC_MSoHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_CMC_MioHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+  </elementImport>
+  <elementImport xmi:id="_CMC_MyoHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+  </elementImport>
+  <elementImport xmi:id="_CMC_NCoHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <elementImport xmi:id="_CMC_NSoHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <elementImport xmi:id="_CMC_NioHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_CMDmQCoHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:id="_CMDmQSoHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+  </elementImport>
+  <elementImport xmi:id="_CMDmQioHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_CMDmQyoHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_CMDmRCoHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_CMDmRSoHEeybK-I2B-fBEg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <packageImport xmi:id="_CMCYICoHEeybK-I2B-fBEg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_CMC_MCoHEeybK-I2B-fBEg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CMDmRioHEeybK-I2B-fBEg" name="etu">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CMDmRyoHEeybK-I2B-fBEg" name="simonzo">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CMENUCoHEeybK-I2B-fBEg" name="competition">
+        <packagedElement xmi:type="uml:Package" xmi:id="_COBVICoHEeybK-I2B-fBEg" name="util">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_COBVISoHEeybK-I2B-fBEg" name="MapUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_CQCuYCoHEeybK-I2B-fBEg" name="Math"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CME0YCoHEeybK-I2B-fBEg" name="RankingHandler" visibility="public">
+          <eAnnotations xmi:id="_CME0YSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CME0YioHEeybK-I2B-fBEg" key="documentation" value=" Given a set of match results (matches between competitors), this interface can&#xA; compute the ranking of the competitors.&#xA; Gradually as match results is given to this interface (via&#xA; {@link RankingHandler#addResult(Result)}), this interface can (gradually)&#xA; compute the ranking. So each time a match result is given, the ranking may&#xA; change.&#xA;"/>
+          </eAnnotations>
+          <ownedOperation xmi:id="_CMY9cCoHEeybK-I2B-fBEg" name="addResult" visibility="public">
+            <eAnnotations xmi:id="_CMY9cSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CMY9cioHEeybK-I2B-fBEg" key="documentation" value=" make this ranking handler take account of the given match result&#xA; @param result a match result this ranking handler have to take account&#xA; @throws IllegalArgumentException if the result is invalid (eg if one of&#xA; the competitors is unknown)&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CMY9cyoHEeybK-I2B-fBEg" name="result" type="_CMH3sCoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CMbZsCoHEeybK-I2B-fBEg" name="getResults" visibility="public">
+            <eAnnotations xmi:id="_CMbZsSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CMbZsioHEeybK-I2B-fBEg" key="documentation" value=" gives the collection of the match results already taken account by this ranking handler&#xA; @return the collection of the match results already taken account by this ranking handler&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CMbZsyoHEeybK-I2B-fBEg" type="_CMRosioHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CMfEECoHEeybK-I2B-fBEg" name="getRanking" visibility="public">
+            <eAnnotations xmi:id="_CMfEESoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CMfEEioHEeybK-I2B-fBEg" key="documentation" value=" Gives the ranking computed from the set of match results already given to&#xA; this ranking handler&#xA; @return the ranking computed from the set of match results already given&#xA; to this ranking handler.&#xA; Its a map where:&#xA; &lt;ol>&#xA;  &lt;li>key: a competitor instance&lt;/li>&#xA;  &lt;li>value: the score of that competitor&lt;/li>&#xA; &lt;/ol>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CMfEEyoHEeybK-I2B-fBEg" type="_CMSPwSoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMFbcCoHEeybK-I2B-fBEg" name="RandomMatch" visibility="public">
+          <eAnnotations xmi:id="_CMFbcSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMFbcioHEeybK-I2B-fBEg" key="documentation" value=" Represents a match &quot;rule&quot; where match are played just randomly.&#xA; That is to say that the each confronted competitors has equal&#xA; probability to win. So the issue of the match can't be predicted.&#xA; @param &lt;T> Sub-type of Competitor&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_CMj8kSoHEeybK-I2B-fBEg" importedElement="_CMj8kCoHEeybK-I2B-fBEg" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_CMFbcyoHEeybK-I2B-fBEg" parameter="_CMFbdCoHEeybK-I2B-fBEg">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CMFbdCoHEeybK-I2B-fBEg" parameteredElement="_CMFbdSoHEeybK-I2B-fBEg">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_CMFbdSoHEeybK-I2B-fBEg" name="T" templateParameter="_CMFbdCoHEeybK-I2B-fBEg"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedAttribute xmi:id="_CMmY0CoHEeybK-I2B-fBEg" name="randomGenerator" visibility="private" type="_CMj8kCoHEeybK-I2B-fBEg">
+            <eAnnotations xmi:id="_CMm_4CoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CMm_4SoHEeybK-I2B-fBEg" key="documentation" value=" used to generate random value for deciding the issue of a match&#xA; "/>
+            </eAnnotations>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_CMjVgCoHEeybK-I2B-fBEg" name="etu.simonzo.competition.Match" client="_CMFbcCoHEeybK-I2B-fBEg" supplier="_CMN-UCoHEeybK-I2B-fBEg" contract="_CMN-UCoHEeybK-I2B-fBEg"/>
+          <ownedOperation xmi:id="_CMm_4ioHEeybK-I2B-fBEg" name="RandomMatch" visibility="public">
+            <eAnnotations xmi:id="_CMm_4yoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CMm_5CoHEeybK-I2B-fBEg" key="documentation" value=" Create a match &quot;rule&quot; where match are played just randomly.&#xA; "/>
+            </eAnnotations>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CMu7sCoHEeybK-I2B-fBEg" name="playWith" visibility="public">
+            <eAnnotations xmi:id="_CMu7sSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CMu7sioHEeybK-I2B-fBEg" key="documentation" value=" Play a match between &lt;code>c1&lt;/code> and &lt;code>c2&lt;/code>.&#xA; The issue of the match is decided randomly.&#xA; For this match mechanism, there must be a winner at the end&#xA; of the match &lt;strong>(there is no tie)&lt;/strong>.&#xA; @param c1 competitor that will confront &lt;code>c2&lt;/code>&#xA; @param c2 competitor that will confront &lt;code>c1&lt;/code>&#xA; @return &lt;ul>&#xA;          &lt;li>&lt;code>MatchOutcome.FIRST_PLAYER_WIN&lt;/code> iff c1 wins&lt;/li>&#xA;          &lt;li>&lt;code>MatchOutcome.SECOND_PLAYER_WIN&lt;/code> iff c2 wins&lt;/li>&#xA;         &lt;/ul>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CMu7syoHEeybK-I2B-fBEg" name="c1" type="_CMFbdSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CMu7tCoHEeybK-I2B-fBEg" name="c2" type="_CMFbdSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CMu7tSoHEeybK-I2B-fBEg" type="_CMIewCoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMGCgCoHEeybK-I2B-fBEg" name="StdoutDisplayer" visibility="public">
+          <eAnnotations xmi:id="_CMGCgSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMGCgioHEeybK-I2B-fBEg" key="documentation" value=" A displayer which uses the standard output to display information.&#xA;"/>
+          </eAnnotations>
+          <interfaceRealization xmi:id="_CMx_ACoHEeybK-I2B-fBEg" name="etu.simonzo.competition.Displayer" client="_CMGCgCoHEeybK-I2B-fBEg" supplier="_CMKT8CoHEeybK-I2B-fBEg" contract="_CMKT8CoHEeybK-I2B-fBEg"/>
+          <ownedOperation xmi:id="_CM0bQCoHEeybK-I2B-fBEg" name="displayMessage" visibility="public">
+            <eAnnotations xmi:id="_CM0bQSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CM0bQioHEeybK-I2B-fBEg" key="documentation" value=" Display the given message to the standard output.&#xA; The message may be formatted for esthetic and readability purpose.&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CM0bQyoHEeybK-I2B-fBEg" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMGpkCoHEeybK-I2B-fBEg" name="League" visibility="public">
+          <eAnnotations xmi:id="_CMGpkSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMGpkioHEeybK-I2B-fBEg" key="documentation" value=" A competition in which every competitor faces each opponent twice. At the end&#xA; of the competition, the competitor with the most victories wins. The class&#xA; is parameterized by a sub-type of the Competitor class, because the Match&#xA; singleton used depends on the type of Competitor&#xA; @param &lt;T> A Competitor sub-type&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_CM7wACoHEeybK-I2B-fBEg" importedElement="_CM7I8CoHEeybK-I2B-fBEg" visibility="private"/>
+          <elementImport xmi:id="_CM7wASoHEeybK-I2B-fBEg" importedElement="_CMSPwSoHEeybK-I2B-fBEg" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_CMGpkyoHEeybK-I2B-fBEg" parameter="_CMGplCoHEeybK-I2B-fBEg">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CMGplCoHEeybK-I2B-fBEg" parameteredElement="_CMGplSoHEeybK-I2B-fBEg">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_CMGplSoHEeybK-I2B-fBEg" name="T" templateParameter="_CMGplCoHEeybK-I2B-fBEg"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <generalization xmi:id="_CM6h4CoHEeybK-I2B-fBEg" general="_CMMwMCoHEeybK-I2B-fBEg"/>
+          <ownedOperation xmi:id="_CNIkUCoHEeybK-I2B-fBEg" name="League" visibility="public">
+            <eAnnotations xmi:id="_CNIkUSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CNIkUioHEeybK-I2B-fBEg" key="documentation" value=" Construct a league defined by a match singleton and a list of&#xA; competitors. The match object is used the determine the outcome of every&#xA; game. The number of points associated to match outcomes are used to&#xA; construct the ranking after the competition is played&#xA; @param match Match singleton which determines games outcomes&#xA; @param competitors List of competitors&#xA; @param victoryPoints Number of points awarded for a victory&#xA; @param defeatPoints Number of points awarded for a defeat&#xA; @param tiePoints Number of points awarded to each competitor in case of a&#xA; tie&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CNIkUyoHEeybK-I2B-fBEg" name="match" type="_CMN-UCoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CNIkVCoHEeybK-I2B-fBEg" name="competitors" type="_CM7I8CoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CNIkVSoHEeybK-I2B-fBEg" name="victoryPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_CNIkVioHEeybK-I2B-fBEg" name="defeatPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_CNIkVyoHEeybK-I2B-fBEg" name="tiePoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CNP5ECoHEeybK-I2B-fBEg" name="play" visibility="protected">
+            <eAnnotations xmi:id="_CNP5ESoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CNP5EioHEeybK-I2B-fBEg" key="documentation" value=" Play the matches between the competitors. Matches are organized in a&#xA; round trip fashion, where each competitor meets with every other&#xA; competitor twice. If the list has &lt;code>n&lt;/code> elements, then&#xA; &lt;code>n * (n - 1)&lt;/code> matches are played. The competitors are paired&#xA; using the following rule : given 3 competitors A, B, C and the list&#xA; [A, B, C], then the played matches are (A, B), (A, C), (B, A), (B, C),&#xA; (C, A), (C, B)&#xA; @param competitors List of competitors enlisted to play&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CNP5EyoHEeybK-I2B-fBEg" name="competitors" type="_CM7I8CoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CNcGUCoHEeybK-I2B-fBEg" name="displayTrace" visibility="private">
+            <eAnnotations xmi:id="_CNcGUSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CNcGUioHEeybK-I2B-fBEg" key="documentation" value=" In the standard output, &#xA; display a trace of the match described by the given arguments&#xA; @param c1 &quot;first&quot; competitor in the match&#xA; @param c2 &quot;second&quot; competitor in the match&#xA; @param outcome outcome of the match&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CNcGUyoHEeybK-I2B-fBEg" name="c1" type="_CMGplSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CNcGVCoHEeybK-I2B-fBEg" name="c2" type="_CMGplSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CNcGVSoHEeybK-I2B-fBEg" name="outcome" type="_CMIewCoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CNnFcCoHEeybK-I2B-fBEg" name="playMatch" visibility="protected">
+            <eAnnotations xmi:id="_CNnFcSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CNnFcioHEeybK-I2B-fBEg" key="documentation" value=" Play the match between &lt;code>c1&lt;/code> and &lt;code>c2&lt;/code> (of course,&#xA; according to the &quot;rule&quot;).&#xA; Update the ranking of the competitors according to the outcome of the&#xA; match (i.e if there is a winner or if it's a tie).&#xA; @param c1 competitor that will play against &lt;code>c2&lt;/code>&#xA; @param c2 competitor that will play against &lt;code>c1&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CNnFcyoHEeybK-I2B-fBEg" name="c1" type="_CMGplSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CNnFdCoHEeybK-I2B-fBEg" name="c2" type="_CMGplSoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CN29ECoHEeybK-I2B-fBEg" name="updateRanking" visibility="protected">
+            <eAnnotations xmi:id="_CN29ESoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CN29EioHEeybK-I2B-fBEg" key="documentation" value=" Update the internal structure used to keep track of points. The result&#xA; argument represents the outcome of the match between the two competitors,&#xA; as returned by playMatch&#xA; @param competitor1 First competitor&#xA; @param competitor2 Second competitor&#xA; @param outcome Instance of enumerated type MatchOutcome indicating the&#xA; result of the match between the competitors&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CN29EyoHEeybK-I2B-fBEg" name="competitor1" type="_CMGplSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CN29FCoHEeybK-I2B-fBEg" name="competitor2" type="_CMGplSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CN29FSoHEeybK-I2B-fBEg" name="outcome" type="_CMIewCoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CMH3sCoHEeybK-I2B-fBEg" name="Result" visibility="public">
+          <eAnnotations xmi:id="_CMH3sSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMH3sioHEeybK-I2B-fBEg" key="documentation" value=" Represents the context of the outcome of a confrontation between two competitor.&#xA; In other words, tells which competitor confronted with another competitor and what&#xA; is the outcome of that confrontation.&#xA; Then, a result is defined by the two confronted competitors and&#xA; the outcome of the match i.e there is a winner (and a loser), or the confrontation &#xA; is tied.&#xA; For identification purpose, one competitor will be called &quot;first&quot; and the other one&#xA; &quot;second&quot;.&#xA;  &#xA;"/>
+          </eAnnotations>
+          <ownedOperation xmi:id="_CN5ZUCoHEeybK-I2B-fBEg" name="getCompetitor1" visibility="public">
+            <eAnnotations xmi:id="_CN5ZUSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CN5ZUioHEeybK-I2B-fBEg" key="documentation" value=" give the &quot;first&quot; competitor: the competitor confronted to the other one returned &#xA; by {@link Result#getCompetitor2()}.&#xA; @return the &quot;first&quot; competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CN5ZUyoHEeybK-I2B-fBEg" type="_CMPMcCoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CN6ncCoHEeybK-I2B-fBEg" name="getCompetitor2" visibility="public">
+            <eAnnotations xmi:id="_CN6ncSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CN6ncioHEeybK-I2B-fBEg" key="documentation" value=" give the &quot;second&quot; competitor: the competitor confronted to the other one returned &#xA; by {@link Result#getCompetitor1()}&#xA; @return the &quot;second&quot; competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CN6ncyoHEeybK-I2B-fBEg" type="_CMPMcCoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CN8coCoHEeybK-I2B-fBEg" name="getOutcome" visibility="public">
+            <eAnnotations xmi:id="_CN8coSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CN8coioHEeybK-I2B-fBEg" key="documentation" value=" The outcome of the confrontation between &lt;code>c1&lt;/code> and &lt;code>c2&lt;/code>.&#xA; With:&#xA; &lt;ul>&#xA;   &lt;li>&lt;code>c1&lt;/code>: the competitor returned by {@link Result#getCompetitor1()}&lt;/li>&#xA;   &lt;li>&lt;code>c2&lt;/code>: the competitor returned by {@link Result#getCompetitor2()}&lt;/li>&#xA; &lt;/ul>&#xA; @return &#xA; &lt;ul> &#xA;   &lt;li>{@link MatchOutcome#TIE} iff tie&lt;/li>&#xA;   &lt;li>{@link MatchOutcome#FIRST_PLAYER_WIN} iff &lt;code>c1&lt;/code> won&lt;/li>&#xA;   &lt;li>{@link MatchOutcome#SECOND_PLAYER_WIN} iff &lt;code>c2&lt;/code> won&lt;/li>&#xA; &lt;/ul>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CN8coyoHEeybK-I2B-fBEg" type="_CMIewCoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_CMIewCoHEeybK-I2B-fBEg" name="MatchOutcome" visibility="public">
+          <eAnnotations xmi:id="_CMIewSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMIewioHEeybK-I2B-fBEg" key="documentation" value=" Represents the final outcome of a confrontation between two&#xA; competitors.&#xA; First of all, there is the notion of &quot;first&quot; player and &quot;second&quot; player,&#xA; that notion is used just to distinguish the two confronting competitors.&#xA; So, the outcome of the match can be:&#xA; &lt;ul>&#xA;  &lt;li>A tie (nobody win) represented by {@link MatchOutcome#TIE}&lt;/li>&#xA;  &lt;li>Not a tie, so there is a winner, represented by:&#xA;   {@link MatchOutcome#FIRST_PLAYER_WIN} if the &quot;first&quot; player won,&#xA;   or {@link MatchOutcome#SECOND_PLAYER_WIN} if the &quot;second&quot; player won.&#xA;   &lt;/li>&#xA; &lt;/ul>&#xA; If one competitor won, the other lost&#xA;"/>
+          </eAnnotations>
+          <ownedLiteral xmi:id="_CN-R0CoHEeybK-I2B-fBEg" name="TIE">
+            <specification xmi:type="uml:LiteralInteger" xmi:id="_CN-R0SoHEeybK-I2B-fBEg"/>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_CN-R0ioHEeybK-I2B-fBEg" name="FIRST_PLAYER_WIN">
+            <specification xmi:type="uml:LiteralInteger" xmi:id="_CN-44CoHEeybK-I2B-fBEg"/>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_CN-44SoHEeybK-I2B-fBEg" name="SECOND_PLAYER_WIN">
+            <specification xmi:type="uml:LiteralInteger" xmi:id="_CN-44ioHEeybK-I2B-fBEg"/>
+          </ownedLiteral>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMJs4CoHEeybK-I2B-fBEg" name="MainLeague" visibility="public">
+          <elementImport xmi:id="_COBVIioHEeybK-I2B-fBEg" importedElement="_COBVISoHEeybK-I2B-fBEg" visibility="private"/>
+          <packageImport xmi:id="_COAHACoHEeybK-I2B-fBEg" importedPackage="_CMRosSoHEeybK-I2B-fBEg" visibility="private"/>
+          <ownedAttribute xmi:id="_COCjQCoHEeybK-I2B-fBEg" name="DISPLAYER" visibility="public" isStatic="true" type="_CMKT8CoHEeybK-I2B-fBEg" association="_CTMJACoHEeybK-I2B-fBEg">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_CODKUCoHEeybK-I2B-fBEg" name="" type="_CMKT8CoHEeybK-I2B-fBEg" value="new StdoutDisplayer()"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_COHbwCoHEeybK-I2B-fBEg" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_COHbwSoHEeybK-I2B-fBEg" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_COHbwioHEeybK-I2B-fBEg" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CMKT8CoHEeybK-I2B-fBEg" name="Displayer" visibility="public">
+          <eAnnotations xmi:id="_CMKT8SoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMKT8ioHEeybK-I2B-fBEg" key="documentation" value=" A displayer is used to output some information/messages from the program.&#xA; For example, a displayer can print something to the console, or show a&#xA; notification in a GUI, ...&#xA;"/>
+          </eAnnotations>
+          <ownedOperation xmi:id="_COM7UCoHEeybK-I2B-fBEg" name="displayMessage">
+            <eAnnotations xmi:id="_COM7USoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_COM7UioHEeybK-I2B-fBEg" key="documentation" value=" Display the given message.&#xA; Before being displayed, the message could be formatted (for example &#xA; for esthetic purpose).&#xA; @param message message to be displayed&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_COM7UyoHEeybK-I2B-fBEg" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMK7ACoHEeybK-I2B-fBEg" name="SimpleRankingHandler" visibility="public">
+          <eAnnotations xmi:id="_CMK7ASoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMK7AioHEeybK-I2B-fBEg" key="documentation" value=" A simple implementation of the RankingHandler abstraction, based on the use&#xA; of a collection of match results, and the possibility to convert these&#xA; results to a ranking of competitors using points information passed on&#xA; construction. The list of competitors to rank is passed on construction.&#xA; All the competitors of the subsequent results must be part of this list, else&#xA; an exception will be thrown&#xA;"/>
+          </eAnnotations>
+          <packageImport xmi:id="_COPXkCoHEeybK-I2B-fBEg" importedPackage="_CMRosSoHEeybK-I2B-fBEg" visibility="private"/>
+          <ownedAttribute xmi:id="_COP-oCoHEeybK-I2B-fBEg" name="victoryPoints" visibility="protected">
+            <eAnnotations xmi:id="_COP-oSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_COP-oioHEeybK-I2B-fBEg" key="documentation" value="Number of points awarded for a victory"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_COQlsCoHEeybK-I2B-fBEg" name="defeatPoints" visibility="protected">
+            <eAnnotations xmi:id="_CORMwCoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CORMwSoHEeybK-I2B-fBEg" key="documentation" value="Number of points awarded for a defeat"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_CORz0CoHEeybK-I2B-fBEg" name="tiePoints" visibility="protected">
+            <eAnnotations xmi:id="_CORz0SoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CORz0ioHEeybK-I2B-fBEg" key="documentation" value="Number of points awarded to each player in case of a tie"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_COU3ICoHEeybK-I2B-fBEg" name="results" visibility="protected" type="_CMH3sCoHEeybK-I2B-fBEg" isOrdered="true" isUnique="false" association="_CTMwECoHEeybK-I2B-fBEg">
+            <eAnnotations xmi:id="_COVeMCoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_COVeMSoHEeybK-I2B-fBEg" key="documentation" value="List of results added since instanciation"/>
+            </eAnnotations>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_COVeMioHEeybK-I2B-fBEg" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_COX6cCoHEeybK-I2B-fBEg" name="ranking" visibility="protected" type="_CMSPwSoHEeybK-I2B-fBEg">
+            <eAnnotations xmi:id="_COYhgCoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_COYhgSoHEeybK-I2B-fBEg" key="documentation" value="Association of competitors and scores"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_COOwgCoHEeybK-I2B-fBEg" name="etu.simonzo.competition.RankingHandler" client="_CMK7ACoHEeybK-I2B-fBEg" supplier="_CME0YCoHEeybK-I2B-fBEg" contract="_CME0YCoHEeybK-I2B-fBEg"/>
+          <ownedOperation xmi:id="_COdaACoHEeybK-I2B-fBEg" name="SimpleRankingHandler" visibility="public">
+            <eAnnotations xmi:id="_COdaASoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_COdaAioHEeybK-I2B-fBEg" key="documentation" value=" Construct a simple ranking handler, with the points value of a victory,&#xA; defeat and tie. These values are used when converting the results to a&#xA; ranking of competitors&#xA; @param competitors List of competitors registered to be ranked&#xA; @param victoryPoints Number of points awarded for a victory&#xA; @param defeatPoints Number of points awarded for a defeat&#xA; @param tiePoints Number of points awarded for a tied match&#xA; @param &lt;T> Sub-type of Competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_COdaAyoHEeybK-I2B-fBEg" name="competitors" type="_CM7I8CoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_COdaBCoHEeybK-I2B-fBEg" name="victoryPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_COdaBSoHEeybK-I2B-fBEg" name="defeatPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_COdaBioHEeybK-I2B-fBEg" name="tiePoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_COhrcCoHEeybK-I2B-fBEg" name="addResult" visibility="public">
+            <eAnnotations xmi:id="_COhrcSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_COhrcioHEeybK-I2B-fBEg" key="documentation" value=" Add a result to the collection of results tracked by the ranking handler&#xA; @param result Result object to add to the collection&#xA; @throws IllegalArgumentException if one of the competitors is unknown,&#xA; ie. was not part of the list passed on instanciation&#xA; {@link etu.simonzo.competition.RankingHandler#addResult}&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_COhrcyoHEeybK-I2B-fBEg" name="result" type="_CMH3sCoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_COnLACoHEeybK-I2B-fBEg" name="getResults" visibility="public">
+            <eAnnotations xmi:id="_COnLASoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_COnLAioHEeybK-I2B-fBEg" key="documentation" value=" gives the collection of the match results already taken account by this ranking handler&#xA; @return the collection of the match results already taken account by this ranking handler&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_COnLAyoHEeybK-I2B-fBEg" type="_CMRosioHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_COtRoCoHEeybK-I2B-fBEg" name="getRanking" visibility="public">
+            <eAnnotations xmi:id="_COtRoSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_COtRoioHEeybK-I2B-fBEg" key="documentation" value=" Return the ranking computed using the results added to the handler.&#xA; Competitors who do not appear in any results have a score of 0&#xA; {@link etu.simonzo.competition.RankingHandler#getRanking}&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_COtRoyoHEeybK-I2B-fBEg" type="_CMSPwSoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_COyxMCoHEeybK-I2B-fBEg" name="mapOfCompetitorsWithoutPoints" visibility="private">
+            <eAnnotations xmi:id="_COyxMSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_COyxMioHEeybK-I2B-fBEg" key="documentation" value=" Return a hashmap in which all competitors were added as keys, each&#xA; associated to a score of 0. The returned map should be filled with actual&#xA; match outcomes&#xA; @param competitors List of competitors registered to be ranked&#xA; @param &lt;T> Sub-type of Competitor&#xA; @return Map associating each competitor to the value 0&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_COyxMyoHEeybK-I2B-fBEg" name="competitors" type="_CM7I8CoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_COyxNCoHEeybK-I2B-fBEg" type="_CMSPwSoHEeybK-I2B-fBEg" direction="return"/>
+            <ownedTemplateSignature xmi:id="_COyxNSoHEeybK-I2B-fBEg" parameter="_COyxNioHEeybK-I2B-fBEg">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_COyxNioHEeybK-I2B-fBEg" parameteredElement="_COyxNyoHEeybK-I2B-fBEg">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_COyxNyoHEeybK-I2B-fBEg" name="T" templateParameter="_COyxNioHEeybK-I2B-fBEg"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CO3psCoHEeybK-I2B-fBEg" name="incrementScore" visibility="private">
+            <eAnnotations xmi:id="_CO3psSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CO3psioHEeybK-I2B-fBEg" key="documentation" value=" Add a number of points to the score of the competitor in the map&#xA; @param competitor Competitor whose score must change&#xA; @param points Number of points to add&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CO3psyoHEeybK-I2B-fBEg" name="competitor" type="_CMPMcCoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CO3ptCoHEeybK-I2B-fBEg" name="points">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CO7UECoHEeybK-I2B-fBEg" name="updateRanking" visibility="private">
+            <eAnnotations xmi:id="_CO7UESoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CO7UEioHEeybK-I2B-fBEg" key="documentation" value=" Modify points in the scores map using the result passed&#xA; @param result Result to be taken into account for the ranking&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CO7UEyoHEeybK-I2B-fBEg" name="result" type="_CMH3sCoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMLiECoHEeybK-I2B-fBEg" name="SimpleResult" visibility="public">
+          <eAnnotations xmi:id="_CMLiESoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMLiEioHEeybK-I2B-fBEg" key="documentation" value=" Represents the context of the outcome of a confrontation between two competitor.&#xA; In other words, tells which competitor confronted with another competitor and what&#xA; is the outcome of that confrontation.&#xA; Then, a result is defined by the two confronted competitors and&#xA; the outcome of the match i.e there is a winner (and a loser), or the confrontation&#xA; is tied.&#xA; The difference between {@link Result} is that this is a concrete class.&#xA;"/>
+          </eAnnotations>
+          <ownedAttribute xmi:id="_CO-XYCoHEeybK-I2B-fBEg" name="competitor1" visibility="protected" type="_CMPMcCoHEeybK-I2B-fBEg" association="_CTMwEioHEeybK-I2B-fBEg">
+            <eAnnotations xmi:id="_CO--cCoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CO--cSoHEeybK-I2B-fBEg" key="documentation" value="First competitor"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_CPAMkCoHEeybK-I2B-fBEg" name="competitor2" visibility="protected" type="_CMPMcCoHEeybK-I2B-fBEg" association="_CTMwFCoHEeybK-I2B-fBEg">
+            <eAnnotations xmi:id="_CPAMkSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPAMkioHEeybK-I2B-fBEg" key="documentation" value="Second competitor"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_CPCBwCoHEeybK-I2B-fBEg" name="outcome" visibility="protected" type="_CMIewCoHEeybK-I2B-fBEg">
+            <eAnnotations xmi:id="_CPCo0CoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPCo0SoHEeybK-I2B-fBEg" key="documentation" value="Outcome of the match between the competitors"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_CO9JQCoHEeybK-I2B-fBEg" name="etu.simonzo.competition.Result" client="_CMLiECoHEeybK-I2B-fBEg" supplier="_CMH3sCoHEeybK-I2B-fBEg" contract="_CMH3sCoHEeybK-I2B-fBEg"/>
+          <ownedOperation xmi:id="_CPJ9kCoHEeybK-I2B-fBEg" name="SimpleResult" visibility="public">
+            <eAnnotations xmi:id="_CPJ9kSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPJ9kioHEeybK-I2B-fBEg" key="documentation" value=" Create a confrontation result where &lt;code>c1&lt;/code> confronted &lt;code>c2&lt;/code>&#xA; and the outcome is &lt;code>outcome&lt;/code>&#xA; @param c1 competitor which confronted &lt;code>c2&lt;/code>. This competitor&#xA; will be identified as the &quot;first&quot;.&#xA; @param c2 competitor which confronted &lt;code>c1&lt;/code>. This competitor&#xA; will be identified as the &quot;second&quot;.&#xA; @param outcome the outcome of the confrontation between &lt;code>c1&lt;/code> and&#xA; &lt;code>c2&lt;/code>. The possible values are:&#xA; &lt;ul>&#xA;  &lt;li>{@link MatchOutcome#TIE} to mean the confrontation tied (no winner)&lt;/li>&#xA;  &lt;li>{@link MatchOutcome#FIRST_PLAYER_WIN} to mean that &lt;code>c1&lt;/code>&#xA; won (and &lt;code>c2&lt;/code> loosed)&lt;/li>&#xA;  &lt;li>{@link MatchOutcome#SECOND_PLAYER_WIN} to mean that &lt;code>c2&lt;/code>&#xA; won (and &lt;code>c1&lt;/code> loosed)&lt;/li>&#xA; &lt;/ul>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CPJ9kyoHEeybK-I2B-fBEg" name="c1" type="_CMPMcCoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CPJ9lCoHEeybK-I2B-fBEg" name="c2" type="_CMPMcCoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CPJ9lSoHEeybK-I2B-fBEg" name="outcome" type="_CMIewCoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CPLLsCoHEeybK-I2B-fBEg" name="getCompetitor1" visibility="public">
+            <eAnnotations xmi:id="_CPLLsSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPLLsioHEeybK-I2B-fBEg" key="documentation" value=" gives the &quot;first&quot; competitor in this result&#xA; @return the &quot;first&quot; competitor in this result&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CPLLsyoHEeybK-I2B-fBEg" type="_CMPMcCoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CPNA4CoHEeybK-I2B-fBEg" name="getCompetitor2" visibility="public">
+            <eAnnotations xmi:id="_CPNA4SoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPNA4ioHEeybK-I2B-fBEg" key="documentation" value=" gives the &quot;second&quot; competitor in this result&#xA; @return the &quot;second&quot; competitor in this result&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CPNA4yoHEeybK-I2B-fBEg" type="_CMPMcCoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CPO2ECoHEeybK-I2B-fBEg" name="getOutcome" visibility="public">
+            <eAnnotations xmi:id="_CPO2ESoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPO2EioHEeybK-I2B-fBEg" key="documentation" value=" give the outcome of this result (tie ?, there is a winner ?)&#xA; @return&#xA; &lt;ul>&#xA;   &lt;li>{@link MatchOutcome#TIE} iff tie (no winner)&lt;/li>&#xA;   &lt;li>{@link MatchOutcome#FIRST_PLAYER_WIN} iff &lt;code>the &quot;first&quot;&#xA; competitor&lt;/code> won&lt;/li>&#xA;   &lt;li>{@link MatchOutcome#SECOND_PLAYER_WIN} iff &lt;code>the &quot;second&quot;&#xA; competitor&lt;/code> won&lt;/li>&#xA; &lt;/ul>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CPO2EyoHEeybK-I2B-fBEg" type="_CMIewCoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMMwMCoHEeybK-I2B-fBEg" name="Competition" visibility="public" isAbstract="true">
+          <eAnnotations xmi:id="_CMMwMSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMMwMioHEeybK-I2B-fBEg" key="documentation" value=" Represents a competition. A competition maybe seen as set of match between&#xA; several competitors. Each match is between two competitors. All match is&#xA; under an unique &quot;rule&quot;/&quot;context&quot;/&quot;mechanism&quot; defined at the creation of a&#xA; competition.  A current ranking between all competitors can be provided at any state of the&#xA; competition. For this purpose, a RankingHandler instance is passed as a&#xA; constructor argument. The number of points associated with a victory, a loss&#xA; or a tie are the responsibility of the ranking handler. If some players are&#xA; duplicated in the list of competitors, all matches will be played nonetheless&#xA; eg. if the list contains two references to the same Competitor, and if the&#xA; pairing rule sets up a match between him and himself, this match will be&#xA; played. Users must make sure that the list contains no duplicate if they want&#xA; to avoid this behaviour&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_CPQrQCoHEeybK-I2B-fBEg" importedElement="_CM7I8CoHEeybK-I2B-fBEg" visibility="private"/>
+          <elementImport xmi:id="_CPRSUCoHEeybK-I2B-fBEg" importedElement="_CMSPwSoHEeybK-I2B-fBEg" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_CMMwMyoHEeybK-I2B-fBEg" parameter="_CMMwNCoHEeybK-I2B-fBEg">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CMMwNCoHEeybK-I2B-fBEg" parameteredElement="_CMMwNSoHEeybK-I2B-fBEg">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_CMMwNSoHEeybK-I2B-fBEg" name="T" templateParameter="_CMMwNCoHEeybK-I2B-fBEg"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedAttribute xmi:id="_CPUVoCoHEeybK-I2B-fBEg" name="match" visibility="private" type="_CMN-UCoHEeybK-I2B-fBEg" association="_CTNXICoHEeybK-I2B-fBEg">
+            <eAnnotations xmi:id="_CPU8sCoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPU8sSoHEeybK-I2B-fBEg" key="documentation" value="Match rule used for each confrontation of competitors"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_CPWx4CoHEeybK-I2B-fBEg" name="competitors" visibility="private" type="_CMMwNSoHEeybK-I2B-fBEg" isOrdered="true" isUnique="false">
+            <eAnnotations xmi:id="_CPXY8CoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPXY8SoHEeybK-I2B-fBEg" key="documentation" value="List of all competitors of this competition"/>
+            </eAnnotations>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CPXY8ioHEeybK-I2B-fBEg" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_CPZOICoHEeybK-I2B-fBEg" name="rankingHandler" visibility="private" type="_CME0YCoHEeybK-I2B-fBEg" association="_CTNXIioHEeybK-I2B-fBEg">
+            <eAnnotations xmi:id="_CPZ1MCoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPZ1MSoHEeybK-I2B-fBEg" key="documentation" value="Ranking handler to manage points and ranking of competitors"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_CPmCcCoHEeybK-I2B-fBEg" name="Competition" visibility="public">
+            <ownedParameter xmi:id="_CPmCcSoHEeybK-I2B-fBEg" name="match" type="_CMN-UCoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CPmCcioHEeybK-I2B-fBEg" name="competitors" type="_CM7I8CoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CPmCcyoHEeybK-I2B-fBEg" name="handler" type="_CME0YCoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CPq68CoHEeybK-I2B-fBEg" name="play" visibility="public">
+            <eAnnotations xmi:id="_CPq68SoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPq68ioHEeybK-I2B-fBEg" key="documentation" value=" Launch this competition from its beginning to its end.&#xA; Matches between competitors are organized (i.e how many match&#xA; to do? which competitor play against which competitor ?)&#xA; Matches between competitors are played.&#xA; The final ranking ({@link Competition#ranking()} of each competitor can be provided&#xA; at the end the competition.&#xA; "/>
+            </eAnnotations>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CPwagCoHEeybK-I2B-fBEg" name="play" visibility="protected" isAbstract="true">
+            <eAnnotations xmi:id="_CPwagSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CPwagioHEeybK-I2B-fBEg" key="documentation" value=" Organize the matches between the given competitors&#xA; (i.e how many match to do? which competitor play against which competitor ?).&#xA; Play each match.&#xA; The final ranking ({@link Competition#ranking()} of each competitor can be provided&#xA; at after the call of this method.&#xA; @param competitors List of competitors to organize and play match with.&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CPwagyoHEeybK-I2B-fBEg" name="competitors" type="_CM7I8CoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CP2hICoHEeybK-I2B-fBEg" name="playMatch" visibility="protected" isAbstract="true">
+            <eAnnotations xmi:id="_CP2hISoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CP2hIioHEeybK-I2B-fBEg" key="documentation" value=" Play the match between &lt;code>c1&lt;/code> and &lt;code>c2&lt;/code> (of course,&#xA; according to the &quot;rule&quot;).&#xA; Update the ranking of the competitors according to the outcome of the&#xA; match (i.e if there is a winner or if it's a tie).&#xA; @param c1 competitor that will play against &lt;code>c2&lt;/code>&#xA; @param c2 competitor that will play against &lt;code>c1&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CP2hIyoHEeybK-I2B-fBEg" name="c1" type="_CMMwNSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CP2hJCoHEeybK-I2B-fBEg" name="c2" type="_CMMwNSoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CP49YCoHEeybK-I2B-fBEg" name="ranking" visibility="public">
+            <eAnnotations xmi:id="_CP49YSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CP49YioHEeybK-I2B-fBEg" key="documentation" value=" Return the ranking at the current state of the competition. Each competitor&#xA; gain some points depending on the outcome of each match it played. The gained&#xA; point for a competitor for a win, tie and loss are the responsibility of&#xA; the ranking handler&#xA; @return a map: key= a competitor, value=the score of that competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CP49YyoHEeybK-I2B-fBEg" type="_CMSPwSoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CP7ZoCoHEeybK-I2B-fBEg" name="getMatch" visibility="protected">
+            <eAnnotations xmi:id="_CP7ZoSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CP7ZoioHEeybK-I2B-fBEg" key="documentation" value=" Return the match &quot;rule&quot;/&quot;context&quot;/&quot;mechanism&quot; used in this competition.&#xA; @return the match &quot;rule&quot;/&quot;context&quot;/&quot;mechanism&quot; used in this competition.&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CP7ZoyoHEeybK-I2B-fBEg" type="_CMN-UCoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CP914CoHEeybK-I2B-fBEg" name="getCompetitors" visibility="protected">
+            <eAnnotations xmi:id="_CP914SoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CP914ioHEeybK-I2B-fBEg" key="documentation" value=" Return the list of competitors involved in the competition, and&#xA; registered on instanciation&#xA; @return the list of competitors playing in this competition.&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CP914yoHEeybK-I2B-fBEg" type="_CM7I8CoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CQASICoHEeybK-I2B-fBEg" name="getRankingHandler" visibility="protected">
+            <eAnnotations xmi:id="_CQASISoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CQASIioHEeybK-I2B-fBEg" key="documentation" value=" Return the ranking handler instance associated with this competition&#xA; @return Ranking handler used to rank competitors&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CQASIyoHEeybK-I2B-fBEg" type="_CME0YCoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMMwNioHEeybK-I2B-fBEg" name="MainTournament" visibility="public">
+          <elementImport xmi:id="_CQCHUSoHEeybK-I2B-fBEg" importedElement="_COBVISoHEeybK-I2B-fBEg" visibility="private"/>
+          <elementImport xmi:id="_CQCuYSoHEeybK-I2B-fBEg" importedElement="_CQCuYCoHEeybK-I2B-fBEg" visibility="private"/>
+          <packageImport xmi:id="_CQCHUCoHEeybK-I2B-fBEg" importedPackage="_CMRosSoHEeybK-I2B-fBEg" visibility="private"/>
+          <ownedAttribute xmi:id="_CQD8gCoHEeybK-I2B-fBEg" name="DISPLAYER" visibility="public" isStatic="true" type="_CMKT8CoHEeybK-I2B-fBEg" association="_CTNXJCoHEeybK-I2B-fBEg">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_CQEjkCoHEeybK-I2B-fBEg" name="" type="_CMKT8CoHEeybK-I2B-fBEg" value="new StdoutDisplayer()"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_CQIN8CoHEeybK-I2B-fBEg" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_CQIN8SoHEeybK-I2B-fBEg" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CQIN8ioHEeybK-I2B-fBEg" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CMN-UCoHEeybK-I2B-fBEg" name="Match" visibility="public">
+          <eAnnotations xmi:id="_CMN-USoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMN-UioHEeybK-I2B-fBEg" key="documentation" value=" An interface which defines a method which should designate the winner&#xA; between two competitors. The interface is parameterized by a sub-type of the&#xA; Competitor type because it should be able to use methods of the specific&#xA; Competitor sub-type to determine the outcome of the match&#xA; @param &lt;T> A Competitor sub-type&#xA;"/>
+          </eAnnotations>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_CMN-UyoHEeybK-I2B-fBEg" parameter="_CMN-VCoHEeybK-I2B-fBEg">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CMN-VCoHEeybK-I2B-fBEg" parameteredElement="_CMN-VSoHEeybK-I2B-fBEg">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_CMN-VSoHEeybK-I2B-fBEg" name="T" templateParameter="_CMN-VCoHEeybK-I2B-fBEg"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedOperation xmi:id="_CQO7oCoHEeybK-I2B-fBEg" name="playWith" visibility="public">
+            <eAnnotations xmi:id="_CQO7oSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CQO7oioHEeybK-I2B-fBEg" key="documentation" value=" Perform the match between the competitors. Return an integer indicating&#xA; the outcome of the match&#xA; @param competitor1 First competitor&#xA; @param competitor2 Second competitor&#xA; @return Instance of enumerated type MatchOutcome indicating the result of&#xA; the match between the competitors&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CQO7oyoHEeybK-I2B-fBEg" name="competitor1" type="_CMN-VSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CQO7pCoHEeybK-I2B-fBEg" name="competitor2" type="_CMN-VSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CQO7pSoHEeybK-I2B-fBEg" type="_CMIewCoHEeybK-I2B-fBEg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMOlYCoHEeybK-I2B-fBEg" name="Tournament" visibility="public">
+          <eAnnotations xmi:id="_CMOlYSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMOlYioHEeybK-I2B-fBEg" key="documentation" value=" A competition in which matches are organized in a knock-out manner. Losers&#xA; are eliminated and winners face each other, until only one remains. The last&#xA; player is the winner of the competition. The number of initial competitors&#xA; must be a power of two. The class is parameterized by a sub-type of the&#xA; Competitor class, because the Match singleton used depends on the type of&#xA; Competitor&#xA; @param &lt;T> A Competitor sub-type&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_CQVpUSoHEeybK-I2B-fBEg" importedElement="_CQVpUCoHEeybK-I2B-fBEg" visibility="private"/>
+          <elementImport xmi:id="_CQVpUioHEeybK-I2B-fBEg" importedElement="_CM7I8CoHEeybK-I2B-fBEg" visibility="private"/>
+          <elementImport xmi:id="_CQVpUyoHEeybK-I2B-fBEg" importedElement="_CMSPwSoHEeybK-I2B-fBEg" visibility="private"/>
+          <elementImport xmi:id="_CQWQYioHEeybK-I2B-fBEg" importedElement="_CQWQYSoHEeybK-I2B-fBEg" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_CMOlYyoHEeybK-I2B-fBEg" parameter="_CMOlZCoHEeybK-I2B-fBEg">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_CMOlZCoHEeybK-I2B-fBEg" parameteredElement="_CMOlZSoHEeybK-I2B-fBEg">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_CMOlZSoHEeybK-I2B-fBEg" name="T" templateParameter="_CMOlZCoHEeybK-I2B-fBEg"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <generalization xmi:id="_CQVCQCoHEeybK-I2B-fBEg" general="_CMMwMCoHEeybK-I2B-fBEg"/>
+          <ownedAttribute xmi:id="_CQXegCoHEeybK-I2B-fBEg" name="victoryPoints" visibility="private">
+            <eAnnotations xmi:id="_CQXegSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CQXegioHEeybK-I2B-fBEg" key="documentation" value=" the number of points the winner of a match gets&#xA; "/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_CQYFkCoHEeybK-I2B-fBEg" name="defeatPoints" visibility="private">
+            <eAnnotations xmi:id="_CQYsoCoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CQYsoSoHEeybK-I2B-fBEg" key="documentation" value=" the number of points the looser of a match gets&#xA; "/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_CQZ6wCoHEeybK-I2B-fBEg" name="tiePoints" visibility="private">
+            <eAnnotations xmi:id="_CQZ6wSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CQZ6wioHEeybK-I2B-fBEg" key="documentation" value=" if the issue of a match is a tie, the number off points each side gets&#xA; "/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_CQ97cCoHEeybK-I2B-fBEg" name="Tournament" visibility="public">
+            <eAnnotations xmi:id="_CQ97cSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CQ97cioHEeybK-I2B-fBEg" key="documentation" value=" Construct a tournament defined by a match singleton and a list of&#xA; competitors. The match object is used the determine the outcome of every&#xA; game. The number of points associated to match outcomes are used to&#xA; construct the ranking after the competition is played&#xA; @param match Match singleton which determines games outcomes&#xA; @param competitors List of competitors. The length of this list must be&#xA; a power of two&#xA; @param victoryPoints Number of points awarded for a victory&#xA; @param defeatPoints Number of points awarded for a defeat&#xA; @param tiePoints Number of points awarded to each competitor in case of a&#xA; tie&#xA; @throws IllegalArgumentException iff the number of competitors is not a&#xA; power of two&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CQ97cyoHEeybK-I2B-fBEg" name="match" type="_CMN-UCoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CQ97dCoHEeybK-I2B-fBEg" name="competitors" type="_CM7I8CoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CQ97dSoHEeybK-I2B-fBEg" name="victoryPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_CQ97dioHEeybK-I2B-fBEg" name="defeatPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_CQ97dyoHEeybK-I2B-fBEg" name="tiePoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CRITgCoHEeybK-I2B-fBEg" name="play" visibility="protected">
+            <eAnnotations xmi:id="_CRITgSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CRITgioHEeybK-I2B-fBEg" key="documentation" value=" Play the matches between the competitors. Matches are organized in&#xA; rounds, where only the winning player advances to the next round.&#xA; If the list has &lt;code>n = 2^k&lt;/code>&#xA; elements, then &lt;code>n - 1&lt;/code> matches are played. The competitors are&#xA; paired using the following rule : given 4 competitors A, B, C and D&#xA; and the list [A, B, C, D], then neighbours are paired against eachother.&#xA; Here, A competes against B, and C competes against D. The next round of&#xA; the tournament is then represented by the following list :&#xA; [winner(A, B), winner(C, D)].&#xA; How it works ? It plays matches in the initial round (..., eighth final,&#xA; quarter-final, semi-final, final). The set of competitors which advance&#xA; to the next round is those who have won &lt;code>z&lt;/code> times in total&#xA; since the beginning of the tournament, with &lt;code> z = 1 &lt;/code> here.&#xA; In the next round &quot;r&quot;, the required number of victory to advance to the&#xA; next round (of &quot;r&quot;) is &lt;code>z + 1&lt;/code>. And so on and so on ... until&#xA; the competition is over (when the final round has been played).&#xA; Let's give an example:&#xA; Let's have the list of participant of the tournament: [A, B, C, D, E, F, G, H]&#xA; &lt;ol>&#xA;  &lt;li>the initial round here is the quarter-final, and played match are&#xA; (A, B), (C, D) (E, F) and (G, H), the number of victories required to&#xA; advance to the next round (which is the semi-final)  is 1&#xA;  &lt;/li>&#xA;  &lt;li>in the quarter final, the played matches are (winner of A vs B,&#xA; winner of C vs D), (winner of E vs F, winner of G vs H) and the number of&#xA; victories required to advance to the next round (which is the final) is 2&#xA;  &lt;/li>&#xA;  &lt;li>...&lt;/li>&#xA;  &lt;li>At the end, the winner of the tournament is the competitor which has&#xA; won 3 times in total since the beginning of the competition&#xA;  &lt;/li>&#xA; &lt;/ol>&#xA; @param competitors List of competitors enlisted to play. Its length must&#xA; be a power of two&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CRITgyoHEeybK-I2B-fBEg" name="competitors" type="_CM7I8CoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CRUgwCoHEeybK-I2B-fBEg" name="play" visibility="private">
+            <eAnnotations xmi:id="_CRUgwSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CRUgwioHEeybK-I2B-fBEg" key="documentation" value=" Play the matches between competitors until a final winner is determined.&#xA; How it works ? It plays matches in the initial round (a round is ...,&#xA; eighth final, quarter-final, semi-final, final). The set of competitors&#xA; which advance to the next round is those who have won&#xA; &lt;code>nbVictory + winRequiredInEachStep&lt;/code> in total since the&#xA; beginning of the tournament. Then play the matches between competitors&#xA; who made to the next round. And so on, and so on until the tournament is&#xA; achieved (when the final round has been played).&#xA; Let's give an example:&#xA; Let's have the list of competitors: [A, B, C, D, E, F, G, H] with&#xA; &lt;code>nbVictory=3, winRequiredInEachStep=1&lt;/code> for example&#xA; &lt;ol>&#xA;  &lt;li>the initial round here is the quarter-final, and played match are&#xA; (A, B), (C, D) (E, F) and (G, H), the number of victories required to&#xA; advance to the next round (which is the semi-final) is 4&#xA; (&lt;code>nbVictory + winRequiredInEachStep&lt;/code>).&#xA;  &lt;/li>&#xA;  &lt;li>in the semi-final, the played matches are (winner of A vs B, winner&#xA; of C vs D), (winner of E vs F, winner of G vs H) and the number of&#xA; victories required to advance to the next round (which is the final) is 5&#xA; (&lt;code>nbVictory + winRequiredInEachStep + 1&lt;/code>)&#xA;  &lt;/li>&#xA;  &lt;li> in the final, the played match is ((winner of A vs B) vs (winner of&#xA; C vs D)) , (winner of(winner of E vs F) vs (winner of G vs H)). This next&#xA; round is special because there are only 2 competitors left so there is not&#xA; a next round anymore and the winner of the competition is determined.&#xA; Let's note that the total number of victories of the final's winner is&#xA; then 6 (&lt;code>nbVictory + winRequiredInEachStep + 1 + 1&lt;/code>).&#xA;  &lt;/li>&#xA; &lt;/ol>&#xA; This methods is used an helper for {@link Tournament#play(List)}.&#xA; @param competitors competitors that will play against each other.&#xA; @param nbVictory total number of victory (since the beginning of the&#xA; tournament) of the competitors that are playing in the initial round&#xA; @param winRequiredInEachStep number of wins a competitor need to get in&#xA; the initial round to advance to the next round&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CRUgwyoHEeybK-I2B-fBEg" name="competitors" type="_CM7I8CoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CRUgxCoHEeybK-I2B-fBEg" name="nbVictory">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_CRUgxSoHEeybK-I2B-fBEg" name="winRequiredInEachStep">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CRnbsCoHEeybK-I2B-fBEg" name="displayTrace" visibility="private">
+            <eAnnotations xmi:id="_CRnbsSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CRnbsioHEeybK-I2B-fBEg" key="documentation" value=" In the standard output,&#xA; display a trace of the match described by the given arguments&#xA; @param c1 &quot;first&quot; competitor in the match&#xA; @param c2 &quot;second&quot; competitor in the match&#xA; @param outcome outcome of the match&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CRnbsyoHEeybK-I2B-fBEg" name="c1" type="_CMOlZSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CRnbtCoHEeybK-I2B-fBEg" name="c2" type="_CMOlZSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CRnbtSoHEeybK-I2B-fBEg" name="outcome" type="_CMIewCoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CSdwQCoHEeybK-I2B-fBEg" name="playMatch" visibility="protected">
+            <eAnnotations xmi:id="_CSdwQSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CSdwQioHEeybK-I2B-fBEg" key="documentation" value=" Play the match between &lt;code>c1&lt;/code> and &lt;code>c2&lt;/code> (of course,&#xA; according to the &quot;rule&quot;).&#xA; Update the ranking of the competitors according to the outcome of the&#xA; match (i.e if there is a winner or if it's a tie).&#xA; @param c1 competitor that will play against &lt;code>c2&lt;/code>&#xA; @param c2 competitor that will play against &lt;code>c1&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CSdwQyoHEeybK-I2B-fBEg" name="c1" type="_CMOlZSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CSdwRCoHEeybK-I2B-fBEg" name="c2" type="_CMOlZSoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CTGpcCoHEeybK-I2B-fBEg" name="updateRanking" visibility="protected">
+            <eAnnotations xmi:id="_CTGpcSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CTGpcioHEeybK-I2B-fBEg" key="documentation" value=" Update the internal structure used to keep track of points. The result&#xA; argument represents the outcome of the match between the two competitors,&#xA; as returned by playMatch&#xA; @param competitor1 First competitor&#xA; @param competitor2 Second competitor&#xA; @param outcome Instance of enumerated type MatchOutcome indicating the&#xA; result of the match between the competitors&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CTGpcyoHEeybK-I2B-fBEg" name="competitor1" type="_CMOlZSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CTGpdCoHEeybK-I2B-fBEg" name="competitor2" type="_CMOlZSoHEeybK-I2B-fBEg"/>
+            <ownedParameter xmi:id="_CTGpdSoHEeybK-I2B-fBEg" name="outcome" type="_CMIewCoHEeybK-I2B-fBEg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CTIeoCoHEeybK-I2B-fBEg" name="isPowerOfTwo" visibility="private" isStatic="true">
+            <eAnnotations xmi:id="_CTIeoSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CTIeoioHEeybK-I2B-fBEg" key="documentation" value=" @param n the number to check if is a power of two&#xA; @return true iff &lt;code>n&lt;/code> is a power of two&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CTIeoyoHEeybK-I2B-fBEg" name="n">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_CTIepCoHEeybK-I2B-fBEg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CMPMcCoHEeybK-I2B-fBEg" name="Competitor" visibility="public">
+          <eAnnotations xmi:id="_CMPMcSoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_CMPMcioHEeybK-I2B-fBEg" key="documentation" value=" A named competitor&#xA;"/>
+          </eAnnotations>
+          <ownedAttribute xmi:id="_CTJswCoHEeybK-I2B-fBEg" name="name" visibility="protected">
+            <eAnnotations xmi:id="_CTKT0CoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CTKT0SoHEeybK-I2B-fBEg" key="documentation" value="Competitor's name"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_CTK64CoHEeybK-I2B-fBEg" name="Competitor" visibility="public">
+            <eAnnotations xmi:id="_CTK64SoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CTK64ioHEeybK-I2B-fBEg" key="documentation" value=" Construct a competitor defined by a name&#xA; @param name Name of the competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CTK64yoHEeybK-I2B-fBEg" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CTLh8CoHEeybK-I2B-fBEg" name="getName" visibility="public">
+            <eAnnotations xmi:id="_CTLh8SoHEeybK-I2B-fBEg" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_CTLh8ioHEeybK-I2B-fBEg" key="documentation" value=" Return the name of the competitor&#xA; @return The name of the competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_CTLh8yoHEeybK-I2B-fBEg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_CTMJACoHEeybK-I2B-fBEg" name="DISPLAYER_target" memberEnd="_COCjQCoHEeybK-I2B-fBEg _CTMJASoHEeybK-I2B-fBEg">
+          <ownedEnd xmi:id="_CTMJASoHEeybK-I2B-fBEg" name="target" type="_CMJs4CoHEeybK-I2B-fBEg" association="_CTMJACoHEeybK-I2B-fBEg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_CTMwECoHEeybK-I2B-fBEg" name="results_target" memberEnd="_COU3ICoHEeybK-I2B-fBEg _CTMwESoHEeybK-I2B-fBEg">
+          <ownedEnd xmi:id="_CTMwESoHEeybK-I2B-fBEg" name="target" type="_CMK7ACoHEeybK-I2B-fBEg" association="_CTMwECoHEeybK-I2B-fBEg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_CTMwEioHEeybK-I2B-fBEg" name="competitor1_target" memberEnd="_CO-XYCoHEeybK-I2B-fBEg _CTMwEyoHEeybK-I2B-fBEg">
+          <ownedEnd xmi:id="_CTMwEyoHEeybK-I2B-fBEg" name="target" type="_CMLiECoHEeybK-I2B-fBEg" association="_CTMwEioHEeybK-I2B-fBEg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_CTMwFCoHEeybK-I2B-fBEg" name="competitor2_target" memberEnd="_CPAMkCoHEeybK-I2B-fBEg _CTMwFSoHEeybK-I2B-fBEg">
+          <ownedEnd xmi:id="_CTMwFSoHEeybK-I2B-fBEg" name="target" type="_CMLiECoHEeybK-I2B-fBEg" association="_CTMwFCoHEeybK-I2B-fBEg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_CTNXICoHEeybK-I2B-fBEg" name="match_target" memberEnd="_CPUVoCoHEeybK-I2B-fBEg _CTNXISoHEeybK-I2B-fBEg">
+          <ownedEnd xmi:id="_CTNXISoHEeybK-I2B-fBEg" name="target" type="_CMMwMCoHEeybK-I2B-fBEg" association="_CTNXICoHEeybK-I2B-fBEg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_CTNXIioHEeybK-I2B-fBEg" name="rankingHandler_target" memberEnd="_CPZOICoHEeybK-I2B-fBEg _CTNXIyoHEeybK-I2B-fBEg">
+          <ownedEnd xmi:id="_CTNXIyoHEeybK-I2B-fBEg" name="target" type="_CMMwMCoHEeybK-I2B-fBEg" association="_CTNXIioHEeybK-I2B-fBEg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_CTNXJCoHEeybK-I2B-fBEg" name="DISPLAYER_target" memberEnd="_CQD8gCoHEeybK-I2B-fBEg _CTNXJSoHEeybK-I2B-fBEg">
+          <ownedEnd xmi:id="_CTNXJSoHEeybK-I2B-fBEg" name="target" type="_CMMwNioHEeybK-I2B-fBEg" association="_CTNXJCoHEeybK-I2B-fBEg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_CTOlQCoHEeybK-I2B-fBEg" name="competition_util" client="_CMENUCoHEeybK-I2B-fBEg" supplier="_CMRosSoHEeybK-I2B-fBEg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_CTOlQSoHEeybK-I2B-fBEg" name="competition_util" client="_CMENUCoHEeybK-I2B-fBEg" supplier="_COBVICoHEeybK-I2B-fBEg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_CTOlQioHEeybK-I2B-fBEg" name="competition_stream" client="_CMENUCoHEeybK-I2B-fBEg" supplier="_CQWQYCoHEeybK-I2B-fBEg"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CMRosCoHEeybK-I2B-fBEg" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CMRosSoHEeybK-I2B-fBEg" name="util">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CQWQYCoHEeybK-I2B-fBEg" name="stream">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_CQWQYSoHEeybK-I2B-fBEg" name="Collectors"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CMRosioHEeybK-I2B-fBEg" name="Collection"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CMSPwSoHEeybK-I2B-fBEg" name="Map"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CMj8kCoHEeybK-I2B-fBEg" name="Random"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CM7I8CoHEeybK-I2B-fBEg" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CQVpUCoHEeybK-I2B-fBEg" name="Iterator"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_CMpcICoHEeybK-I2B-fBEg" name="T"/>
+</uml:Model>

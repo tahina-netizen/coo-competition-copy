@@ -1,0 +1,38 @@
+@startuml strategies
+package strategies.group {
+    interface GroupingStrategy {
+        group(List<T extends Competitor> cs): Collection
+        
+    }
+    class MakeNGroupsStrategy {
+        -n: int
+        +MakeNGroupsStrategy(int n)
+        +getN(): int
+        +<T extends Competitor> group(List<T>): Collection<List<T>>
+    }
+    GroupingStrategy <|.. MakeNGroupsStrategy
+}
+package strategies.filter {
+    interface FilteringStrategy {
+        <T extends Competitor> filter(Collection<T> cs): Collection<T>
+    }
+    class TakeNFirstFilteringStrategy {
+        +TakeNFirstFilteringStrategy(int n)
+        +getN(): int
+        +<T extends Competitor> filter(Collection<T> cs): Collection<T>
+    }
+    FilteringStrategy <|.. TakeNFirstFilteringStrategy
+}
+
+package strategies.sort {
+    interface SortingStrategy {
+        <T extends Competitor> sort(Collection<T> qualified, Collection<Map<T, Integer>> scores)
+    }
+    class ArbitrarySortingStrategy {
+        +<T extends Competitor> sort(Collection<T> qualified, Collection<Map<T, Integer>> scores)
+        -<T extends Competitor> inAnyRanking(T c, Collection<T> cs): boolean
+    }
+
+    SortingStrategy <|.. ArbitrarySortingStrategy
+}
+@enduml

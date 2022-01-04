@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_zgUaQEWUEeypEZ-iusDkTQ" name="competition">
+  <elementImport xmi:id="_zzktcEWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_zzlUgEWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+  </elementImport>
+  <elementImport xmi:id="_zzlUgUWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+  </elementImport>
+  <elementImport xmi:id="_zzl7kEWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <elementImport xmi:id="_zzl7kUWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <elementImport xmi:id="_zzmioEWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_zznJsEWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:id="_zznJsUWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+  </elementImport>
+  <elementImport xmi:id="_zznJskWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_zznwwEWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_zznwwUWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_zzoX0EWUEeypEZ-iusDkTQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <packageImport xmi:id="_zzTAoEWUEeypEZ-iusDkTQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_zza8cEWUEeypEZ-iusDkTQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zzsCMEWUEeypEZ-iusDkTQ" name="etu">
+    <packagedElement xmi:type="uml:Package" xmi:id="_zzspQEWUEeypEZ-iusDkTQ" name="simonzo">
+      <packagedElement xmi:type="uml:Package" xmi:id="_zztQUEWUEeypEZ-iusDkTQ" name="competition">
+        <packagedElement xmi:type="uml:Package" xmi:id="_z1aggEWUEeypEZ-iusDkTQ" name="util">
+          <packagedElement xmi:type="uml:Class" xmi:id="_z1bHkEWUEeypEZ-iusDkTQ" name="MapUtil" visibility="public">
+            <elementImport xmi:id="_0DZ5MUWUEeypEZ-iusDkTQ" importedElement="_0DZ5MEWUEeypEZ-iusDkTQ" visibility="private"/>
+            <elementImport xmi:id="_0DagQUWUEeypEZ-iusDkTQ" importedElement="_0DagQEWUEeypEZ-iusDkTQ" visibility="private"/>
+            <elementImport xmi:id="_0DbuYUWUEeypEZ-iusDkTQ" importedElement="_0DbuYEWUEeypEZ-iusDkTQ" visibility="private"/>
+            <elementImport xmi:id="_0DcVcUWUEeypEZ-iusDkTQ" importedElement="_0DcVcEWUEeypEZ-iusDkTQ" visibility="private"/>
+            <elementImport xmi:id="_0Dc8gEWUEeypEZ-iusDkTQ" importedElement="_z4XG0EWUEeypEZ-iusDkTQ" visibility="private"/>
+            <elementImport xmi:id="_0Dc8gUWUEeypEZ-iusDkTQ" importedElement="_z2amEEWUEeypEZ-iusDkTQ" visibility="private"/>
+            <elementImport xmi:id="_0DeKoUWUEeypEZ-iusDkTQ" importedElement="_0DeKoEWUEeypEZ-iusDkTQ" visibility="private"/>
+            <ownedOperation xmi:id="_0D5BYEWUEeypEZ-iusDkTQ" name="sortByDescendingValue" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_0D5BYUWUEeypEZ-iusDkTQ" name="map" type="_z2amEEWUEeypEZ-iusDkTQ"/>
+              <ownedParameter xmi:id="_0D5BYkWUEeypEZ-iusDkTQ" type="_z2amEEWUEeypEZ-iusDkTQ" direction="return"/>
+              <ownedTemplateSignature xmi:id="_0D5BY0WUEeypEZ-iusDkTQ" parameter="_0D5BZEWUEeypEZ-iusDkTQ">
+                <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0D5BZEWUEeypEZ-iusDkTQ" parameteredElement="_0D5BZUWUEeypEZ-iusDkTQ">
+                  <ownedParameteredElement xmi:type="uml:Class" xmi:id="_0D5BZUWUEeypEZ-iusDkTQ" name="K" templateParameter="_0D5BZEWUEeypEZ-iusDkTQ"/>
+                </ownedParameter>
+              </ownedTemplateSignature>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_z1eK4EWUEeypEZ-iusDkTQ" name="Math" visibility="public">
+            <ownedOperation xmi:id="_0EF1sEWUEeypEZ-iusDkTQ" name="isPowerOfTwo" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_0EF1sUWUEeypEZ-iusDkTQ" name="n">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0EF1skWUEeypEZ-iusDkTQ" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Usage" xmi:id="_05ho4EWUEeypEZ-iusDkTQ" name="util_util" client="_z1aggEWUEeypEZ-iusDkTQ" supplier="_z2YJ0EWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_z0IHEEWUEeypEZ-iusDkTQ" name="FilteringStrategy" visibility="public">
+          <eAnnotations xmi:id="_z0IHEUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z0IHEkWUEeypEZ-iusDkTQ" key="documentation" value=" Represents an algorithm which, knowing the scores of each competitor of&#xA; each group, filters a set of groups (each group&#xA; containing a set of competitors) to get a set of competitors.&#xA; At the end of the filtering, the result will be a collection of competitors&#xA; that passed through the filtering algorithm.&#xA; Only competitors with known scores can be filtered.&#xA; With a set of groups and the scores of each competitor,&#xA; there are many ways to filter them.&#xA; For example, given 3 groups:&#xA; &lt;table>&#xA;  &lt;caption>Group 1&lt;/caption>&#xA;      &lt;thead>&#xA;          &lt;tr>&#xA;              &lt;th>Competitor&lt;/th>&#xA;              &lt;th>Score&lt;/th>&#xA;          &lt;/tr>&#xA;      &lt;/thead>&#xA;      &lt;tbody>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Alice&lt;/td>&#xA;              &lt;td>&amp;nbsp;42&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Bob&lt;/td>&#xA;              &lt;td>&amp;nbsp;16&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Charlie&lt;/td>&#xA;              &lt;td>&amp;nbsp;11&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Delta&lt;/td>&#xA;              &lt;td>&amp;nbsp;10&lt;/td>&#xA;          &lt;/tr>&#xA;      &lt;/tbody>&#xA; &lt;/table>&#xA; &lt;table>&#xA;  &lt;caption>Group 2&lt;/caption>&#xA;      &lt;thead>&#xA;          &lt;tr>&#xA;              &lt;th>Competitor&lt;/th>&#xA;              &lt;th>Score&lt;/th>&#xA;          &lt;/tr>&#xA;      &lt;/thead>&#xA;      &lt;tbody>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Enum&lt;/td>&#xA;              &lt;td>&amp;nbsp;30&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Finley&lt;/td>&#xA;              &lt;td>&amp;nbsp;20&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Goat&lt;/td>&#xA;              &lt;td>&amp;nbsp;19&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Hello&lt;/td>&#xA;              &lt;td>&amp;nbsp;17&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Ienessey&lt;/td>&#xA;              &lt;td>&amp;nbsp;17&lt;/td>&#xA;          &lt;/tr>&#xA;      &lt;/tbody>&#xA; &lt;/table>&#xA; &lt;table>&#xA;  &lt;caption>Group 3&lt;/caption>&#xA;      &lt;thead>&#xA;          &lt;tr>&#xA;              &lt;th>Competitor&lt;/th>&#xA;              &lt;th>Score&lt;/th>&#xA;          &lt;/tr>&#xA;      &lt;/thead>&#xA;      &lt;tbody>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Jean&lt;/td>&#xA;              &lt;td>&amp;nbsp;31&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Klay&lt;/td>&#xA;              &lt;td>&amp;nbsp;21&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Lauren&lt;/td>&#xA;              &lt;td>&amp;nbsp;21&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Marie&lt;/td>&#xA;              &lt;td>&amp;nbsp;16&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Nichols&lt;/td>&#xA;              &lt;td>&amp;nbsp;15&lt;/td>&#xA;          &lt;/tr>&#xA;          &lt;tr>&#xA;              &lt;td>&amp;nbsp;Oakland&lt;/td>&#xA;              &lt;td>&amp;nbsp;10&lt;/td>&#xA;          &lt;/tr>&#xA;      &lt;/tbody>&#xA; &lt;/table>&#xA; We can (for example):&#xA; &lt;ul>&#xA;  &lt;li>&#xA;      filter the 2 first of each group, so we get at the end [Alice, Bob&#xA;      , Enum, Finley, Jean, Klay]&#xA;  &lt;/li>&#xA;  &lt;li>&#xA;      filter the 2 first of each group and add the 2 last of each group&#xA;      combined so we get at the end [Alice, Bob, Enum, Finley, Jean, Klay, Charlie, Delta]&#xA;  &lt;/li>&#xA; &lt;/ul>&#xA; And many other (infinite) ways to filter groups ...&#xA; So, an instance of a class that implements this interface defines a (precise)&#xA; way to implement the filtering.&#xA;"/>
+          </eAnnotations>
+          <ownedOperation xmi:id="_z3BDAEWUEeypEZ-iusDkTQ" name="filter">
+            <eAnnotations xmi:id="_z3BDAUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z3BDAkWUEeypEZ-iusDkTQ" key="documentation" value=" Filter (select) some competitors among the given groups using this&#xA; filtering algorithm&#xA; @param &lt;T> a subclass of competitors&#xA; @param scores (each element of this collection represents a group)&#xA; a collection of groups to be filtered&#xA; @return a collection of selected competitors among the given groups&#xA; using this filtering algorithm&#xA; @throws IllegalArgumentException if selection cannot be performed&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z3BDA0WUEeypEZ-iusDkTQ" name="scores" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z3BDBEWUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+            <ownedTemplateSignature xmi:id="_z3BDBUWUEeypEZ-iusDkTQ" parameter="_z3BDBkWUEeypEZ-iusDkTQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z3BDBkWUEeypEZ-iusDkTQ" parameteredElement="_z3BDB0WUEeypEZ-iusDkTQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z3BDB0WUEeypEZ-iusDkTQ" name="T" templateParameter="_z3BDBkWUEeypEZ-iusDkTQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_z0aa8EWUEeypEZ-iusDkTQ" name="RankingHandler" visibility="public">
+          <eAnnotations xmi:id="_z0aa8UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z0aa8kWUEeypEZ-iusDkTQ" key="documentation" value=" Given a set of match results (matches between competitors), this interface can&#xA; compute the ranking of the competitors.&#xA; Gradually as match results is given to this interface (via&#xA; {@link RankingHandler#addResult(Result)}), this interface can (gradually)&#xA; compute the ranking. So each time a match result is given, the ranking may&#xA; change.&#xA;"/>
+          </eAnnotations>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z0aa80WUEeypEZ-iusDkTQ" parameter="_z0aa9EWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z0aa9EWUEeypEZ-iusDkTQ" parameteredElement="_z0aa9UWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z0aa9UWUEeypEZ-iusDkTQ" name="T" templateParameter="_z0aa9EWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedOperation xmi:id="_z3N3UEWUEeypEZ-iusDkTQ" name="addResult" visibility="public">
+            <eAnnotations xmi:id="_z3N3UUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z3N3UkWUEeypEZ-iusDkTQ" key="documentation" value=" make this ranking handler take account of the given match result&#xA; @param result a match result this ranking handler have to take account&#xA; @throws IllegalArgumentException if the result is invalid (eg if one of&#xA; the competitors is unknown)&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z3N3U0WUEeypEZ-iusDkTQ" name="result" type="_z0su0EWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z3RhsEWUEeypEZ-iusDkTQ" name="getResults" visibility="public">
+            <eAnnotations xmi:id="_z3SIwEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z3SIwUWUEeypEZ-iusDkTQ" key="documentation" value=" gives the collection of the match results already taken account by this ranking handler&#xA; @return the collection of the match results already taken account by this ranking handler&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z3SIwkWUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z3VzIEWUEeypEZ-iusDkTQ" name="getRanking" visibility="public">
+            <eAnnotations xmi:id="_z3VzIUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z3VzIkWUEeypEZ-iusDkTQ" key="documentation" value=" Gives the ranking computed from the set of match results already given to&#xA; this ranking handler&#xA; @return the ranking computed from the set of match results already given&#xA; to this ranking handler.&#xA; Its a map where:&#xA; &lt;ol>&#xA;  &lt;li>key: a competitor instance&lt;/li>&#xA;  &lt;li>value: the score of that competitor&lt;/li>&#xA; &lt;/ol>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z3VzI0WUEeypEZ-iusDkTQ" type="_z2amEEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z0hIoEWUEeypEZ-iusDkTQ" name="RandomMatch" visibility="public">
+          <eAnnotations xmi:id="_z0hIoUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z0hIokWUEeypEZ-iusDkTQ" key="documentation" value=" Represents a match &quot;rule&quot; where match are played just randomly.&#xA; That is to say that the each confronted competitors has equal&#xA; probability to win. So the issue of the match can't be predicted.&#xA; @param &lt;T> Sub-type of Competitor&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_z3pVIEWUEeypEZ-iusDkTQ" importedElement="_z3ouEEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z0hIo0WUEeypEZ-iusDkTQ" parameter="_z0hIpEWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z0hIpEWUEeypEZ-iusDkTQ" parameteredElement="_z0hIpUWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z0hIpUWUEeypEZ-iusDkTQ" name="T" templateParameter="_z0hIpEWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedAttribute xmi:id="_z3vbwEWUEeypEZ-iusDkTQ" name="randomGenerator" visibility="private" type="_z3ouEEWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_z3wp4EWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z3wp4UWUEeypEZ-iusDkTQ" key="documentation" value=" used to generate random value for deciding the issue of a match&#xA; "/>
+            </eAnnotations>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_z3m44EWUEeypEZ-iusDkTQ" name="etu.simonzo.competition.Match" client="_z0hIoEWUEeypEZ-iusDkTQ" supplier="_z1G-gEWUEeypEZ-iusDkTQ" contract="_z1G-gEWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_z3xQ8EWUEeypEZ-iusDkTQ" name="RandomMatch" visibility="public">
+            <eAnnotations xmi:id="_z3xQ8UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z3xQ8kWUEeypEZ-iusDkTQ" key="documentation" value=" Create a match &quot;rule&quot; where match are played just randomly.&#xA; "/>
+            </eAnnotations>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z383IEWUEeypEZ-iusDkTQ" name="playWith" visibility="public">
+            <eAnnotations xmi:id="_z383IUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z383IkWUEeypEZ-iusDkTQ" key="documentation" value=" Play a match between &lt;code>c1&lt;/code> and &lt;code>c2&lt;/code>.&#xA; The issue of the match is decided randomly.&#xA; For this match mechanism, there must be a winner at the end&#xA; of the match &lt;strong>(there is no tie)&lt;/strong>.&#xA; @param c1 competitor that will confront &lt;code>c2&lt;/code>&#xA; @param c2 competitor that will confront &lt;code>c1&lt;/code>&#xA; @return &lt;ul>&#xA;          &lt;li>&lt;code>MatchOutcome.FIRST_PLAYER_WIN&lt;/code> iff c1 wins&lt;/li>&#xA;          &lt;li>&lt;code>MatchOutcome.SECOND_PLAYER_WIN&lt;/code> iff c2 wins&lt;/li>&#xA;         &lt;/ul>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z383I0WUEeypEZ-iusDkTQ" name="c1" type="_z0hIpUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z383JEWUEeypEZ-iusDkTQ" name="c2" type="_z0hIpUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z383JUWUEeypEZ-iusDkTQ" type="_z0ukAEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z0kzAEWUEeypEZ-iusDkTQ" name="StdoutDisplayer" visibility="public">
+          <eAnnotations xmi:id="_z0kzAUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z0laEEWUEeypEZ-iusDkTQ" key="documentation" value=" A displayer which uses the standard output to display information.&#xA;"/>
+          </eAnnotations>
+          <ownedAttribute xmi:id="_z4C9wEWUEeypEZ-iusDkTQ" name="STDOUT_DISPLAYER_SINGLETON" visibility="private" isLeaf="true" isStatic="true" type="_z0kzAEWUEeypEZ-iusDkTQ" association="_05Ye8EWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_z4Dk0EWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z4Dk0UWUEeypEZ-iusDkTQ" key="documentation" value=" the unique instance of StdoutDisplayer (singleton pattern)&#xA; "/>
+            </eAnnotations>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_z4HPMEWUEeypEZ-iusDkTQ" name="" type="_z0kzAEWUEeypEZ-iusDkTQ" value="new StdoutDisplayer()"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_z4AhgEWUEeypEZ-iusDkTQ" name="etu.simonzo.competition.Displayer" client="_z0kzAEWUEeypEZ-iusDkTQ" supplier="_z05jIEWUEeypEZ-iusDkTQ" contract="_z05jIEWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_z4H2QEWUEeypEZ-iusDkTQ" name="StdoutDisplayer" visibility="private">
+            <eAnnotations xmi:id="_z4H2QUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z4H2QkWUEeypEZ-iusDkTQ" key="documentation" value=" Create a standard output displayer. &#xA; "/>
+            </eAnnotations>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z4MuwEWUEeypEZ-iusDkTQ" name="displayMessage" visibility="public">
+            <eAnnotations xmi:id="_z4MuwUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z4MuwkWUEeypEZ-iusDkTQ" key="documentation" value=" Display the given message to the standard output.&#xA; The message may be formatted for esthetic and readability purpose.&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z4Muw0WUEeypEZ-iusDkTQ" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z4PyEEWUEeypEZ-iusDkTQ" name="getInstance" visibility="public" isStatic="true">
+            <eAnnotations xmi:id="_z4PyEUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z4PyEkWUEeypEZ-iusDkTQ" key="documentation" value=" Give the unique instance of StdoutDisplayer. (singleton pattern is used)&#xA; @return the unique instance of StdoutDisplayer&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z4PyE0WUEeypEZ-iusDkTQ" type="_z0kzAEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z0qSkEWUEeypEZ-iusDkTQ" name="League" visibility="public">
+          <eAnnotations xmi:id="_z0qSkUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z0qSkkWUEeypEZ-iusDkTQ" key="documentation" value=" A competition in which every competitor faces each opponent twice. At the end&#xA; of the competition, the competitor with the most victories wins. The class&#xA; is parameterized by a sub-type of the Competitor class, because the Match&#xA; singleton used depends on the type of Competitor&#xA; @param &lt;T> A Competitor sub-type&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_z4Xt4EWUEeypEZ-iusDkTQ" importedElement="_z4XG0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_z4Xt4UWUEeypEZ-iusDkTQ" importedElement="_z2amEEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z0qSk0WUEeypEZ-iusDkTQ" parameter="_z0qSlEWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z0qSlEWUEeypEZ-iusDkTQ" parameteredElement="_z0qSlUWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z0qSlUWUEeypEZ-iusDkTQ" name="T" templateParameter="_z0qSlEWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <generalization xmi:id="_z4V4sEWUEeypEZ-iusDkTQ" general="_z1AQ0EWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_z4oMkEWUEeypEZ-iusDkTQ" name="League" visibility="public">
+            <eAnnotations xmi:id="_z4oMkUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z4oMkkWUEeypEZ-iusDkTQ" key="documentation" value=" Construct a league defined by a match singleton and a list of&#xA; competitors. The match object is used the determine the outcome of every&#xA; game. The number of points associated to match outcomes are used to&#xA; construct the ranking after the competition is played&#xA; @param match Match singleton which determines games outcomes&#xA; @param competitors List of competitors&#xA; @param victoryPoints Number of points awarded for a victory&#xA; @param defeatPoints Number of points awarded for a defeat&#xA; @param tiePoints Number of points awarded to each competitor in case of a&#xA; tie&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z4oMk0WUEeypEZ-iusDkTQ" name="match" type="_z1G-gEWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z4oMlEWUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z4oMlUWUEeypEZ-iusDkTQ" name="victoryPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_z4oMlkWUEeypEZ-iusDkTQ" name="defeatPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_z4oMl0WUEeypEZ-iusDkTQ" name="tiePoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z4x9kEWUEeypEZ-iusDkTQ" name="play" visibility="protected">
+            <eAnnotations xmi:id="_z4ykoEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z4ykoUWUEeypEZ-iusDkTQ" key="documentation" value=" Play the matches between the competitors. Matches are organized in a&#xA; round trip fashion, where each competitor meets with every other&#xA; competitor twice. If the list has &lt;code>n&lt;/code> elements, then&#xA; &lt;code>n * (n - 1)&lt;/code> matches are played. The competitors are paired&#xA; using the following rule : given 3 competitors A, B, C and the list&#xA; [A, B, C], then the played matches are (A, B), (A, C), (B, A), (B, C),&#xA; (C, A), (C, B)&#xA; @param competitors List of competitors enlisted to play&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z4ykokWUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z5DDUEWUEeypEZ-iusDkTQ" name="displayTrace" visibility="private">
+            <eAnnotations xmi:id="_z5DDUUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z5DDUkWUEeypEZ-iusDkTQ" key="documentation" value=" In the standard output,&#xA; display a trace of the match described by the given arguments&#xA; @param c1 &quot;first&quot; competitor in the match&#xA; @param c2 &quot;second&quot; competitor in the match&#xA; @param outcome outcome of the match&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z5DDU0WUEeypEZ-iusDkTQ" name="c1" type="_z0qSlUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z5DqYEWUEeypEZ-iusDkTQ" name="c2" type="_z0qSlUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z5DqYUWUEeypEZ-iusDkTQ" name="outcome" type="_z0ukAEWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z5S68EWUEeypEZ-iusDkTQ" name="playMatch" visibility="protected">
+            <eAnnotations xmi:id="_z5S68UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z5S68kWUEeypEZ-iusDkTQ" key="documentation" value=" Play the match between &lt;code>c1&lt;/code> and &lt;code>c2&lt;/code> (of course,&#xA; according to the &quot;rule&quot;).&#xA; Update the ranking of the competitors according to the outcome of the&#xA; match (i.e if there is a winner or if it's a tie).&#xA; @param c1 competitor that will play against &lt;code>c2&lt;/code>&#xA; @param c2 competitor that will play against &lt;code>c1&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z5S680WUEeypEZ-iusDkTQ" name="c1" type="_z0qSlUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z5S69EWUEeypEZ-iusDkTQ" name="c2" type="_z0qSlUWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z5quYEWUEeypEZ-iusDkTQ" name="updateRanking" visibility="protected">
+            <eAnnotations xmi:id="_z5quYUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z5quYkWUEeypEZ-iusDkTQ" key="documentation" value=" Update the internal structure used to keep track of points. The result&#xA; argument represents the outcome of the match between the two competitors,&#xA; as returned by playMatch&#xA; @param competitor1 First competitor&#xA; @param competitor2 Second competitor&#xA; @param outcome Instance of enumerated type MatchOutcome indicating the&#xA; result of the match between the competitors&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z5quY0WUEeypEZ-iusDkTQ" name="competitor1" type="_z0qSlUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z5quZEWUEeypEZ-iusDkTQ" name="competitor2" type="_z0qSlUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z5quZUWUEeypEZ-iusDkTQ" name="outcome" type="_z0ukAEWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_z0su0EWUEeypEZ-iusDkTQ" name="Result" visibility="public">
+          <eAnnotations xmi:id="_z0su0UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z0su0kWUEeypEZ-iusDkTQ" key="documentation" value=" Represents the context of the outcome of a confrontation between two competitor.&#xA; In other words, tells which competitor confronted with another competitor and what&#xA; is the outcome of that confrontation.&#xA; Then, a result is defined by the two confronted competitors and&#xA; the outcome of the match i.e there is a winner (and a loser), or the confrontation&#xA; is tied.&#xA; For identification purpose, one competitor will be called &quot;first&quot; and the other one&#xA; &quot;second&quot;.&#xA;"/>
+          </eAnnotations>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z0su00WUEeypEZ-iusDkTQ" parameter="_z0su1EWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z0su1EWUEeypEZ-iusDkTQ" parameteredElement="_z0su1UWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z0su1UWUEeypEZ-iusDkTQ" name="T" templateParameter="_z0su1EWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedOperation xmi:id="_z5uYwEWUEeypEZ-iusDkTQ" name="getCompetitor1" visibility="public">
+            <eAnnotations xmi:id="_z5uYwUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z5uYwkWUEeypEZ-iusDkTQ" key="documentation" value=" give the &quot;first&quot; competitor: the competitor confronted to the other one returned&#xA; by {@link Result#getCompetitor2()}.&#xA; @return the &quot;first&quot; competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z5uYw0WUEeypEZ-iusDkTQ" type="_z0su1UWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z5u_0EWUEeypEZ-iusDkTQ" name="getCompetitor2" visibility="public">
+            <eAnnotations xmi:id="_z5u_0UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z5u_0kWUEeypEZ-iusDkTQ" key="documentation" value=" give the &quot;second&quot; competitor: the competitor confronted to the other one returned&#xA; by {@link Result#getCompetitor1()}&#xA; @return the &quot;second&quot; competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z5u_00WUEeypEZ-iusDkTQ" type="_z0su1UWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z5yqMEWUEeypEZ-iusDkTQ" name="getOutcome" visibility="public">
+            <eAnnotations xmi:id="_z5yqMUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z5yqMkWUEeypEZ-iusDkTQ" key="documentation" value=" The outcome of the confrontation between &lt;code>c1&lt;/code> and &lt;code>c2&lt;/code>.&#xA; With:&#xA; &lt;ul>&#xA;   &lt;li>&lt;code>c1&lt;/code>: the competitor returned by {@link Result#getCompetitor1()}&lt;/li>&#xA;   &lt;li>&lt;code>c2&lt;/code>: the competitor returned by {@link Result#getCompetitor2()}&lt;/li>&#xA; &lt;/ul>&#xA; @return&#xA; &lt;ul>&#xA;   &lt;li>{@link MatchOutcome#TIE} iff tie&lt;/li>&#xA;   &lt;li>{@link MatchOutcome#FIRST_PLAYER_WIN} iff &lt;code>c1&lt;/code> won&lt;/li>&#xA;   &lt;li>{@link MatchOutcome#SECOND_PLAYER_WIN} iff &lt;code>c2&lt;/code> won&lt;/li>&#xA; &lt;/ul>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z5yqM0WUEeypEZ-iusDkTQ" type="_z0ukAEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_z0ukAEWUEeypEZ-iusDkTQ" name="MatchOutcome" visibility="public">
+          <eAnnotations xmi:id="_z0vLEEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z0vLEUWUEeypEZ-iusDkTQ" key="documentation" value=" Represents the final outcome of a confrontation between two&#xA; competitors.&#xA; First of all, there is the notion of &quot;first&quot; player and &quot;second&quot; player,&#xA; that notion is used just to distinguish the two confronting competitors.&#xA; So, the outcome of the match can be:&#xA; &lt;ul>&#xA;  &lt;li>A tie (nobody win) represented by {@link MatchOutcome#TIE}&lt;/li>&#xA;  &lt;li>Not a tie, so there is a winner, represented by:&#xA;   {@link MatchOutcome#FIRST_PLAYER_WIN} if the &quot;first&quot; player won,&#xA;   or {@link MatchOutcome#SECOND_PLAYER_WIN} if the &quot;second&quot; player won.&#xA;   &lt;/li>&#xA; &lt;/ul>&#xA; If one competitor won, the other lost&#xA;"/>
+          </eAnnotations>
+          <ownedLiteral xmi:id="_z51GcEWUEeypEZ-iusDkTQ" name="TIE">
+            <specification xmi:type="uml:LiteralInteger" xmi:id="_z51tgEWUEeypEZ-iusDkTQ"/>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_z52UkEWUEeypEZ-iusDkTQ" name="FIRST_PLAYER_WIN">
+            <specification xmi:type="uml:LiteralInteger" xmi:id="_z52UkUWUEeypEZ-iusDkTQ"/>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_z527oEWUEeypEZ-iusDkTQ" name="SECOND_PLAYER_WIN">
+            <specification xmi:type="uml:LiteralInteger" xmi:id="_z527oUWUEeypEZ-iusDkTQ"/>
+          </ownedLiteral>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z0y1cEWUEeypEZ-iusDkTQ" name="MainLeague" visibility="public">
+          <elementImport xmi:id="_z55-8EWUEeypEZ-iusDkTQ" importedElement="_z1bHkEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_z55X4EWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedOperation xmi:id="_z6B6wEWUEeypEZ-iusDkTQ" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_z6B6wUWUEeypEZ-iusDkTQ" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z6B6wkWUEeypEZ-iusDkTQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z00qoEWUEeypEZ-iusDkTQ" name="TakeNFirstFilteringStrategy" visibility="public">
+          <eAnnotations xmi:id="_z00qoUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z00qokWUEeypEZ-iusDkTQ" key="documentation" value=" This class represents a filtering strategy where the &lt;code>n&lt;/code>&#xA; competitors with the highest scores in each group are chosen and returned as&#xA; a collection of competitors&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_z6IocUWUEeypEZ-iusDkTQ" importedElement="_z1bHkEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_z6IocEWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedAttribute xmi:id="_z6J2kEWUEeypEZ-iusDkTQ" name="n" visibility="private">
+            <eAnnotations xmi:id="_z6KdoEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z6KdoUWUEeypEZ-iusDkTQ" key="documentation" value="Number of players to select in each group"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_z6IBYEWUEeypEZ-iusDkTQ" name="etu.simonzo.competition.FilteringStrategy" client="_z00qoEWUEeypEZ-iusDkTQ" supplier="_z0IHEEWUEeypEZ-iusDkTQ" contract="_z0IHEEWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_z6MS0EWUEeypEZ-iusDkTQ" name="TakeNFirstFilteringStrategy" visibility="public">
+            <eAnnotations xmi:id="_z6MS0UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z6MS0kWUEeypEZ-iusDkTQ" key="documentation" value=" Create an instance of the strategy, which can be used to keep only the&#xA; &lt;code>n&lt;/code> competitors with the highest score in each group for the&#xA; next phase.&#xA; @param n Number of players to select in each group&#xA; @throws IllegalArgumentException iff &lt;code>n&lt;/code> is not positive&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z6MS00WUEeypEZ-iusDkTQ" name="n">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z6Ng8EWUEeypEZ-iusDkTQ" name="getN" visibility="public">
+            <eAnnotations xmi:id="_z6Ng8UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z6Ng8kWUEeypEZ-iusDkTQ" key="documentation" value=" Return the number of competitors which are selected in each group.&#xA; @return Number of competitors selected in each group&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z6Ng80WUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z6Wq4EWUEeypEZ-iusDkTQ" name="filter" visibility="public">
+            <eAnnotations xmi:id="_z6Wq4UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z6Wq4kWUEeypEZ-iusDkTQ" key="documentation" value=" Return a filtered collection of competitors, containing only those with&#xA; the highest scores in each group (the number of competitors chosen in&#xA; each group is decided at instanciation).&#xA; @param &lt;T> Sub-type of Competitor&#xA; @param scores A collection of maps (each map representing a group of&#xA; competitors) associating competitors to their score&#xA; @return A collection of selected competitors, chosen using the &quot;take the&#xA; &lt;code>n&lt;/code> best in each group&quot; strategy&#xA; @throws IllegalArgumentException iff one of the group contains less&#xA; competitors than the number to select&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z6Wq40WUEeypEZ-iusDkTQ" name="scores" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z6Wq5EWUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+            <ownedTemplateSignature xmi:id="_z6Wq5UWUEeypEZ-iusDkTQ" parameter="_z6Wq5kWUEeypEZ-iusDkTQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z6Wq5kWUEeypEZ-iusDkTQ" parameteredElement="_z6Wq50WUEeypEZ-iusDkTQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z6Wq50WUEeypEZ-iusDkTQ" name="T" templateParameter="_z6Wq5kWUEeypEZ-iusDkTQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z02f0EWUEeypEZ-iusDkTQ" name="MakeNGroupsStrategy" visibility="public">
+          <eAnnotations xmi:id="_z02f0UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z02f0kWUEeypEZ-iusDkTQ" key="documentation" value=" An algorithm of making groups (in the group stage) defined by the number of&#xA; groups this algorithm should make (we will call it &lt;code>N&lt;/code>).&#xA; With a given list of competitors, this algorithm proceed to make exactly&#xA; &lt;code>N&lt;/code> groups from it.&#xA; Let's suppose the list of competitors contains &lt;code>n&lt;/code> competitors,&#xA; to make this algorithm works, &lt;code>n&lt;/code> must be a multiple of&#xA; &lt;code>N&lt;/code>.&#xA; So, each constructed&#xA; group will contains exactly &lt;code>n / N&lt;/code> competitors&#xA; For example:&#xA; &lt;ul>&#xA;  &lt;li>if the given list is [A, B, C, D, E, F, G, H] and we have&#xA;      to make 4 groups, then this algorithm will make 4 groups with 2&#xA;      competitors per group like [A, B], [C, D], [E, F], [G, H].&#xA;  &lt;/li>&#xA;  &lt;li>&#xA;      if the given list is [B, A, C, E, D, G, H, F] and we have to make 4&#xA;      groups, then this algorithm will make 4 groups with 2 competitors&#xA;      per group like like [B, A], [C, E], [D, G], [H, F]&#xA;  &lt;/li>&#xA; &lt;/ul>&#xA; As illustrated in the examples, the order in the given list influences the&#xA; making of the groups.&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_z6cxgEWUEeypEZ-iusDkTQ" importedElement="_z2YJ0UWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_z6d_oUWUEeypEZ-iusDkTQ" importedElement="_z6d_oEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_z6fNwEWUEeypEZ-iusDkTQ" importedElement="_z6emsEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_z6fNwUWUEeypEZ-iusDkTQ" importedElement="_z4XG0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedAttribute xmi:id="_z6gb4EWUEeypEZ-iusDkTQ" name="n" visibility="private">
+            <eAnnotations xmi:id="_z6hC8EWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z6hC8UWUEeypEZ-iusDkTQ" key="documentation" value=" the number of group this strategy makes&#xA; "/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_z6cKcEWUEeypEZ-iusDkTQ" name="etu.simonzo.competition.GroupingStrategy" client="_z02f0EWUEeypEZ-iusDkTQ" supplier="_z1L3AEWUEeypEZ-iusDkTQ" contract="_z1L3AEWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_z6i4IEWUEeypEZ-iusDkTQ" name="MakeNGroupsStrategy" visibility="public">
+            <eAnnotations xmi:id="_z6i4IUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z6i4IkWUEeypEZ-iusDkTQ" key="documentation" value=" Create an instance of MakeNGroupsStrategy with the given number&#xA; of groups to make. So the call to {@link MakeNGroupsStrategy#group(List)}&#xA; will make exactly &lt;code>n&lt;/code> groups. The number of groups must be&#xA; strictly positive, else an exception is thrown.&#xA; @param n the number of groups this instance have to make&#xA; @throws IllegalArgumentException iff &lt;code>n&lt;/code> is not strictly positive&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z6i4I0WUEeypEZ-iusDkTQ" name="n">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z6ktUEWUEeypEZ-iusDkTQ" name="getN" visibility="public">
+            <eAnnotations xmi:id="_z6ktUUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z6ktUkWUEeypEZ-iusDkTQ" key="documentation" value=" gives the number of groups this strategy makes&#xA; @return number of groups this strategy makes&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z6ktU0WUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z6ueUEWUEeypEZ-iusDkTQ" name="group" visibility="public">
+            <eAnnotations xmi:id="_z6ueUUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z6ueUkWUEeypEZ-iusDkTQ" key="documentation" value=" With &lt;code>n&lt;/code> as the integer given at construction, make exactly&#xA; &lt;code>n&lt;/code> groups with the given list of competitors.&#xA; &lt;strong>the order in the given list influences the&#xA; making of the groups.&lt;/strong>&#xA; @param competitors the list of competitors that will be used to make the&#xA; groups.&#xA; Its size has to be a multiple of &lt;code>n&lt;/code>&#xA; @return &lt;code>n&lt;/code> groups formed from the given list of competitors&#xA; @throws IllegalArgumentException if the size of &lt;code>competitors&lt;/code>&#xA; is not a multiple of &lt;code>n&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z6ueU0WUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z6ueVEWUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+            <ownedTemplateSignature xmi:id="_z6ueVUWUEeypEZ-iusDkTQ" parameter="_z6ueVkWUEeypEZ-iusDkTQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z6ueVkWUEeypEZ-iusDkTQ" parameteredElement="_z6ueV0WUEeypEZ-iusDkTQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z6ueV0WUEeypEZ-iusDkTQ" name="T" templateParameter="_z6ueVkWUEeypEZ-iusDkTQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_z05jIEWUEeypEZ-iusDkTQ" name="Displayer" visibility="public">
+          <eAnnotations xmi:id="_z05jIUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z05jIkWUEeypEZ-iusDkTQ" key="documentation" value=" A displayer is used to output some information/messages from the program.&#xA; For example, a displayer can print something to the console, or show a&#xA; notification in a GUI, ...&#xA;"/>
+          </eAnnotations>
+          <ownedOperation xmi:id="_z60k8EWUEeypEZ-iusDkTQ" name="displayMessage">
+            <eAnnotations xmi:id="_z60k8UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z60k8kWUEeypEZ-iusDkTQ" key="documentation" value=" Display the given message.&#xA; Before being displayed, the message could be formatted (for example &#xA; for esthetic purpose).&#xA; @param message message to be displayed&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z60k80WUEeypEZ-iusDkTQ" name="message">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z07YUEWUEeypEZ-iusDkTQ" name="SimpleRankingHandler" visibility="public">
+          <eAnnotations xmi:id="_z07YUUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z07YUkWUEeypEZ-iusDkTQ" key="documentation" value=" A simple implementation of the RankingHandler abstraction, based on the use&#xA; of a collection of match results, and the possibility to convert these&#xA; results to a ranking of competitors using points information passed on&#xA; construction. The list of competitors to rank is passed on construction.&#xA; All the competitors of the subsequent results must be part of this list, else&#xA; an exception will be thrown&#xA;"/>
+          </eAnnotations>
+          <packageImport xmi:id="_z675sEWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z07YU0WUEeypEZ-iusDkTQ" parameter="_z07YVEWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z07YVEWUEeypEZ-iusDkTQ" parameteredElement="_z07YVUWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z07YVUWUEeypEZ-iusDkTQ" name="T" templateParameter="_z07YVEWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedAttribute xmi:id="_z69u4EWUEeypEZ-iusDkTQ" name="victoryPoints" visibility="protected">
+            <eAnnotations xmi:id="_z6-V8EWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z6-V8UWUEeypEZ-iusDkTQ" key="documentation" value="Number of points awarded for a victory"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_z7AyMEWUEeypEZ-iusDkTQ" name="defeatPoints" visibility="protected">
+            <eAnnotations xmi:id="_z7BZQEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z7BZQUWUEeypEZ-iusDkTQ" key="documentation" value="Number of points awarded for a defeat"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_z7D1gEWUEeypEZ-iusDkTQ" name="tiePoints" visibility="protected">
+            <eAnnotations xmi:id="_z7EckEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z7EckUWUEeypEZ-iusDkTQ" key="documentation" value="Number of points awarded to each player in case of a tie"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_z7KjMEWUEeypEZ-iusDkTQ" name="results" visibility="protected" type="_z0su0EWUEeypEZ-iusDkTQ" isOrdered="true" isUnique="false" association="_05ZGAEWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_z7LKQEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z7LKQUWUEeypEZ-iusDkTQ" key="documentation" value="List of results added since instanciation"/>
+            </eAnnotations>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z7LxUEWUEeypEZ-iusDkTQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_z7SfAEWUEeypEZ-iusDkTQ" name="ranking" visibility="protected" type="_z2amEEWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_z7TGEEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z7TGEUWUEeypEZ-iusDkTQ" key="documentation" value="Association of competitors and scores"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_z67SoEWUEeypEZ-iusDkTQ" name="etu.simonzo.competition.RankingHandler" client="_z07YUEWUEeypEZ-iusDkTQ" supplier="_z0aa8EWUEeypEZ-iusDkTQ" contract="_z0aa8EWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_z7bo8EWUEeypEZ-iusDkTQ" name="SimpleRankingHandler" visibility="public">
+            <eAnnotations xmi:id="_z7bo8UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z7bo8kWUEeypEZ-iusDkTQ" key="documentation" value=" Construct a simple ranking handler, with the points value of a victory,&#xA; defeat and tie. These values are used when converting the results to a&#xA; ranking of competitors&#xA; @param competitors List of competitors registered to be ranked&#xA; @param victoryPoints Number of points awarded for a victory&#xA; @param defeatPoints Number of points awarded for a defeat&#xA; @param tiePoints Number of points awarded for a tied match&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z7bo80WUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z7bo9EWUEeypEZ-iusDkTQ" name="victoryPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_z7bo9UWUEeypEZ-iusDkTQ" name="defeatPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_z7bo9kWUEeypEZ-iusDkTQ" name="tiePoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z7jkwEWUEeypEZ-iusDkTQ" name="addResult" visibility="public">
+            <eAnnotations xmi:id="_z7jkwUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z7jkwkWUEeypEZ-iusDkTQ" key="documentation" value=" Add a result to the collection of results tracked by the ranking handler&#xA; @param result Result object to add to the collection&#xA; @throws IllegalArgumentException if one of the competitors is unknown,&#xA; ie. was not part of the list passed on instanciation&#xA; {@link etu.simonzo.competition.RankingHandler#addResult}&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z7jkw0WUEeypEZ-iusDkTQ" name="result" type="_z0su0EWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z7susEWUEeypEZ-iusDkTQ" name="getResults" visibility="public">
+            <eAnnotations xmi:id="_z7susUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z7suskWUEeypEZ-iusDkTQ" key="documentation" value=" gives the collection of the match results already taken account by this ranking handler&#xA; @return the collection of the match results already taken account by this ranking handler&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z7sus0WUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z72fsEWUEeypEZ-iusDkTQ" name="getRanking" visibility="public">
+            <eAnnotations xmi:id="_z72fsUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z72fskWUEeypEZ-iusDkTQ" key="documentation" value=" Return the ranking computed using the results added to the handler.&#xA; Competitors who do not appear in any results have a score of 0&#xA; {@link etu.simonzo.competition.RankingHandler#getRanking}&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z72fs0WUEeypEZ-iusDkTQ" type="_z2amEEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z7_poEWUEeypEZ-iusDkTQ" name="mapOfCompetitorsWithoutPoints" visibility="private">
+            <eAnnotations xmi:id="_z7_poUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z7_pokWUEeypEZ-iusDkTQ" key="documentation" value=" Return a hashmap in which all competitors were added as keys, each&#xA; associated to a score of 0. The returned map should be filled with actual&#xA; match outcomes&#xA; @param competitors List of competitors registered to be ranked&#xA; @return Map associating each competitor to the value 0&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z7_po0WUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z7_ppEWUEeypEZ-iusDkTQ" type="_z2amEEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z8GXUEWUEeypEZ-iusDkTQ" name="incrementScore" visibility="private">
+            <eAnnotations xmi:id="_z8G-YEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z8G-YUWUEeypEZ-iusDkTQ" key="documentation" value=" Add a number of points to the score of the competitor in the map&#xA; @param competitor Competitor whose score must change&#xA; @param points Number of points to add&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z8G-YkWUEeypEZ-iusDkTQ" name="competitor" type="_z07YVUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z8G-Y0WUEeypEZ-iusDkTQ" name="points">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z8OTIEWUEeypEZ-iusDkTQ" name="updateRanking" visibility="private">
+            <eAnnotations xmi:id="_z8OTIUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z8OTIkWUEeypEZ-iusDkTQ" key="documentation" value=" Modify points in the scores map using the result passed&#xA; @param result Result to be taken into account for the ranking&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z8OTI0WUEeypEZ-iusDkTQ" name="result" type="_z0su0EWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z090kEWUEeypEZ-iusDkTQ" name="SimpleResult" visibility="public">
+          <eAnnotations xmi:id="_z090kUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z090kkWUEeypEZ-iusDkTQ" key="documentation" value=" Represents the context of the outcome of a confrontation between two competitor.&#xA; In other words, tells which competitor confronted with another competitor and what&#xA; is the outcome of that confrontation.&#xA; Then, a result is defined by the two confronted competitors and&#xA; the outcome of the match i.e there is a winner (and a loser), or the confrontation&#xA; is tied.&#xA; The difference between {@link Result} is that this is a concrete class.&#xA;"/>
+          </eAnnotations>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z090k0WUEeypEZ-iusDkTQ" parameter="_z090lEWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z090lEWUEeypEZ-iusDkTQ" parameteredElement="_z090lUWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z090lUWUEeypEZ-iusDkTQ" name="T" templateParameter="_z090lEWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedAttribute xmi:id="_z8SkkEWUEeypEZ-iusDkTQ" name="competitor1" visibility="protected" type="_z090lUWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_z8TLoEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z8TLoUWUEeypEZ-iusDkTQ" key="documentation" value="First competitor"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_z8TysEWUEeypEZ-iusDkTQ" name="competitor2" visibility="protected" type="_z090lUWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_z8TysUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z8UZwEWUEeypEZ-iusDkTQ" key="documentation" value="Second competitor"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_z8XdEEWUEeypEZ-iusDkTQ" name="outcome" visibility="protected" type="_z0ukAEWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_z8XdEUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z8XdEkWUEeypEZ-iusDkTQ" key="documentation" value="Outcome of the match between the competitors"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_z8R9gEWUEeypEZ-iusDkTQ" name="etu.simonzo.competition.Result" client="_z090kEWUEeypEZ-iusDkTQ" supplier="_z0su0EWUEeypEZ-iusDkTQ" contract="_z0su0EWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_z8hOEEWUEeypEZ-iusDkTQ" name="SimpleResult" visibility="public">
+            <eAnnotations xmi:id="_z8hOEUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z8hOEkWUEeypEZ-iusDkTQ" key="documentation" value=" Create a confrontation result where &lt;code>c1&lt;/code> confronted &lt;code>c2&lt;/code>&#xA; and the outcome is &lt;code>outcome&lt;/code>&#xA; @param c1 competitor which confronted &lt;code>c2&lt;/code>. This competitor&#xA; will be identified as the &quot;first&quot;.&#xA; @param c2 competitor which confronted &lt;code>c1&lt;/code>. This competitor&#xA; will be identified as the &quot;second&quot;.&#xA; @param outcome the outcome of the confrontation between &lt;code>c1&lt;/code> and&#xA; &lt;code>c2&lt;/code>. The possible values are:&#xA; &lt;ul>&#xA;  &lt;li>{@link MatchOutcome#TIE} to mean the confrontation tied (no winner)&lt;/li>&#xA;  &lt;li>{@link MatchOutcome#FIRST_PLAYER_WIN} to mean that &lt;code>c1&lt;/code>&#xA; won (and &lt;code>c2&lt;/code> loosed)&lt;/li>&#xA;  &lt;li>{@link MatchOutcome#SECOND_PLAYER_WIN} to mean that &lt;code>c2&lt;/code>&#xA; won (and &lt;code>c1&lt;/code> loosed)&lt;/li>&#xA; &lt;/ul>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z8hOE0WUEeypEZ-iusDkTQ" name="c1" type="_z090lUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z8hOFEWUEeypEZ-iusDkTQ" name="c2" type="_z090lUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z8hOFUWUEeypEZ-iusDkTQ" name="outcome" type="_z0ukAEWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z8icMEWUEeypEZ-iusDkTQ" name="getCompetitor1" visibility="public">
+            <eAnnotations xmi:id="_z8jDQEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z8jDQUWUEeypEZ-iusDkTQ" key="documentation" value=" gives the &quot;first&quot; competitor in this result&#xA; @return the &quot;first&quot; competitor in this result&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z8jDQkWUEeypEZ-iusDkTQ" type="_z090lUWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z8jqUEWUEeypEZ-iusDkTQ" name="getCompetitor2" visibility="public">
+            <eAnnotations xmi:id="_z8jqUUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z8jqUkWUEeypEZ-iusDkTQ" key="documentation" value=" gives the &quot;second&quot; competitor in this result&#xA; @return the &quot;second&quot; competitor in this result&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z8jqU0WUEeypEZ-iusDkTQ" type="_z090lUWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z8nUsEWUEeypEZ-iusDkTQ" name="getOutcome" visibility="public">
+            <eAnnotations xmi:id="_z8nUsUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z8nUskWUEeypEZ-iusDkTQ" key="documentation" value=" give the outcome of this result (tie ?, there is a winner ?)&#xA; @return&#xA; &lt;ul>&#xA;   &lt;li>{@link MatchOutcome#TIE} iff tie (no winner)&lt;/li>&#xA;   &lt;li>{@link MatchOutcome#FIRST_PLAYER_WIN} iff &lt;code>the &quot;first&quot;&#xA; competitor&lt;/code> won&lt;/li>&#xA;   &lt;li>{@link MatchOutcome#SECOND_PLAYER_WIN} iff &lt;code>the &quot;second&quot;&#xA; competitor&lt;/code> won&lt;/li>&#xA; &lt;/ul>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z8nUs0WUEeypEZ-iusDkTQ" type="_z0ukAEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1AQ0EWUEeypEZ-iusDkTQ" name="Competition" visibility="public" isAbstract="true">
+          <eAnnotations xmi:id="_z1AQ0UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z1AQ0kWUEeypEZ-iusDkTQ" key="documentation" value=" Represents a competition. A competition maybe seen as set of match between&#xA; several competitors. Each match is between two competitors. All match is&#xA; under an unique &quot;rule&quot;/&quot;context&quot;/&quot;mechanism&quot; defined at the creation of a&#xA; competition.  A current ranking between all competitors can be provided at&#xA; the end of the competition. For this purpose, a RankingHandler instance is&#xA; passed as a constructor argument. The number of points associated with a&#xA; victory, a loss or a tie are the responsibility of the ranking handler. If&#xA; some players are duplicated in the list of competitors, all matches will be&#xA; played nonetheless eg. if the list contains two references to the same&#xA; Competitor, and if the pairing rule sets up a match between him and himself,&#xA; this match will be played. Users must make sure that the list contains no&#xA; duplicate if they want to avoid this behaviour&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_z8q_EEWUEeypEZ-iusDkTQ" importedElement="_z4XG0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_z8q_EUWUEeypEZ-iusDkTQ" importedElement="_z2amEEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z1AQ00WUEeypEZ-iusDkTQ" parameter="_z1AQ1EWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z1AQ1EWUEeypEZ-iusDkTQ" parameteredElement="_z1AQ1UWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z1AQ1UWUEeypEZ-iusDkTQ" name="T" templateParameter="_z1AQ1EWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedAttribute xmi:id="_z8weoEWUEeypEZ-iusDkTQ" name="match" visibility="private" type="_z1G-gEWUEeypEZ-iusDkTQ" association="_05ZtEEWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_z8weoUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z8xFsEWUEeypEZ-iusDkTQ" key="documentation" value="Match rule used for each confrontation of competitors"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_z8zh8EWUEeypEZ-iusDkTQ" name="competitors" visibility="private" type="_z1AQ1UWUEeypEZ-iusDkTQ" isOrdered="true" isUnique="false">
+            <eAnnotations xmi:id="_z80JAEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z80wEEWUEeypEZ-iusDkTQ" key="documentation" value="List of all competitors of this competition"/>
+            </eAnnotations>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z80wEUWUEeypEZ-iusDkTQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_z85BgEWUEeypEZ-iusDkTQ" name="rankingHandler" visibility="private" type="_z0aa8EWUEeypEZ-iusDkTQ" association="_05ZtEkWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_z85okEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z85okUWUEeypEZ-iusDkTQ" key="documentation" value="Ranking handler to manage points and ranking of competitors"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_z9MjgEWUEeypEZ-iusDkTQ" name="Competition" visibility="public">
+            <ownedParameter xmi:id="_z9MjgUWUEeypEZ-iusDkTQ" name="match" type="_z1G-gEWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z9MjgkWUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z9Mjg0WUEeypEZ-iusDkTQ" name="handler" type="_z0aa8EWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z9TRMEWUEeypEZ-iusDkTQ" name="play" visibility="public">
+            <eAnnotations xmi:id="_z9TRMUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z9TRMkWUEeypEZ-iusDkTQ" key="documentation" value=" Launch this competition from its beginning to its end.  Matches between&#xA; competitors are organized (i.e how many match to do? which competitor&#xA; play against which competitor ?)  Matches between competitors are played.&#xA; The final ranking ({@link Competition#ranking()} of each competitor can&#xA; be provided after the call to this method.&#xA; &lt;strong>This method should not be called more than once. Else the&#xA; behaviour is undefined&lt;/strong>&#xA; "/>
+            </eAnnotations>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z9b0EEWUEeypEZ-iusDkTQ" name="play" visibility="protected" isAbstract="true">
+            <eAnnotations xmi:id="_z9b0EUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z9b0EkWUEeypEZ-iusDkTQ" key="documentation" value=" Organize the matches between the given competitors (i.e how many match to&#xA; do? which competitor play against which competitor ?). Play each match.&#xA; @param competitors List of competitors to organize and play match with.&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z9b0E0WUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z9jv4EWUEeypEZ-iusDkTQ" name="playMatch" visibility="protected" isAbstract="true">
+            <eAnnotations xmi:id="_z9jv4UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z9jv4kWUEeypEZ-iusDkTQ" key="documentation" value=" Play the match between &lt;code>c1&lt;/code> and &lt;code>c2&lt;/code> (of course,&#xA; according to the &quot;rule&quot;).&#xA; Update the ranking of the competitors according to the outcome of the&#xA; match (i.e if there is a winner or if it's a tie).&#xA; @param c1 competitor that will play against &lt;code>c2&lt;/code>&#xA; @param c2 competitor that will play against &lt;code>c1&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z9jv40WUEeypEZ-iusDkTQ" name="c1" type="_z1AQ1UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z9jv5EWUEeypEZ-iusDkTQ" name="c2" type="_z1AQ1UWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z9oBUEWUEeypEZ-iusDkTQ" name="ranking" visibility="public">
+            <eAnnotations xmi:id="_z9oBUUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z9oBUkWUEeypEZ-iusDkTQ" key="documentation" value=" Return the ranking at the end of the competition. Each competitor gain&#xA; some points depending on the outcome of each match it played. The gained&#xA; point for a competitor for a win, tie and loss are the responsibility of&#xA; the ranking handler.&#xA; &lt;strong>This method should only be called after a call to&#xA; {@link Competition#play()}, else the behaviour is undefined&lt;/strong>&#xA; @return a map: key= a competitor, value=the score of that competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z9oBU0WUEeypEZ-iusDkTQ" type="_z2amEEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z9sSwEWUEeypEZ-iusDkTQ" name="getMatch" visibility="protected">
+            <eAnnotations xmi:id="_z9sSwUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z9sSwkWUEeypEZ-iusDkTQ" key="documentation" value=" Return the match &quot;rule&quot;/&quot;context&quot;/&quot;mechanism&quot; used in this competition.&#xA; @return the match &quot;rule&quot;/&quot;context&quot;/&quot;mechanism&quot; used in this competition.&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z9sSw0WUEeypEZ-iusDkTQ" type="_z1G-gEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z9xLQEWUEeypEZ-iusDkTQ" name="getCompetitors" visibility="protected">
+            <eAnnotations xmi:id="_z9xLQUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z9xLQkWUEeypEZ-iusDkTQ" key="documentation" value=" Return the list of competitors involved in the competition, and&#xA; registered on instanciation&#xA; @return the list of competitors playing in this competition.&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z9xLQ0WUEeypEZ-iusDkTQ" type="_z4XG0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z91csEWUEeypEZ-iusDkTQ" name="getRankingHandler" visibility="protected">
+            <eAnnotations xmi:id="_z91csUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z91cskWUEeypEZ-iusDkTQ" key="documentation" value=" Return the ranking handler instance associated with this competition&#xA; @return Ranking handler used to rank competitors&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z91cs0WUEeypEZ-iusDkTQ" type="_z0aa8EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1D7MEWUEeypEZ-iusDkTQ" name="MainTournament" visibility="public">
+          <elementImport xmi:id="_z94gAUWUEeypEZ-iusDkTQ" importedElement="_z1bHkEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_z95HEEWUEeypEZ-iusDkTQ" importedElement="_z1eK4EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_z94gAEWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedOperation xmi:id="_z-Ab0EWUEeypEZ-iusDkTQ" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_z-Ab0UWUEeypEZ-iusDkTQ" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z-Ab0kWUEeypEZ-iusDkTQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_z1G-gEWUEeypEZ-iusDkTQ" name="Match" visibility="public">
+          <eAnnotations xmi:id="_z1G-gUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z1G-gkWUEeypEZ-iusDkTQ" key="documentation" value=" An interface which defines a method which should designate the winner&#xA; between two competitors. The interface is parameterized by a sub-type of the&#xA; Competitor type because it should be able to use methods of the specific&#xA; Competitor sub-type to determine the outcome of the match&#xA; @param &lt;T> A Competitor sub-type&#xA;"/>
+          </eAnnotations>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z1G-g0WUEeypEZ-iusDkTQ" parameter="_z1G-hEWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z1G-hEWUEeypEZ-iusDkTQ" parameteredElement="_z1G-hUWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z1G-hUWUEeypEZ-iusDkTQ" name="T" templateParameter="_z1G-hEWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedOperation xmi:id="_z-PFUEWUEeypEZ-iusDkTQ" name="playWith" visibility="public">
+            <eAnnotations xmi:id="_z-PFUUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z-PFUkWUEeypEZ-iusDkTQ" key="documentation" value=" Perform the match between the competitors. Return an integer indicating&#xA; the outcome of the match&#xA; @param competitor1 First competitor&#xA; @param competitor2 Second competitor&#xA; @return Instance of enumerated type MatchOutcome indicating the result of&#xA; the match between the competitors&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z-PFU0WUEeypEZ-iusDkTQ" name="competitor1" type="_z1G-hUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z-PFVEWUEeypEZ-iusDkTQ" name="competitor2" type="_z1G-hUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z-PFVUWUEeypEZ-iusDkTQ" type="_z0ukAEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z-WaEEWUEeypEZ-iusDkTQ" name="playWithAndGetWinner">
+            <eAnnotations xmi:id="_z-WaEUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z-WaEkWUEeypEZ-iusDkTQ" key="documentation" value=" Perform the match between the competitors and if there is a winner, give it.&#xA; @param competitor1 First competitor&#xA; @param competitor2 Second competitor&#xA; @return&#xA; &lt;ul>&#xA;  &lt;li> if there is a winner, return an &lt;code>Optional&lt;/code> instance&#xA;  containing the winner.&#xA;  &lt;/li>&#xA;  &lt;li> if there is no winner (when the match is tie), return an empty&#xA;      &lt;code>Optional&lt;/code> instance&#xA;  &lt;/li>&#xA; &lt;/ul>&#xA; This is just an &lt;strong>utility method&lt;/strong> aimed to make the use of&#xA; {@link Match#playWith(Competitor, Competitor)} easier by avoiding repeated&#xA; &quot;if&quot; statement when trying to determine the winner&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z-WaE0WUEeypEZ-iusDkTQ" name="competitor1" type="_z1G-hUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z-WaFEWUEeypEZ-iusDkTQ" name="competitor2" type="_z1G-hUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z-WaFUWUEeypEZ-iusDkTQ" type="_z-HJgEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_z1KB0EWUEeypEZ-iusDkTQ" name="SortingStrategy" visibility="public">
+          <eAnnotations xmi:id="_z1KB0UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z1KB0kWUEeypEZ-iusDkTQ" key="documentation" value=" Represents a strategy to sort a collection of competitors based on the&#xA; results of a group phase. These results are represented by a collection of&#xA; associative maps (each map associating competitors to their score inside of&#xA; their own group). Unqualified competitors may be present in the score maps,&#xA; but these competitors are ignored and do not appear in the sorted list of&#xA; competitors. The list which is returned by the sort method can be used as an&#xA; argument to create a new competition&#xA;"/>
+          </eAnnotations>
+          <ownedOperation xmi:id="_z-iAQEWUEeypEZ-iusDkTQ" name="sort">
+            <eAnnotations xmi:id="_z-iAQUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z-iAQkWUEeypEZ-iusDkTQ" key="documentation" value=" Return a list of competitors in a particular order. All the competitors&#xA; in the &lt;code>qualifiedCompetitors&lt;/code> collection are present in the&#xA; returned list exactly once. The &lt;code>groupScores&lt;/code> collection of&#xA; score associations is used to determine the sorting order&#xA; @param &lt;T> Sub-type of Competitor&#xA; @param qualifiedCompetitors Competitors which should be present in the&#xA; sorted list of competitors&#xA; @param groupScores Collection of maps associating competitors to their&#xA; score in their respective groups&#xA; @return Sorted list of competitors&#xA; @throws IllegalArgumentException iff a qualified competitor can not be&#xA; found in any of the rankings represented by &lt;code>groupScores&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z-iAQ0WUEeypEZ-iusDkTQ" name="qualifiedCompetitors" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z-iAREWUEeypEZ-iusDkTQ" name="groupScores" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z-iARUWUEeypEZ-iusDkTQ" type="_z4XG0EWUEeypEZ-iusDkTQ" direction="return"/>
+            <ownedTemplateSignature xmi:id="_z-iARkWUEeypEZ-iusDkTQ" parameter="_z-iAR0WUEeypEZ-iusDkTQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z-iAR0WUEeypEZ-iusDkTQ" parameteredElement="_z-iASEWUEeypEZ-iusDkTQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z-iASEWUEeypEZ-iusDkTQ" name="T" templateParameter="_z-iAR0WUEeypEZ-iusDkTQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_z1L3AEWUEeypEZ-iusDkTQ" name="GroupingStrategy" visibility="public">
+          <eAnnotations xmi:id="_z1L3AUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z1L3AkWUEeypEZ-iusDkTQ" key="documentation" value=" Represents an algorithm used to make groups (in group stage) from a set &#xA; of competitors.&#xA; With a set of competitors, there is many ways to make groups with it.&#xA; &#xA; For example, if we have 8 competitors [A, B, C, D, E, F, G, H], we can make &#xA; (for example):&#xA; &lt;ul>&#xA;  &lt;li>4 groups with 2 players in each group: [A, B], [C, D], [E, F], [G, H]&lt;/li>&#xA;  &lt;li>3 groups with 2 groups with 3 players and one with 2 players: [A, B, C], &#xA;  [D, E, F], [G, H]&lt;/li>&#xA; &lt;/ul>&#xA; And many others (infinite) ways to make groups ...&#xA; So, an instance of a class that implements this interface define a (precise)&#xA; way to make the grouping.  &#xA;"/>
+          </eAnnotations>
+          <ownedOperation xmi:id="_z-sYUEWUEeypEZ-iusDkTQ" name="group">
+            <eAnnotations xmi:id="_z-sYUUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z-sYUkWUEeypEZ-iusDkTQ" key="documentation" value=" groups the given list of competitors using the algorithm defined in this&#xA; method.&#xA; @param &lt;T> a subclass of competitors.&#xA; @param competitors the list of competitors to group&#xA; @return A collection of groups. Each element of the collection represents a group.&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z-sYU0WUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z-sYVEWUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+            <ownedTemplateSignature xmi:id="_z-sYVUWUEeypEZ-iusDkTQ" parameter="_z-sYVkWUEeypEZ-iusDkTQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z-sYVkWUEeypEZ-iusDkTQ" parameteredElement="_z-sYV0WUEeypEZ-iusDkTQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z-sYV0WUEeypEZ-iusDkTQ" name="T" templateParameter="_z-sYVkWUEeypEZ-iusDkTQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1OTQEWUEeypEZ-iusDkTQ" name="Tournament" visibility="public">
+          <eAnnotations xmi:id="_z1OTQUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z1OTQkWUEeypEZ-iusDkTQ" key="documentation" value=" A competition in which matches are organized in a knock-out manner. Losers&#xA; are eliminated and winners face each other, until only one remains. The last&#xA; player is the winner of the competition. The number of initial competitors&#xA; must be a power of two. The class is parameterized by a sub-type of the&#xA; Competitor class, because the Match instance used depends on the type of&#xA; Competitor&#xA; @param &lt;T> A Competitor sub-type&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_z-ye8UWUEeypEZ-iusDkTQ" importedElement="_z6d_oEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_z-zGAEWUEeypEZ-iusDkTQ" importedElement="_z6emsEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_z-zGAUWUEeypEZ-iusDkTQ" importedElement="_z4XG0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_z-ztEEWUEeypEZ-iusDkTQ" importedElement="_z2amEEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z1OTQ0WUEeypEZ-iusDkTQ" parameter="_z1OTREWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z1OTREWUEeypEZ-iusDkTQ" parameteredElement="_z1OTRUWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z1OTRUWUEeypEZ-iusDkTQ" name="T" templateParameter="_z1OTREWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <generalization xmi:id="_z-ye8EWUEeypEZ-iusDkTQ" general="_z1AQ0EWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_z-2JUEWUEeypEZ-iusDkTQ" name="victoryPoints" visibility="private">
+            <eAnnotations xmi:id="_z-2JUUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z-2JUkWUEeypEZ-iusDkTQ" key="documentation" value=" the number of points the winner of a match gets&#xA; "/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_z-3-gEWUEeypEZ-iusDkTQ" name="defeatPoints" visibility="private">
+            <eAnnotations xmi:id="_z-4lkEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z-4lkUWUEeypEZ-iusDkTQ" key="documentation" value=" the number of points the looser of a match gets&#xA; "/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_z-5zsEWUEeypEZ-iusDkTQ" name="tiePoints" visibility="private">
+            <eAnnotations xmi:id="_z-6awEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z-6awUWUEeypEZ-iusDkTQ" key="documentation" value=" if the issue of a match is a tie, the number off points each side gets&#xA; "/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_z_K5cEWUEeypEZ-iusDkTQ" name="Tournament" visibility="public">
+            <eAnnotations xmi:id="_z_K5cUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z_K5ckWUEeypEZ-iusDkTQ" key="documentation" value=" Construct a tournament defined by a match singleton and a list of&#xA; competitors. The match object is used the determine the outcome of every&#xA; game. The number of points associated to match outcomes are used to&#xA; construct the ranking after the competition is played&#xA; @param match Match singleton which determines games outcomes&#xA; @param competitors List of competitors. The length of this list must be&#xA; a power of two&#xA; @param victoryPoints Number of points awarded for a victory&#xA; @param defeatPoints Number of points awarded for a defeat&#xA; @param tiePoints Number of points awarded to each competitor in case of a&#xA; tie&#xA; @throws IllegalArgumentException iff the number of competitors is not a&#xA; power of two&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z_K5c0WUEeypEZ-iusDkTQ" name="match" type="_z1G-gEWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z_K5dEWUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z_K5dUWUEeypEZ-iusDkTQ" name="victoryPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_z_K5dkWUEeypEZ-iusDkTQ" name="defeatPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_z_K5d0WUEeypEZ-iusDkTQ" name="tiePoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z_YU0EWUEeypEZ-iusDkTQ" name="play" visibility="protected">
+            <eAnnotations xmi:id="_z_YU0UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z_YU0kWUEeypEZ-iusDkTQ" key="documentation" value=" Play the matches between the competitors. Matches are organized in&#xA; rounds, where only the winning player advances to the next round.&#xA; If the list has &lt;code>n = 2^k&lt;/code>&#xA; elements, then &lt;code>n - 1&lt;/code> matches are played. The competitors are&#xA; paired using the following rule : given 4 competitors A, B, C and D&#xA; and the list [A, B, C, D], then neighbours are paired against eachother.&#xA; Here, A competes against B, and C competes against D. The next round of&#xA; the tournament is then represented by the following list :&#xA; [winner(A, B), winner(C, D)].&#xA; How it works ? It plays matches in the initial round (..., eighth final,&#xA; quarter-final, semi-final, final). The set of competitors which advance&#xA; to the next round is those who have won &lt;code>z&lt;/code> times in total&#xA; since the beginning of the tournament, with &lt;code> z = 1 &lt;/code> here.&#xA; In the next round &quot;r&quot;, the required number of victory to advance to the&#xA; next round (of &quot;r&quot;) is &lt;code>z + 1&lt;/code>. And so on and so on ... until&#xA; the competition is over (when the final round has been played).&#xA; Let's give an example:&#xA; Let's have the list of participant of the tournament: [A, B, C, D, E, F, G, H]&#xA; &lt;ol>&#xA;  &lt;li>the initial round here is the quarter-final, and played match are&#xA; (A, B), (C, D) (E, F) and (G, H), the number of victories required to&#xA; advance to the next round (which is the semi-final)  is 1&#xA;  &lt;/li>&#xA;  &lt;li>in the quarter final, the played matches are (winner of A vs B,&#xA; winner of C vs D), (winner of E vs F, winner of G vs H) and the number of&#xA; victories required to advance to the next round (which is the final) is 2&#xA;  &lt;/li>&#xA;  &lt;li>...&lt;/li>&#xA;  &lt;li>At the end, the winner of the tournament is the competitor which has&#xA; won 3 times in total since the beginning of the competition&#xA;  &lt;/li>&#xA; &lt;/ol>&#xA; @param competitors List of competitors enlisted to play. Its length must&#xA; be a power of two&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z_YU00WUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z_lwMEWUEeypEZ-iusDkTQ" name="play" visibility="private">
+            <eAnnotations xmi:id="_z_lwMUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z_lwMkWUEeypEZ-iusDkTQ" key="documentation" value=" Play the matches between competitors until a final winner is determined.&#xA; How it works ? It plays matches in the initial round (a round is ...,&#xA; eighth final, quarter-final, semi-final, final). The set of competitors&#xA; which advance to the next round is those who have won&#xA; &lt;code>nbVictory + winRequiredInEachStep&lt;/code> in total since the&#xA; beginning of the tournament. Then play the matches between competitors&#xA; who made to the next round. And so on, and so on until the tournament is&#xA; over (when the final round has been played).&#xA; Let's give an example:&#xA; Let's have the list of competitors: [A, B, C, D, E, F, G, H] with&#xA; &lt;code>nbVictory=3, winRequiredInEachStep=1&lt;/code> for example&#xA; &lt;ol>&#xA;  &lt;li>the initial round here is the quarter-final, and played match are&#xA; (A, B), (C, D) (E, F) and (G, H), the number of victories required to&#xA; advance to the next round (which is the semi-final) is 4&#xA; (&lt;code>nbVictory + winRequiredInEachStep&lt;/code>).&#xA;  &lt;/li>&#xA;  &lt;li>in the semi-final, the played matches are (winner of A vs B, winner&#xA; of C vs D), (winner of E vs F, winner of G vs H) and the number of&#xA; victories required to advance to the next round (which is the final) is 5&#xA; (&lt;code>nbVictory + winRequiredInEachStep + 1&lt;/code>)&#xA;  &lt;/li>&#xA;  &lt;li> in the final, the played match is ((winner of A vs B) vs (winner of&#xA; C vs D)) , (winner of(winner of E vs F) vs (winner of G vs H)). This next&#xA; round is special because there are only 2 competitors left so there is not&#xA; a next round anymore and the winner of the competition is determined.&#xA; Let's note that the total number of victories of the final's winner is&#xA; then 6 (&lt;code>nbVictory + winRequiredInEachStep + 1 + 1&lt;/code>).&#xA;  &lt;/li>&#xA; &lt;/ol>&#xA; This methods is used an helper for {@link Tournament#play(List)}.&#xA; @param competitors competitors that will play against each other.&#xA; @param nbVictory total number of victory (since the beginning of the&#xA; tournament) of the competitors that are playing in the initial round&#xA; @param winRequiredInEachStep number of wins a competitor need to get in&#xA; the initial round to advance to the next round&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z_lwM0WUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z_lwNEWUEeypEZ-iusDkTQ" name="nbVictory">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_z_lwNUWUEeypEZ-iusDkTQ" name="winRequiredInEachStep">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_z_4rIEWUEeypEZ-iusDkTQ" name="displayTrace" visibility="private">
+            <eAnnotations xmi:id="_z_4rIUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_z_4rIkWUEeypEZ-iusDkTQ" key="documentation" value=" In the standard output,&#xA; display a trace of the match described by the given arguments&#xA; @param c1 &quot;first&quot; competitor in the match&#xA; @param c2 &quot;second&quot; competitor in the match&#xA; @param outcome outcome of the match&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_z_4rI0WUEeypEZ-iusDkTQ" name="c1" type="_z1OTRUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z_4rJEWUEeypEZ-iusDkTQ" name="c2" type="_z1OTRUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_z_4rJUWUEeypEZ-iusDkTQ" name="outcome" type="_z0ukAEWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0AIiwEWUEeypEZ-iusDkTQ" name="playMatch" visibility="protected">
+            <eAnnotations xmi:id="_0AIiwUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0AIiwkWUEeypEZ-iusDkTQ" key="documentation" value=" Play the match between &lt;code>c1&lt;/code> and &lt;code>c2&lt;/code> (of course,&#xA; according to the &quot;rule&quot;).&#xA; Update the ranking of the competitors according to the outcome of the&#xA; match (i.e if there is a winner or if it's a tie).&#xA; @param c1 competitor that will play against &lt;code>c2&lt;/code>&#xA; @param c2 competitor that will play against &lt;code>c1&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0AIiw0WUEeypEZ-iusDkTQ" name="c1" type="_z1OTRUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0AIixEWUEeypEZ-iusDkTQ" name="c2" type="_z1OTRUWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0AfIEEWUEeypEZ-iusDkTQ" name="updateRanking" visibility="protected">
+            <eAnnotations xmi:id="_0AfIEUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0AfIEkWUEeypEZ-iusDkTQ" key="documentation" value=" Update the internal structure used to keep track of points. The outcome&#xA; argument represents the outcome of the match between the two competitors,&#xA; as returned by playMatch&#xA; @param competitor1 First competitor&#xA; @param competitor2 Second competitor&#xA; @param outcome Instance of enumerated type MatchOutcome indicating the&#xA; result of the match between the competitors&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0AfIE0WUEeypEZ-iusDkTQ" name="competitor1" type="_z1OTRUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0AfIFEWUEeypEZ-iusDkTQ" name="competitor2" type="_z1OTRUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0AfIFUWUEeypEZ-iusDkTQ" name="outcome" type="_z0ukAEWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0AiLYEWUEeypEZ-iusDkTQ" name="isPowerOfTwo" visibility="private" isStatic="true">
+            <eAnnotations xmi:id="_0AiLYUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0AiLYkWUEeypEZ-iusDkTQ" key="documentation" value=" @param n the number to check if is a power of two&#xA; @return true iff &lt;code>n&lt;/code> is a power of two&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0AiLY0WUEeypEZ-iusDkTQ" name="n">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_0AiLZEWUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1QIcEWUEeypEZ-iusDkTQ" name="ArbitrarySortingStrategy" visibility="public">
+          <eAnnotations xmi:id="_z1QIcUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z1QIckWUEeypEZ-iusDkTQ" key="documentation" value=" Represents a &quot;default&quot; sorting strategy. This strategy just iterate&#xA; over the elements of the given collection of competitors and add them&#xA; to the list to return.&#xA; In other words, no genuine sorting is done, the collection&#xA; of competitors is returned &quot;as it is&quot; (but as a list)&#xA;"/>
+          </eAnnotations>
+          <elementImport xmi:id="_0Anq8EWUEeypEZ-iusDkTQ" importedElement="_z2YJ0UWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0AoSAEWUEeypEZ-iusDkTQ" importedElement="_z6emsEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0AoSAUWUEeypEZ-iusDkTQ" importedElement="_z4XG0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0Ao5EEWUEeypEZ-iusDkTQ" importedElement="_z2amEEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <interfaceRealization xmi:id="_0AnD4EWUEeypEZ-iusDkTQ" name="etu.simonzo.competition.SortingStrategy" client="_z1QIcEWUEeypEZ-iusDkTQ" supplier="_z1KB0EWUEeypEZ-iusDkTQ" contract="_z1KB0EWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_0A27gEWUEeypEZ-iusDkTQ" name="sort" visibility="public">
+            <eAnnotations xmi:id="_0A3ikEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0A3ikUWUEeypEZ-iusDkTQ" key="documentation" value=" Gives a list of competitors where the order&#xA; is the order with which &lt;code>qualifiedCompetitors&lt;/code>'s&#xA; iterator iterate over it.&#xA; No genuine sorting is done, the collection&#xA; of competitors is returned &quot;as it is&quot; (but as a list)&#xA; @param &lt;T> Sub-type of Competitor&#xA; @param qualifiedCompetitors Competitors which should be present in the&#xA; sorted list of competitors&#xA; @param groupScores Collection of maps associating competitors to their&#xA; score in their respective groups&#xA; @return the resulting list of competitors&#xA; @throws IllegalArgumentException iff a qualified competitor can not be&#xA; found in any of the rankings represented by &lt;code>groupScores&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0A3ikkWUEeypEZ-iusDkTQ" name="qualifiedCompetitors" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0A3ik0WUEeypEZ-iusDkTQ" name="groupScores" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0A3ilEWUEeypEZ-iusDkTQ" type="_z4XG0EWUEeypEZ-iusDkTQ" direction="return"/>
+            <ownedTemplateSignature xmi:id="_0A3ilUWUEeypEZ-iusDkTQ" parameter="_0A3ilkWUEeypEZ-iusDkTQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0A3ilkWUEeypEZ-iusDkTQ" parameteredElement="_0A3il0WUEeypEZ-iusDkTQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_0A3il0WUEeypEZ-iusDkTQ" name="T" templateParameter="_0A3ilkWUEeypEZ-iusDkTQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0BChsEWUEeypEZ-iusDkTQ" name="inAnyRanking" visibility="private">
+            <eAnnotations xmi:id="_0BChsUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0BChskWUEeypEZ-iusDkTQ" key="documentation" value=" Return true if the competitor has a score in any ranking&#xA; @param &lt;T> Sub-type of Competitor&#xA; @param c Competitor to look up in rankings&#xA; @param rankings Collection of ranking maps&#xA; @return &lt;code>true&lt;/code> iff the competitor is associated to a score in&#xA; any ranking of the collection&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0BChs0WUEeypEZ-iusDkTQ" name="c" type="_0A3il0WUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0BChtEWUEeypEZ-iusDkTQ" name="rankings" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0BChtUWUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <ownedTemplateSignature xmi:id="_0BChtkWUEeypEZ-iusDkTQ" parameter="_0BCht0WUEeypEZ-iusDkTQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_0BCht0WUEeypEZ-iusDkTQ" parameteredElement="_0BChuEWUEeypEZ-iusDkTQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_0BChuEWUEeypEZ-iusDkTQ" name="T" templateParameter="_0BCht0WUEeypEZ-iusDkTQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1SksEWUEeypEZ-iusDkTQ" name="Master" visibility="public">
+          <eAnnotations xmi:id="_z1SksUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z1SkskWUEeypEZ-iusDkTQ" key="documentation" value=" A competition consisting of two phases: a group phase followed by a&#xA; tournament phase. During the first phase, competitors are first split into&#xA; groups. Then matches are carried out inside of each group (in a round trip&#xA; fashion, each competitor playing against every other competitor in his group&#xA; exactly twice). Then group results are used to determine which competitors&#xA; are qualified for the second phase of the Master. The second phase consists&#xA; in a tournament in which matches are played in a knock-out manner. After the&#xA; tournament phase is over, the final ranking may be obtained.&#xA; A Master is defined by the method used to select competitors between the two&#xA; phases of the competition. The selection process is divided in three steps,&#xA; each of these steps represented by an instance of a particular strategy&#xA; class: a strategy to split competitors into groups, a strategy to choose&#xA; qualified players given the results of the different groups, and a strategy&#xA; to order the list of qualified competitors. This last step is relevant&#xA; because the order in which competitors are registered for a competition&#xA; determines the way they will be paired up.&#xA; Strategy objects are passed as constructor arguments. &lt;strong>The user is&#xA; responsible of the adequation between the strategies.&lt;/strong> Most notably,&#xA; the user should make sure that the size of the final list of qualified&#xA; competitors is a power of two, so that a tournament can be played.&#xA; @param &lt;T> Sub-type of Competitor&#xA;"/>
+          </eAnnotations>
+          <packageImport xmi:id="_0BHaMUWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z1Sks0WUEeypEZ-iusDkTQ" parameter="_z1SktEWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z1SktEWUEeypEZ-iusDkTQ" parameteredElement="_z1SktUWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z1SktUWUEeypEZ-iusDkTQ" name="T" templateParameter="_z1SktEWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <generalization xmi:id="_0BHaMEWUEeypEZ-iusDkTQ" general="_z1AQ0EWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0BNg0EWUEeypEZ-iusDkTQ" name="leagues" visibility="private" type="_z0qSkEWUEeypEZ-iusDkTQ" isUnique="false" association="_05aUIEWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_0BOH4EWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0BOH4UWUEeypEZ-iusDkTQ" key="documentation" value="Collection of league competitions corresponding to the first phase"/>
+            </eAnnotations>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0BOH4kWUEeypEZ-iusDkTQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0BTAYEWUEeypEZ-iusDkTQ" name="tournament" visibility="private" type="_z1OTQEWUEeypEZ-iusDkTQ" association="_05a7MEWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_0BTncEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0BTncUWUEeypEZ-iusDkTQ" key="documentation" value="Tournament corresponding to the second phase"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0BXR0EWUEeypEZ-iusDkTQ" name="gstrat" visibility="private" type="_z1L3AEWUEeypEZ-iusDkTQ" association="_05a7MkWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_0BXR0UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0BX44EWUEeypEZ-iusDkTQ" key="documentation" value="Strategy to split competitors into groups"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0Ba8MEWUEeypEZ-iusDkTQ" name="fstrat" visibility="private" type="_z0IHEEWUEeypEZ-iusDkTQ" association="_05biQEWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_0BbjQEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0BbjQUWUEeypEZ-iusDkTQ" key="documentation" value="Strategy to select qualified players based on group rankings"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0BfNoEWUEeypEZ-iusDkTQ" name="sstrat" visibility="private" type="_z1KB0EWUEeypEZ-iusDkTQ" association="_05biQkWUEeypEZ-iusDkTQ">
+            <eAnnotations xmi:id="_0Bf0sEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0Bf0sUWUEeypEZ-iusDkTQ" key="documentation" value="Strategy to sort a list of qualified players"/>
+            </eAnnotations>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0Bhp4EWUEeypEZ-iusDkTQ" name="victoryPoints" visibility="private">
+            <eAnnotations xmi:id="_0Bhp4UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0BiQ8EWUEeypEZ-iusDkTQ" key="documentation" value="Number of points awarded for a victory"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0BjfEEWUEeypEZ-iusDkTQ" name="defeatPoints" visibility="private">
+            <eAnnotations xmi:id="_0BkGIEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0BkGIUWUEeypEZ-iusDkTQ" key="documentation" value="Number of points awarded for a defeat"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0Bl7UEWUEeypEZ-iusDkTQ" name="tiePoints" visibility="private">
+            <eAnnotations xmi:id="_0Bl7UUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0Bl7UkWUEeypEZ-iusDkTQ" key="documentation" value="Number of points awarded to each competitor in case of a tie"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_0CFDgEWUEeypEZ-iusDkTQ" name="Master" visibility="public">
+            <eAnnotations xmi:id="_0CFDgUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0CFDgkWUEeypEZ-iusDkTQ" key="documentation" value=" Create a master defined by an instance of match, a list of competitors,&#xA; a grouping strategy, a filtering strategy and a sorting strategy. These&#xA; strategies will be used to select competitors which are allowed to&#xA; compete in the tournament of the second phase.&#xA; @param match Match object used to determine the outcome of matches&#xA; @param competitors List of competitors enlisted to play in the master&#xA; @param gstrat Strategy which determines how competitors are split into&#xA; groups for the first phase of the master&#xA; @param fstrat Strategy which determines which competitors are qualified&#xA; to enter the tournament phase following the group phase&#xA; @param sstrat Strategy which determines the order in which qualified&#xA; competitors are enlisted in the tournament phase&#xA; @param victoryPoints Number of points awarded for a victory&#xA; @param defeatPoints Number of points awarded for a defeat&#xA; @param tiePoints Number of points awarded to each competitor in case of a&#xA; tie&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0CFDg0WUEeypEZ-iusDkTQ" name="match" type="_z1G-gEWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0CFDhEWUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0CFDhUWUEeypEZ-iusDkTQ" name="gstrat" type="_z1L3AEWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0CFDhkWUEeypEZ-iusDkTQ" name="fstrat" type="_z0IHEEWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0CFDh0WUEeypEZ-iusDkTQ" name="sstrat" type="_z1KB0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0CFDiEWUEeypEZ-iusDkTQ" name="victoryPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_0CFDiUWUEeypEZ-iusDkTQ" name="defeatPoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_0CFDikWUEeypEZ-iusDkTQ" name="tiePoints">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0CNmYEWUEeypEZ-iusDkTQ" name="play" visibility="protected">
+            <eAnnotations xmi:id="_0CNmYUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0CNmYkWUEeypEZ-iusDkTQ" key="documentation" value=" Play all the matches in the master, using the strategy objects passed at&#xA; construction to select competitors between the two phases.&#xA; @param competitors List of competitors enlisted to play&#xA; @throws IllegalStateException if the strategies used are incompatible. In&#xA; this case, the instance of master is in an undefined state.&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0CNmY0WUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0CU7IEWUEeypEZ-iusDkTQ" name="playMatch" visibility="protected">
+            <eAnnotations xmi:id="_0CU7IUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0CU7IkWUEeypEZ-iusDkTQ" key="documentation" value=" &lt;strong>Unsupported operation.&lt;/strong> This method should not be called.&#xA; @param competitor1 Unused first competitor&#xA; @param competitor2 Unused second competitor&#xA; @throws UnsupportedOperationException iff the method is called&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0CU7I0WUEeypEZ-iusDkTQ" name="competitor1" type="_z1SktUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0CU7JEWUEeypEZ-iusDkTQ" name="competitor2" type="_z1SktUWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0CZMkEWUEeypEZ-iusDkTQ" name="ranking" visibility="public">
+            <eAnnotations xmi:id="_0CZMkUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0CZMkkWUEeypEZ-iusDkTQ" key="documentation" value=" Return the ranking of the tournament phase of the master.&#xA; &lt;strong>This method should only be called after a call to&#xA; {@link Competition#play()}, else the behaviour is undefined&lt;/strong>&#xA; @return Map associating competitors to scores&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0CZMk0WUEeypEZ-iusDkTQ" type="_z2amEEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0Cc28EWUEeypEZ-iusDkTQ" name="groupPhaseRankings" visibility="public">
+            <eAnnotations xmi:id="_0Cc28UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0Cc28kWUEeypEZ-iusDkTQ" key="documentation" value=" Return the collection of the rankings of the group stage of the&#xA; master.&#xA; &lt;strong>This method should only be called after a call to&#xA; {@link Competition#play()}, else the behaviour is undefined&lt;/strong>&#xA; @return Collection of ranking maps, each associating competitors to&#xA; their score in their particular group&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0Cc280WUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0ClZ0EWUEeypEZ-iusDkTQ" name="prepareFirstPhase" visibility="private">
+            <eAnnotations xmi:id="_0ClZ0UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0ClZ0kWUEeypEZ-iusDkTQ" key="documentation" value=" Split competitors into groups.&#xA; @param competitors Initial list of competitors&#xA; @return Groups of competitors for the group phase&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0ClZ00WUEeypEZ-iusDkTQ" name="competitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0ClZ1EWUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0Ct8sEWUEeypEZ-iusDkTQ" name="playFirstPhase" visibility="private">
+            <eAnnotations xmi:id="_0Ct8sUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0Ct8skWUEeypEZ-iusDkTQ" key="documentation" value=" Instanciate a league for each group and play all matches in each&#xA; league. Return a collection of rankings, one for each league. Set the&#xA; &lt;code>leagues&lt;/code> private field as a side-effect.&#xA; @param groups Groups of competitors, each group represents the&#xA; competitors of a league&#xA; @return Collection of maps associating competitors to their score in&#xA; their own group&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0Ct8s0WUEeypEZ-iusDkTQ" name="groups" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0Ct8tEWUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0C14gEWUEeypEZ-iusDkTQ" name="prepareSecondPhase" visibility="private">
+            <eAnnotations xmi:id="_0C14gUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0C14gkWUEeypEZ-iusDkTQ" key="documentation" value=" Select the qualified competitors after the group phase and order them for&#xA; the second phase.&#xA; @param rankings Collection of maps associating competitors to their score&#xA; in their own group&#xA; @return List of qualified competitors&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0C14g0WUEeypEZ-iusDkTQ" name="rankings" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0C14hEWUEeypEZ-iusDkTQ" type="_z4XG0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0C-bYEWUEeypEZ-iusDkTQ" name="playSecondPhase" visibility="private">
+            <eAnnotations xmi:id="_0C-bYUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0C-bYkWUEeypEZ-iusDkTQ" key="documentation" value="Instanciate a tournament for the qualified competitors and play it. Set&#xA; the &lt;code>tournament&lt;/code> private field as a side effect.&#xA; @param qualifiedCompetitors List of competitors who are playing in the&#xA; tournament phase&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0C-bY0WUEeypEZ-iusDkTQ" name="qualifiedCompetitors" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1UZ4EWUEeypEZ-iusDkTQ" name="Competitor" visibility="public">
+          <eAnnotations xmi:id="_z1UZ4UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z1UZ4kWUEeypEZ-iusDkTQ" key="documentation" value=" A named competitor&#xA;"/>
+          </eAnnotations>
+          <ownedAttribute xmi:id="_0DBesEWUEeypEZ-iusDkTQ" name="name" visibility="protected">
+            <eAnnotations xmi:id="_0DBesUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0DBeskWUEeypEZ-iusDkTQ" key="documentation" value="Competitor's name"/>
+            </eAnnotations>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_0DDT4EWUEeypEZ-iusDkTQ" name="Competitor" visibility="public">
+            <eAnnotations xmi:id="_0DDT4UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0DDT4kWUEeypEZ-iusDkTQ" key="documentation" value=" Construct a competitor defined by a name&#xA; @param name Name of the competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0DDT40WUEeypEZ-iusDkTQ" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0DFJEEWUEeypEZ-iusDkTQ" name="getName" visibility="public">
+            <eAnnotations xmi:id="_0DFJEUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0DFJEkWUEeypEZ-iusDkTQ" key="documentation" value=" Return the name of the competitor&#xA; @return The name of the competitor&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0DFJE0WUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1Z5cEWUEeypEZ-iusDkTQ" name="MainMaster" visibility="public">
+          <elementImport xmi:id="_0DHlUUWUEeypEZ-iusDkTQ" importedElement="_z1bHkEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0DHlUEWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedAttribute xmi:id="_0DIzcEWUEeypEZ-iusDkTQ" name="nbInGroup" visibility="private" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_0DIzcUWUEeypEZ-iusDkTQ" name="" value="2">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_0DOTAEWUEeypEZ-iusDkTQ" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_0DOTAUWUEeypEZ-iusDkTQ" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0DOTAkWUEeypEZ-iusDkTQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1fZAEWUEeypEZ-iusDkTQ" name="TournamentTest" visibility="public">
+          <elementImport xmi:id="_0ERb4UWUEeypEZ-iusDkTQ" importedElement="_0ERb4EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0ESqAUWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0EQ00UWUEeypEZ-iusDkTQ" importedPackage="_0EQ00EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0ESqAkWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <generalization xmi:id="_0EPmsEWUEeypEZ-iusDkTQ" general="_z12lYEWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0EZXsEWUEeypEZ-iusDkTQ" name="match" visibility="protected" type="_z2A9cEWUEeypEZ-iusDkTQ" association="_05cJUEWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0Eh6kEWUEeypEZ-iusDkTQ" name="competitors" visibility="protected" type="_z1UZ4EWUEeypEZ-iusDkTQ" isOrdered="true" isUnique="false" association="_05cJUkWUEeypEZ-iusDkTQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Eh6kUWUEeypEZ-iusDkTQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0EoBMEWUEeypEZ-iusDkTQ" name="tournament" visibility="protected" type="_z1OTQEWUEeypEZ-iusDkTQ" association="_05cwYEWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_0FFUMEWUEeypEZ-iusDkTQ" name="createCompetition" visibility="protected">
+            <ownedParameter xmi:id="_0FFUMUWUEeypEZ-iusDkTQ" type="_z1AQ0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0FxQsEWUEeypEZ-iusDkTQ" name="init" visibility="public"/>
+          <ownedOperation xmi:id="_0Gaw8EWUEeypEZ-iusDkTQ" name="constructorThrowsIfListSizeNotPowerOfTwo" visibility="public"/>
+          <ownedOperation xmi:id="_0HGGYEWUEeypEZ-iusDkTQ" name="constructorDoesNotThrowIfListSizePowerOfTwo" visibility="public"/>
+          <ownedOperation xmi:id="_0HvmoEWUEeypEZ-iusDkTQ" name="playCallsPlayWithCorrectNumberOfTimes" visibility="public"/>
+          <ownedOperation xmi:id="_0IaVAEWUEeypEZ-iusDkTQ" name="playProducesCorrectMatchUps" visibility="public"/>
+          <ownedOperation xmi:id="_0JD1QEWUEeypEZ-iusDkTQ" name="playMatchCausesRankingUpdate" visibility="public"/>
+          <ownedOperation xmi:id="_0Jt8kEWUEeypEZ-iusDkTQ" name="rankingProducesCorrectScores" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1mGsEWUEeypEZ-iusDkTQ" name="SimpleRankingHandlerTest" visibility="public">
+          <elementImport xmi:id="_0KFI8EWUEeypEZ-iusDkTQ" importedElement="_0ERb4EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0KFI8UWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0KEh4EWUEeypEZ-iusDkTQ" importedPackage="_0EQ00EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0KFwAEWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedAttribute xmi:id="_0KKBcEWUEeypEZ-iusDkTQ" name="c1" visibility="protected" type="_z1UZ4EWUEeypEZ-iusDkTQ" association="_05cwYkWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0KNr0EWUEeypEZ-iusDkTQ" name="c2" visibility="protected" type="_z1UZ4EWUEeypEZ-iusDkTQ" association="_05dXcEWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0KRWMEWUEeypEZ-iusDkTQ" name="c3" visibility="protected" type="_z1UZ4EWUEeypEZ-iusDkTQ" association="_05dXckWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_0KoikEWUEeypEZ-iusDkTQ" name="setUp" visibility="public"/>
+          <ownedOperation xmi:id="_0LSC0EWUEeypEZ-iusDkTQ" name="createRankingHandler" visibility="protected">
+            <ownedParameter xmi:id="_0LSC0UWUEeypEZ-iusDkTQ" type="_z0aa8EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0MbSUEWUEeypEZ-iusDkTQ" name="createSimpleRankingHandler" visibility="protected">
+            <ownedParameter xmi:id="_0MbSUUWUEeypEZ-iusDkTQ" type="_z07YUEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0NDkcEWUEeypEZ-iusDkTQ" name="constructorShouldNotThrowException" visibility="public"/>
+          <ownedOperation xmi:id="_0Nr2kEWUEeypEZ-iusDkTQ" name="addResultWorksProperlyWhenGivenAResultWithKnownCompetitors" visibility="public"/>
+          <ownedOperation xmi:id="_0OXMAEWUEeypEZ-iusDkTQ" name="addResultThrowExceptionWhenGivenAResultWithUnknownCompetitor" visibility="public"/>
+          <ownedOperation xmi:id="_0P7SQEWUEeypEZ-iusDkTQ" name="getResultsGivesTheRightCollectionOfResult" visibility="public"/>
+          <ownedOperation xmi:id="_0Q14QEWUEeypEZ-iusDkTQ" name="getResultsReturnsEmptyCollectionWhenNoAddedResults" visibility="public"/>
+          <ownedOperation xmi:id="_0RuCAEWUEeypEZ-iusDkTQ" name="getRankingReturnsMapWithRightContent" visibility="public"/>
+          <ownedOperation xmi:id="_0SWUIEWUEeypEZ-iusDkTQ" name="whenNoResultsYetGetRankingShouldBeAMapWhereEachCompetitorsHas0Point" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1qYIEWUEeypEZ-iusDkTQ" name="MakeNGroupsStrategyTest" visibility="public">
+          <elementImport xmi:id="_0Swj0EWUEeypEZ-iusDkTQ" importedElement="_0ERb4EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0Swj0UWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0Sv8wEWUEeypEZ-iusDkTQ" importedPackage="_0EQ00EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0SxK4EWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <generalization xmi:id="_0SvVsEWUEeypEZ-iusDkTQ" general="_z1upkEWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0S4foEWUEeypEZ-iusDkTQ" name="competitors" visibility="private" type="_z1UZ4EWUEeypEZ-iusDkTQ" isOrdered="true" isUnique="false" association="_05d-gEWUEeypEZ-iusDkTQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0S5GsEWUEeypEZ-iusDkTQ" value="*"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_0TN20EWUEeypEZ-iusDkTQ" name="createGroupingStrategy" visibility="protected">
+            <ownedParameter xmi:id="_0TN20UWUEeypEZ-iusDkTQ" type="_z1L3AEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0TxQcEWUEeypEZ-iusDkTQ" name="init" visibility="public"/>
+          <ownedOperation xmi:id="_0UV4MEWUEeypEZ-iusDkTQ" name="constructorThrowsIfNIsNotPositive" visibility="public"/>
+          <ownedOperation xmi:id="_0U544EWUEeypEZ-iusDkTQ" name="groupThrowsIfNumberOfCompetitorsIsNotMultipleOfN" visibility="public"/>
+          <ownedOperation xmi:id="_0VdSgEWUEeypEZ-iusDkTQ" name="groupsAreWellComposed" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1upkEWUEeypEZ-iusDkTQ" name="GroupingStrategyTest" visibility="public" isAbstract="true">
+          <elementImport xmi:id="_0VwNcUWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0VwNcEWUEeypEZ-iusDkTQ" importedPackage="_0EQ00EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0Vw0gEWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedOperation xmi:id="_0V3iMEWUEeypEZ-iusDkTQ" name="createGroupingStrategy" visibility="protected" isAbstract="true">
+            <ownedParameter xmi:id="_0V4JQEWUEeypEZ-iusDkTQ" type="_z1L3AEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0WDIYEWUEeypEZ-iusDkTQ" name="eachCompetitorIsAssignedToAGroup" visibility="public"/>
+          <ownedOperation xmi:id="_0WPVoEWUEeypEZ-iusDkTQ" name="eachCompetitorIsExactlyAssignedToAGroupWhenNoDuplicate" visibility="public"/>
+          <ownedOperation xmi:id="_0Wa70EWUEeypEZ-iusDkTQ" name="eachGroupedCompetitorWasInOriginalList" visibility="public"/>
+          <ownedOperation xmi:id="_0Wud0EWUEeypEZ-iusDkTQ" name="competitorIsInAGroup" visibility="private">
+            <ownedParameter xmi:id="_0Wud0UWUEeypEZ-iusDkTQ" name="c" type="_z1UZ4EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0Wud0kWUEeypEZ-iusDkTQ" name="groups" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0Wud00WUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0XDN8EWUEeypEZ-iusDkTQ" name="competitorIsInExactlyOneGroup" visibility="private">
+            <ownedParameter xmi:id="_0XD1AEWUEeypEZ-iusDkTQ" name="c" type="_z1UZ4EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0XD1AUWUEeypEZ-iusDkTQ" name="groups" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0XD1AkWUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0XQCQEWUEeypEZ-iusDkTQ" name="makeCompetitors" visibility="private">
+            <ownedParameter xmi:id="_0XQCQUWUEeypEZ-iusDkTQ" type="_z4XG0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1ziEEWUEeypEZ-iusDkTQ" name="FilteringStrategyTest" visibility="public" isAbstract="true">
+          <elementImport xmi:id="_0XX-EEWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0XXXAEWUEeypEZ-iusDkTQ" importedPackage="_0EQ00EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0XX-EUWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedOperation xmi:id="_0XeEsEWUEeypEZ-iusDkTQ" name="createFilteringStrategy" visibility="protected" isAbstract="true">
+            <ownedParameter xmi:id="_0XeEsUWUEeypEZ-iusDkTQ" type="_z0IHEEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0XnOoEWUEeypEZ-iusDkTQ" name="eachFilteredCompetitorsHasAScore" visibility="public"/>
+          <ownedOperation xmi:id="_0XwYkEWUEeypEZ-iusDkTQ" name="numberOfQualifiedCompetitorsInferiorToNumberOfKeys" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z11-UEWUEeypEZ-iusDkTQ" name="ArbitrarySortingStrategyTest" visibility="public">
+          <generalization xmi:id="_0X4UYEWUEeypEZ-iusDkTQ" general="_z2En0EWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_0YAQMEWUEeypEZ-iusDkTQ" name="createSortingStrategy" visibility="protected">
+            <ownedParameter xmi:id="_0YAQMUWUEeypEZ-iusDkTQ" type="_z1KB0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z12lYEWUEeypEZ-iusDkTQ" name="CompetitionTest" visibility="public" isAbstract="true">
+          <elementImport xmi:id="_0YGW0UWUEeypEZ-iusDkTQ" importedElement="_0YGW0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0YG94EWUEeypEZ-iusDkTQ" importedElement="_0ERb4EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0YG94UWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedOperation xmi:id="_0YMdcEWUEeypEZ-iusDkTQ" name="createCompetition" visibility="protected" isAbstract="true">
+            <ownedParameter xmi:id="_0YMdcUWUEeypEZ-iusDkTQ" type="_z1AQ0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0YWOcEWUEeypEZ-iusDkTQ" name="setUp"/>
+          <ownedOperation xmi:id="_0YeKQEWUEeypEZ-iusDkTQ" name="tearDown"/>
+          <ownedOperation xmi:id="_0YlfAEWUEeypEZ-iusDkTQ" name="playShouldNotThrowException"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z18E8EWUEeypEZ-iusDkTQ" name="TakeNFirstFilteringStrategyTest" visibility="package">
+          <elementImport xmi:id="_0Y0IgUWUEeypEZ-iusDkTQ" importedElement="_0DZ5MEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0Y0vkEWUEeypEZ-iusDkTQ" importedElement="_z2YJ0UWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0Y1WoUWUEeypEZ-iusDkTQ" importedElement="_0Y1WoEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0Y19sUWUEeypEZ-iusDkTQ" importedElement="_0Y19sEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0Y2kwEWUEeypEZ-iusDkTQ" importedElement="_z4XG0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0Y2kwUWUEeypEZ-iusDkTQ" importedElement="_z2amEEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0Y3L0EWUEeypEZ-iusDkTQ" importedElement="_0YGW0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0Y3L0UWUEeypEZ-iusDkTQ" importedElement="_0ERb4EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0Y3y4EWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0Y0IgEWUEeypEZ-iusDkTQ" importedPackage="_0EQ00EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <generalization xmi:id="_0YzhcEWUEeypEZ-iusDkTQ" general="_z1ziEEWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0ZCK8EWUEeypEZ-iusDkTQ" name="competitors" visibility="private" type="_z1UZ4EWUEeypEZ-iusDkTQ" isOrdered="true" isUnique="false" association="_05elkEWUEeypEZ-iusDkTQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0ZCyAEWUEeypEZ-iusDkTQ" value="*"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_0ZmLoEWUEeypEZ-iusDkTQ" name="setUp"/>
+          <ownedOperation xmi:id="_0arJsEWUEeypEZ-iusDkTQ" name="createFilteringStrategy" visibility="protected">
+            <ownedParameter xmi:id="_0arJsUWUEeypEZ-iusDkTQ" type="_z0IHEEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0blvsEWUEeypEZ-iusDkTQ" name="constructorShouldThrowWhenNIsNotStrictlyPositive"/>
+          <ownedOperation xmi:id="_0ccrUEWUEeypEZ-iusDkTQ" name="whenArgsOKFilterShouldReturnACollectionWithRightSize"/>
+          <ownedOperation xmi:id="_0dTm8EWUEeypEZ-iusDkTQ" name="whenArgsOKFilterShouldReturnACollectionWithRightContent"/>
+          <ownedOperation xmi:id="_0eJUcEWUEeypEZ-iusDkTQ" name="whenNbOfCompetitorsInAGroupIsNotEnoughFilterShouldThrow"/>
+          <ownedOperation xmi:id="_0fCFQEWUEeypEZ-iusDkTQ" name="listOfUsedCompetitors" visibility="protected">
+            <ownedParameter xmi:id="_0fCsUEWUEeypEZ-iusDkTQ" type="_z4XG0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0fgmYEWUEeypEZ-iusDkTQ" name="groupScoresExampleWithSomeExAequo" visibility="protected">
+            <eAnnotations xmi:id="_0fhNcEWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0fhNcUWUEeypEZ-iusDkTQ" key="documentation" value=" @return&#xA; in this case, groups like this:&#xA;  group 1 (&#xA;  A -> 42,&#xA;  B -> 16,&#xA;  C -> 11,&#xA;  D -> 10,&#xA;  )&#xA;  group 2 (&#xA;  E -> 30,&#xA;  F -> 20,&#xA;  G -> 19,&#xA;  H -> 17,&#xA;  I -> 17,&#xA;  )&#xA;  group 3 (&#xA;  J -> 31,&#xA;  K -> 21,&#xA;  L -> 21,&#xA;  M -> 16,&#xA;  N -> 15,&#xA;  O -> 10,&#xA;  )&#xA;"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0fhNckWUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0fibkEWUEeypEZ-iusDkTQ" name="usedValueOfN" visibility="protected">
+            <eAnnotations xmi:id="_0fibkUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0fibkkWUEeypEZ-iusDkTQ" key="documentation" value=" @return the used value of &lt;code>n&lt;/code> in&#xA; {@link TakeNFirstFilteringStrategyTest#createTakeNFirstFilteringStrategy()}&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0fibk0WUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0foiMEWUEeypEZ-iusDkTQ" name="createTakeNFirstFilteringStrategy" visibility="protected" isLeaf="true">
+            <eAnnotations xmi:id="_0foiMUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0foiMkWUEeypEZ-iusDkTQ" key="documentation" value=" @return an instance that is typed as a TakeNFirstFilteringStrategy&#xA; subclass using {@link TakeNFirstFilteringStrategyTest#usedValueOfN()}&#xA; as the value of &lt;code>n&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0foiM0WUEeypEZ-iusDkTQ" type="_z00qoEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0gHqYEWUEeypEZ-iusDkTQ" name="createTakeNFirstFilteringStrategyWithTooHighN" visibility="private">
+            <ownedParameter xmi:id="_0gHqYUWUEeypEZ-iusDkTQ" type="_z00qoEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0hKzQEWUEeypEZ-iusDkTQ" name="expectedOptionsOfFilteredCompetitors" visibility="private">
+            <ownedParameter xmi:id="_0hKzQUWUEeypEZ-iusDkTQ" type="_z2YJ0UWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z1-hMEWUEeypEZ-iusDkTQ" name="RandomMatchTest" visibility="public">
+          <elementImport xmi:id="_0hzFYEWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0hyeUEWUEeypEZ-iusDkTQ" importedPackage="_0EQ00EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedOperation xmi:id="_0h7BMEWUEeypEZ-iusDkTQ" name="testPlayWith"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z2A9cEWUEeypEZ-iusDkTQ" name="MatchMock" visibility="public">
+          <eAnnotations xmi:id="_z2A9cUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+            <details xmi:id="_z2A9ckWUEeypEZ-iusDkTQ" key="documentation" value=" A simple class implementing Match, which can be used as a mock for testing.&#xA; This class provides a method to set the returned value of subsequent calls to&#xA; the playWith method. It also keeps track of the number of calls made to&#xA; playWith and allows the user to retrieve the set of match results at any&#xA; point&#xA; @see etu.simonzo.competition.Result&#xA;"/>
+          </eAnnotations>
+          <packageImport xmi:id="_0iEyMEWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_z2A9c0WUEeypEZ-iusDkTQ" parameter="_z2A9dEWUEeypEZ-iusDkTQ">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_z2A9dEWUEeypEZ-iusDkTQ" parameteredElement="_z2A9dUWUEeypEZ-iusDkTQ">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_z2A9dUWUEeypEZ-iusDkTQ" name="T" templateParameter="_z2A9dEWUEeypEZ-iusDkTQ"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <ownedAttribute xmi:id="_0iGnYEWUEeypEZ-iusDkTQ" name="nbCalls" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0iK40EWUEeypEZ-iusDkTQ" name="currentOutcome" visibility="private" type="_z0ukAEWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0iSNkEWUEeypEZ-iusDkTQ" name="results" visibility="private" type="_z0su0EWUEeypEZ-iusDkTQ" isOrdered="true" isUnique="false" association="_05elkkWUEeypEZ-iusDkTQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0iSNkUWUEeypEZ-iusDkTQ" value="*"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_0iELIEWUEeypEZ-iusDkTQ" name="etu.simonzo.competition.Match" client="_z2A9cEWUEeypEZ-iusDkTQ" supplier="_z1G-gEWUEeypEZ-iusDkTQ" contract="_z1G-gEWUEeypEZ-iusDkTQ"/>
+          <ownedOperation xmi:id="_0idzwEWUEeypEZ-iusDkTQ" name="MatchMock" visibility="public">
+            <ownedParameter xmi:id="_0iea0EWUEeypEZ-iusDkTQ" name="initialOutcome" type="_z0ukAEWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0ipZ8EWUEeypEZ-iusDkTQ" name="getNbCalls" visibility="public">
+            <ownedParameter xmi:id="_0ipZ8UWUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0i3cYEWUEeypEZ-iusDkTQ" name="setOutcome" visibility="public">
+            <ownedParameter xmi:id="_0i3cYUWUEeypEZ-iusDkTQ" name="outcome" type="_z0ukAEWUEeypEZ-iusDkTQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0jBNYEWUEeypEZ-iusDkTQ" name="getResults" visibility="public">
+            <ownedParameter xmi:id="_0jBNYUWUEeypEZ-iusDkTQ" type="_z4XG0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0jPP0EWUEeypEZ-iusDkTQ" name="playWith" visibility="public">
+            <eAnnotations xmi:id="_0jPP0UWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0jPP0kWUEeypEZ-iusDkTQ" key="documentation" value=" Perform the match between the competitors. Return an integer indicating&#xA; the outcome of the match&#xA; @param competitor1 First competitor&#xA; @param competitor2 Second competitor&#xA; @return Instance of enumerated type MatchOutcome indicating the result of&#xA; the match between the competitors&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0jP24EWUEeypEZ-iusDkTQ" name="c1" type="_z2A9dUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0jP24UWUEeypEZ-iusDkTQ" name="c2" type="_z2A9dUWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0jP24kWUEeypEZ-iusDkTQ" type="_z0ukAEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z2En0EWUEeypEZ-iusDkTQ" name="SortingStrategyTest" visibility="public" isAbstract="true">
+          <elementImport xmi:id="_0jXLoUWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0jXLoEWUEeypEZ-iusDkTQ" importedPackage="_0EQ00EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0jXysEWUEeypEZ-iusDkTQ" importedPackage="_z2YJ0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <ownedOperation xmi:id="_0jsi0EWUEeypEZ-iusDkTQ" name="createSortingStrategy" visibility="protected" isAbstract="true">
+            <ownedParameter xmi:id="_0jsi0UWUEeypEZ-iusDkTQ" type="_z1KB0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0kQjgEWUEeypEZ-iusDkTQ" name="sortThrowsIfCompetitorWithNoScore" visibility="public"/>
+          <ownedOperation xmi:id="_0kz9IEWUEeypEZ-iusDkTQ" name="sortedListOfCompetitorsOnlyContainsQualifiedCompetitors" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z2I5QEWUEeypEZ-iusDkTQ" name="LeagueTest" visibility="package">
+          <elementImport xmi:id="_0lOM0UWUEeypEZ-iusDkTQ" importedElement="_0DZ5MEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0lOz4EWUEeypEZ-iusDkTQ" importedElement="_z4XG0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0lOz4UWUEeypEZ-iusDkTQ" importedElement="_z2amEEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0lOz4kWUEeypEZ-iusDkTQ" importedElement="_0ERb4EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0lPa8EWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0lOM0EWUEeypEZ-iusDkTQ" importedPackage="_0EQ00EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <generalization xmi:id="_0lNlwEWUEeypEZ-iusDkTQ" general="_z12lYEWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0lQpEEWUEeypEZ-iusDkTQ" name="TIE_POINTS" visibility="private" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_0lQpEUWUEeypEZ-iusDkTQ" name="" value="1">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0lSeQEWUEeypEZ-iusDkTQ" name="DEFEAT_POINTS" visibility="private" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_0lSeQUWUEeypEZ-iusDkTQ" name="" value="-1">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0lTsYEWUEeypEZ-iusDkTQ" name="VICTORY_POINTS" visibility="private" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_0lUTcEWUEeypEZ-iusDkTQ" name="" value="3">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0lboMEWUEeypEZ-iusDkTQ" name="matchMockDemo" visibility="protected" type="_z2A9cEWUEeypEZ-iusDkTQ" association="_05fMoUWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0lkyIEWUEeypEZ-iusDkTQ" name="competitorsDemo" visibility="private" type="_z1UZ4EWUEeypEZ-iusDkTQ" isOrdered="true" isUnique="false" association="_05fzsEWUEeypEZ-iusDkTQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lkyIUWUEeypEZ-iusDkTQ" value="*"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_0lvxQEWUEeypEZ-iusDkTQ" name="setUp"/>
+          <ownedOperation xmi:id="_0mCFIEWUEeypEZ-iusDkTQ" name="createCompetition" visibility="public">
+            <ownedParameter xmi:id="_0mCFIUWUEeypEZ-iusDkTQ" type="_z1AQ0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0mVAEEWUEeypEZ-iusDkTQ" name="createLeague" visibility="public">
+            <ownedParameter xmi:id="_0mVAEUWUEeypEZ-iusDkTQ" type="_z0qSkEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0mms4EWUEeypEZ-iusDkTQ" name="constructorShouldNotThrowExceptionWhenArgsAreValid" visibility="public"/>
+          <ownedOperation xmi:id="_0m4ZsEWUEeypEZ-iusDkTQ" name="playMatchShouldHaveBeenCalledNTimes" visibility="public"/>
+          <ownedOperation xmi:id="_0nRbQEWUEeypEZ-iusDkTQ" name="getCompetitorPointsInLeague" visibility="private" isStatic="true">
+            <eAnnotations xmi:id="_0nRbQUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_0nRbQkWUEeypEZ-iusDkTQ" key="documentation" value=" @return the points that &lt;code>c&lt;/code> currently has in the league &lt;code>l&lt;/code>&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_0nRbQ0WUEeypEZ-iusDkTQ" name="l" type="_z0qSkEWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0nRbREWUEeypEZ-iusDkTQ" name="c" type="_z1UZ4EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_0nRbRUWUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_0ncaYEWUEeypEZ-iusDkTQ" name="rankingUpdatedAfterPlayMatch" visibility="public"/>
+          <ownedOperation xmi:id="_0ns5EEWUEeypEZ-iusDkTQ" name="rankingShouldReturnWhatIsExpectedAfterPlay" visibility="public"/>
+          <ownedOperation xmi:id="_0n9-0EWUEeypEZ-iusDkTQ" name="competitorsShouldBePairedCorrectly" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z2KHYEWUEeypEZ-iusDkTQ" name="MasterTest" visibility="package">
+          <elementImport xmi:id="_0oProUWUEeypEZ-iusDkTQ" importedElement="_0DZ5MEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0oQSsEWUEeypEZ-iusDkTQ" importedElement="_z2YJ0UWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0oQSsUWUEeypEZ-iusDkTQ" importedElement="_z6emsEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0oQSskWUEeypEZ-iusDkTQ" importedElement="_z4XG0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0oQ5wEWUEeypEZ-iusDkTQ" importedElement="_z2amEEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0oQ5wUWUEeypEZ-iusDkTQ" importedElement="_z1bHkEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0oRg0EWUEeypEZ-iusDkTQ" importedElement="_0ERb4EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0oRg0UWUEeypEZ-iusDkTQ" importedElement="_0YGW0EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <elementImport xmi:id="_0oRg0kWUEeypEZ-iusDkTQ" importedElement="_0ESqAEWUEeypEZ-iusDkTQ" visibility="private"/>
+          <packageImport xmi:id="_0oProEWUEeypEZ-iusDkTQ" importedPackage="_0EQ00EWUEeypEZ-iusDkTQ" visibility="private"/>
+          <generalization xmi:id="_0oPEkEWUEeypEZ-iusDkTQ" general="_z12lYEWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0oSu8EWUEeypEZ-iusDkTQ" name="TIE_POINTS" visibility="private" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_0oTWAEWUEeypEZ-iusDkTQ" name="" value="3">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0oUkIEWUEeypEZ-iusDkTQ" name="DEFEAT_POINTS" visibility="private" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_0oVLMEWUEeypEZ-iusDkTQ" name="">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0oWZUEWUEeypEZ-iusDkTQ" name="VICTORY_POINTS" visibility="private" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_0oWZUUWUEeypEZ-iusDkTQ" name="" value="1">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0otlsEWUEeypEZ-iusDkTQ" name="match" visibility="private" type="_z2A9cEWUEeypEZ-iusDkTQ" association="_05fzskWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0o6aAEWUEeypEZ-iusDkTQ" name="competitors" visibility="private" type="_z1UZ4EWUEeypEZ-iusDkTQ" isOrdered="true" isUnique="false" association="_05gawEWUEeypEZ-iusDkTQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0o7BEEWUEeypEZ-iusDkTQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0pBHsEWUEeypEZ-iusDkTQ" name="gstrat" visibility="private" type="_z1L3AEWUEeypEZ-iusDkTQ" association="_05gawkWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0pIccEWUEeypEZ-iusDkTQ" name="fstrat" visibility="private" type="_z0IHEEWUEeypEZ-iusDkTQ" association="_05hB0EWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0pQYQEWUEeypEZ-iusDkTQ" name="sstrat" visibility="private" type="_z1KB0EWUEeypEZ-iusDkTQ" association="_05hB0kWUEeypEZ-iusDkTQ"/>
+          <ownedAttribute xmi:id="_0pSNcEWUEeypEZ-iusDkTQ" name="gstratN" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0pUCoEWUEeypEZ-iusDkTQ" name="fstratN" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0pVQwEWUEeypEZ-iusDkTQ" name="groupSize" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0pXF8EWUEeypEZ-iusDkTQ" name="firstPhaseNbMatches" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0pY7IEWUEeypEZ-iusDkTQ" name="secondPhaseNbMatches" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_0qBNQEWUEeypEZ-iusDkTQ" name="setUp"/>
+          <ownedOperation xmi:id="_0rJ1sEWUEeypEZ-iusDkTQ" name="playWithBadCombinationOfStrategyShouldThrow" visibility="public"/>
+          <ownedOperation xmi:id="_0sM-kEWUEeypEZ-iusDkTQ" name="playCallsPlayWithCorrectNumberOfTimes" visibility="public"/>
+          <ownedOperation xmi:id="_0tU_8EWUEeypEZ-iusDkTQ" name="playProducesCorrectMatchUpsInFirstPhase" visibility="public"/>
+          <ownedOperation xmi:id="_0uZW8EWUEeypEZ-iusDkTQ" name="winnerIsAmongTheBestAfterFirstPhase" visibility="public"/>
+          <ownedOperation xmi:id="_0vdt8EWUEeypEZ-iusDkTQ" name="groupPhaseRankingContainsEveryAndOnlyCompetitors" visibility="public"/>
+          <ownedOperation xmi:id="_0whd4EWUEeypEZ-iusDkTQ" name="groupPhaseRankingsReturnExpectedScores" visibility="public"/>
+          <ownedOperation xmi:id="_0xoRIEWUEeypEZ-iusDkTQ" name="finalRankingShouldContainsExpectedCompetitors" visibility="public"/>
+          <ownedOperation xmi:id="_0zB_UEWUEeypEZ-iusDkTQ" name="finalRankingShouldContainsRightNbOfCompetitors" visibility="public"/>
+          <ownedOperation xmi:id="_00legEWUEeypEZ-iusDkTQ" name="finalRankingShouldContainsExpectedScores" visibility="public"/>
+          <ownedOperation xmi:id="_01rqsEWUEeypEZ-iusDkTQ" name="createMaster" visibility="protected">
+            <ownedParameter xmi:id="_01rqsUWUEeypEZ-iusDkTQ" type="_z1SksEWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_02vaoEWUEeypEZ-iusDkTQ" name="createCompetition" visibility="protected">
+            <ownedParameter xmi:id="_02vaoUWUEeypEZ-iusDkTQ" type="_z1AQ0EWUEeypEZ-iusDkTQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_03u5IEWUEeypEZ-iusDkTQ" name="containsMatchup" visibility="private" isStatic="true">
+            <eAnnotations xmi:id="_03u5IUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_03u5IkWUEeypEZ-iusDkTQ" key="documentation" value=" @param results list of result&#xA; @param ca&#xA; @param cb&#xA; @return true iff &lt;code>results&lt;/code> contains a matchup between&#xA; &lt;code>ca&lt;/code> and &lt;code>cb&lt;/code> (&lt;code>ca&lt;/code> vs &lt;code>cb&lt;/code>&#xA; exactly in that order)&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_03u5I0WUEeypEZ-iusDkTQ" name="results" type="_z4XG0EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_03u5JEWUEeypEZ-iusDkTQ" name="ca" type="_z1UZ4EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_03u5JUWUEeypEZ-iusDkTQ" name="cb" type="_z1UZ4EWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_03u5JkWUEeypEZ-iusDkTQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <ownedTemplateSignature xmi:id="_03u5J0WUEeypEZ-iusDkTQ" parameter="_03u5KEWUEeypEZ-iusDkTQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_03u5KEWUEeypEZ-iusDkTQ" parameteredElement="_03vgMEWUEeypEZ-iusDkTQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_03vgMEWUEeypEZ-iusDkTQ" name="T" templateParameter="_03u5KEWUEeypEZ-iusDkTQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_04B0EEWUEeypEZ-iusDkTQ" name="extractWinnersExAequo" visibility="private" isStatic="true">
+            <eAnnotations xmi:id="_04B0EUWUEeypEZ-iusDkTQ" source="http://www.eclipse.org/umlgen/reverse/java/doc">
+              <details xmi:id="_04B0EkWUEeypEZ-iusDkTQ" key="documentation" value=" @param &lt;T>&#xA; @param scores&#xA; @return all competitor with the maximum score&#xA; "/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_04B0E0WUEeypEZ-iusDkTQ" name="scores" type="_z2amEEWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_04B0FEWUEeypEZ-iusDkTQ" type="_z4XG0EWUEeypEZ-iusDkTQ" direction="return"/>
+            <ownedTemplateSignature xmi:id="_04B0FUWUEeypEZ-iusDkTQ" parameter="_04B0FkWUEeypEZ-iusDkTQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_04B0FkWUEeypEZ-iusDkTQ" parameteredElement="_04B0F0WUEeypEZ-iusDkTQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_04B0F0WUEeypEZ-iusDkTQ" name="T" templateParameter="_04B0FkWUEeypEZ-iusDkTQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+          <ownedOperation xmi:id="_04ypEEWUEeypEZ-iusDkTQ" name="extractCompetitorsFromGroups" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_04ypEUWUEeypEZ-iusDkTQ" name="rankings" type="_z2YJ0UWUEeypEZ-iusDkTQ"/>
+            <ownedParameter xmi:id="_04ypEkWUEeypEZ-iusDkTQ" type="_z4XG0EWUEeypEZ-iusDkTQ" direction="return"/>
+            <ownedTemplateSignature xmi:id="_04ypE0WUEeypEZ-iusDkTQ" parameter="_04ypFEWUEeypEZ-iusDkTQ">
+              <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_04ypFEWUEeypEZ-iusDkTQ" parameteredElement="_04ypFUWUEeypEZ-iusDkTQ">
+                <ownedParameteredElement xmi:type="uml:Class" xmi:id="_04ypFUWUEeypEZ-iusDkTQ" name="T" templateParameter="_04ypFEWUEeypEZ-iusDkTQ"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_05WCsEWUEeypEZ-iusDkTQ" name="competition_util" client="_zztQUEWUEeypEZ-iusDkTQ" supplier="_z2YJ0EWUEeypEZ-iusDkTQ"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_05WpwEWUEeypEZ-iusDkTQ" name="competition_util" client="_zztQUEWUEeypEZ-iusDkTQ" supplier="_z1aggEWUEeypEZ-iusDkTQ"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_05XQ0EWUEeypEZ-iusDkTQ" name="competition_Assertions" client="_zztQUEWUEeypEZ-iusDkTQ" supplier="_0EQ00EWUEeypEZ-iusDkTQ"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_05XQ0UWUEeypEZ-iusDkTQ" name="competition_api" client="_zztQUEWUEeypEZ-iusDkTQ" supplier="_0EQNw0WUEeypEZ-iusDkTQ"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05Ye8EWUEeypEZ-iusDkTQ" name="STDOUT_DISPLAYER_SINGLETON_target" memberEnd="_z4C9wEWUEeypEZ-iusDkTQ _05Ye8UWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05Ye8UWUEeypEZ-iusDkTQ" name="target" type="_z0kzAEWUEeypEZ-iusDkTQ" association="_05Ye8EWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05ZGAEWUEeypEZ-iusDkTQ" name="results_target" memberEnd="_z7KjMEWUEeypEZ-iusDkTQ _05ZGAUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05ZGAUWUEeypEZ-iusDkTQ" name="target" type="_z07YUEWUEeypEZ-iusDkTQ" association="_05ZGAEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05ZtEEWUEeypEZ-iusDkTQ" name="match_target" memberEnd="_z8weoEWUEeypEZ-iusDkTQ _05ZtEUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05ZtEUWUEeypEZ-iusDkTQ" name="target" type="_z1AQ0EWUEeypEZ-iusDkTQ" association="_05ZtEEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05ZtEkWUEeypEZ-iusDkTQ" name="rankingHandler_target" memberEnd="_z85BgEWUEeypEZ-iusDkTQ _05ZtE0WUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05ZtE0WUEeypEZ-iusDkTQ" name="target" type="_z1AQ0EWUEeypEZ-iusDkTQ" association="_05ZtEkWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05aUIEWUEeypEZ-iusDkTQ" name="leagues_target" memberEnd="_0BNg0EWUEeypEZ-iusDkTQ _05aUIUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05aUIUWUEeypEZ-iusDkTQ" name="target" type="_z1SksEWUEeypEZ-iusDkTQ" association="_05aUIEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05a7MEWUEeypEZ-iusDkTQ" name="tournament_target" memberEnd="_0BTAYEWUEeypEZ-iusDkTQ _05a7MUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05a7MUWUEeypEZ-iusDkTQ" name="target" type="_z1SksEWUEeypEZ-iusDkTQ" association="_05a7MEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05a7MkWUEeypEZ-iusDkTQ" name="gstrat_target" memberEnd="_0BXR0EWUEeypEZ-iusDkTQ _05a7M0WUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05a7M0WUEeypEZ-iusDkTQ" name="target" type="_z1SksEWUEeypEZ-iusDkTQ" association="_05a7MkWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05biQEWUEeypEZ-iusDkTQ" name="fstrat_target" memberEnd="_0Ba8MEWUEeypEZ-iusDkTQ _05biQUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05biQUWUEeypEZ-iusDkTQ" name="target" type="_z1SksEWUEeypEZ-iusDkTQ" association="_05biQEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05biQkWUEeypEZ-iusDkTQ" name="sstrat_target" memberEnd="_0BfNoEWUEeypEZ-iusDkTQ _05biQ0WUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05biQ0WUEeypEZ-iusDkTQ" name="target" type="_z1SksEWUEeypEZ-iusDkTQ" association="_05biQkWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05cJUEWUEeypEZ-iusDkTQ" name="match_target" memberEnd="_0EZXsEWUEeypEZ-iusDkTQ _05cJUUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05cJUUWUEeypEZ-iusDkTQ" name="target" type="_z1fZAEWUEeypEZ-iusDkTQ" association="_05cJUEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05cJUkWUEeypEZ-iusDkTQ" name="competitors_target" memberEnd="_0Eh6kEWUEeypEZ-iusDkTQ _05cJU0WUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05cJU0WUEeypEZ-iusDkTQ" name="target" type="_z1fZAEWUEeypEZ-iusDkTQ" association="_05cJUkWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05cwYEWUEeypEZ-iusDkTQ" name="tournament_target" memberEnd="_0EoBMEWUEeypEZ-iusDkTQ _05cwYUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05cwYUWUEeypEZ-iusDkTQ" name="target" type="_z1fZAEWUEeypEZ-iusDkTQ" association="_05cwYEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05cwYkWUEeypEZ-iusDkTQ" name="c1_target" memberEnd="_0KKBcEWUEeypEZ-iusDkTQ _05cwY0WUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05cwY0WUEeypEZ-iusDkTQ" name="target" type="_z1mGsEWUEeypEZ-iusDkTQ" association="_05cwYkWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05dXcEWUEeypEZ-iusDkTQ" name="c2_target" memberEnd="_0KNr0EWUEeypEZ-iusDkTQ _05dXcUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05dXcUWUEeypEZ-iusDkTQ" name="target" type="_z1mGsEWUEeypEZ-iusDkTQ" association="_05dXcEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05dXckWUEeypEZ-iusDkTQ" name="c3_target" memberEnd="_0KRWMEWUEeypEZ-iusDkTQ _05dXc0WUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05dXc0WUEeypEZ-iusDkTQ" name="target" type="_z1mGsEWUEeypEZ-iusDkTQ" association="_05dXckWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05d-gEWUEeypEZ-iusDkTQ" name="competitors_target" memberEnd="_0S4foEWUEeypEZ-iusDkTQ _05d-gUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05d-gUWUEeypEZ-iusDkTQ" name="target" type="_z1qYIEWUEeypEZ-iusDkTQ" association="_05d-gEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05elkEWUEeypEZ-iusDkTQ" name="competitors_target" memberEnd="_0ZCK8EWUEeypEZ-iusDkTQ _05elkUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05elkUWUEeypEZ-iusDkTQ" name="target" type="_z18E8EWUEeypEZ-iusDkTQ" association="_05elkEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05elkkWUEeypEZ-iusDkTQ" name="results_target" memberEnd="_0iSNkEWUEeypEZ-iusDkTQ _05fMoEWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05fMoEWUEeypEZ-iusDkTQ" name="target" type="_z2A9cEWUEeypEZ-iusDkTQ" association="_05elkkWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05fMoUWUEeypEZ-iusDkTQ" name="matchMockDemo_target" memberEnd="_0lboMEWUEeypEZ-iusDkTQ _05fMokWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05fMokWUEeypEZ-iusDkTQ" name="target" type="_z2I5QEWUEeypEZ-iusDkTQ" association="_05fMoUWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05fzsEWUEeypEZ-iusDkTQ" name="competitorsDemo_target" memberEnd="_0lkyIEWUEeypEZ-iusDkTQ _05fzsUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05fzsUWUEeypEZ-iusDkTQ" name="target" type="_z2I5QEWUEeypEZ-iusDkTQ" association="_05fzsEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05fzskWUEeypEZ-iusDkTQ" name="match_target" memberEnd="_0otlsEWUEeypEZ-iusDkTQ _05fzs0WUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05fzs0WUEeypEZ-iusDkTQ" name="target" type="_z2KHYEWUEeypEZ-iusDkTQ" association="_05fzskWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05gawEWUEeypEZ-iusDkTQ" name="competitors_target" memberEnd="_0o6aAEWUEeypEZ-iusDkTQ _05gawUWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05gawUWUEeypEZ-iusDkTQ" name="target" type="_z2KHYEWUEeypEZ-iusDkTQ" association="_05gawEWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05gawkWUEeypEZ-iusDkTQ" name="gstrat_target" memberEnd="_0pBHsEWUEeypEZ-iusDkTQ _05gaw0WUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05gaw0WUEeypEZ-iusDkTQ" name="target" type="_z2KHYEWUEeypEZ-iusDkTQ" association="_05gawkWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05hB0EWUEeypEZ-iusDkTQ" name="fstrat_target" memberEnd="_0pIccEWUEeypEZ-iusDkTQ _05hB0UWUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05hB0UWUEeypEZ-iusDkTQ" name="target" type="_z2KHYEWUEeypEZ-iusDkTQ" association="_05hB0EWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_05hB0kWUEeypEZ-iusDkTQ" name="sstrat_target" memberEnd="_0pQYQEWUEeypEZ-iusDkTQ _05hB00WUEeypEZ-iusDkTQ">
+          <ownedEnd xmi:id="_05hB00WUEeypEZ-iusDkTQ" name="target" type="_z2KHYEWUEeypEZ-iusDkTQ" association="_05hB0kWUEeypEZ-iusDkTQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_05jeEEWUEeypEZ-iusDkTQ" name="competition_util" client="_zztQUEWUEeypEZ-iusDkTQ" supplier="_z2YJ0EWUEeypEZ-iusDkTQ"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_05jeEUWUEeypEZ-iusDkTQ" name="competition_util" client="_zztQUEWUEeypEZ-iusDkTQ" supplier="_z1aggEWUEeypEZ-iusDkTQ"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_05jeEkWUEeypEZ-iusDkTQ" name="competition_Assertions" client="_zztQUEWUEeypEZ-iusDkTQ" supplier="_0EQ00EWUEeypEZ-iusDkTQ"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_05jeE0WUEeypEZ-iusDkTQ" name="competition_api" client="_zztQUEWUEeypEZ-iusDkTQ" supplier="_0EQNw0WUEeypEZ-iusDkTQ"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_z2XiwEWUEeypEZ-iusDkTQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_z2YJ0EWUEeypEZ-iusDkTQ" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_z2YJ0UWUEeypEZ-iusDkTQ" name="Collection"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_z2amEEWUEeypEZ-iusDkTQ" name="Map"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_z3ouEEWUEeypEZ-iusDkTQ" name="Random"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_z4XG0EWUEeypEZ-iusDkTQ" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_z6d_oEWUEeypEZ-iusDkTQ" name="Iterator"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_z6emsEWUEeypEZ-iusDkTQ" name="LinkedList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_z-HJgEWUEeypEZ-iusDkTQ" name="Optional"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_0DZ5MEWUEeypEZ-iusDkTQ" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_0DagQEWUEeypEZ-iusDkTQ" name="Collections"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_0DbuYEWUEeypEZ-iusDkTQ" name="Comparator"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_0DcVcEWUEeypEZ-iusDkTQ" name="LinkedHashMap"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_0DeKoEWUEeypEZ-iusDkTQ" name="Entry"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_0Y1WoEWUEeypEZ-iusDkTQ" name="HashMap"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_0Y19sEWUEeypEZ-iusDkTQ" name="HashSet"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_z307UEWUEeypEZ-iusDkTQ" name="T"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_0EQNwEWUEeypEZ-iusDkTQ" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_0EQNwUWUEeypEZ-iusDkTQ" name="junit">
+      <packagedElement xmi:type="uml:Package" xmi:id="_0EQNwkWUEeypEZ-iusDkTQ" name="jupiter">
+        <packagedElement xmi:type="uml:Package" xmi:id="_0EQNw0WUEeypEZ-iusDkTQ" name="api">
+          <packagedElement xmi:type="uml:Package" xmi:id="_0EQ00EWUEeypEZ-iusDkTQ" name="Assertions"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_0ERb4EWUEeypEZ-iusDkTQ" name="BeforeEach"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_0ESqAEWUEeypEZ-iusDkTQ" name="Test"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_0YGW0EWUEeypEZ-iusDkTQ" name="AfterEach"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

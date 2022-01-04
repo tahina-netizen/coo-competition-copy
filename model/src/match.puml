@@ -1,0 +1,21 @@
+@startuml match
+package match {
+
+    enum MatchOutcome {
+        TIE
+        FIRST_PLAYER_WIN
+        SECOND_PLAYER_WIN
+    }
+    interface Match<T extends Competitor> {
+        playWith(T p1, T p2): MatchOutcome
+        playWithAndGetWinner(T p1, T p2): Optional<Competitor>
+    }
+    class RandomMatch {
+        -randomGenerator: Random
+        +RandomMatch()
+        +playWith(T p1, T p2): MatchOutcome
+    }
+
+    class RandomMatch implements Match
+}
+@enduml

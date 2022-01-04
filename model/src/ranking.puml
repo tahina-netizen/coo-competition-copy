@@ -1,0 +1,44 @@
+@startuml ranking
+
+package ranking {
+    interface RankingHandler<T extends Competitor> {
+        +addResult<Result<T> r>
+        +getResults(): Collection<Result<T>>
+        +getRanking(: Map<T, Integer>)
+    }
+
+    class SimpleRankingHandler<T extends Competitor> {
+        #victoryPoints: int
+        #defeatPoints: int
+        #tiePoints: int
+        #ranking: Map<T, Integer>
+        +SimpleRankingHandler(List<T> cs, int victoryPoints, int defeatPoints, int tiePoints)
+        +addResult(Result<T> r)
+        getResults(): Collection<Result<R>>
+        getRanking(): Map<T, Integer>
+        -mapOfCompetitorsWithoutPoints(List<T> cs)
+        -incrementScore(T, integer)
+        -updateRanking(Result<T>)
+    }
+
+    interface Result<T extends Competitor> {
+        getCompetitor1(): T
+        getCompetitor2(): T
+        getOutcome(): MatchOutcome
+    }
+
+    class SimpleResult {
+        #competitor1: T
+        #competitor2: T
+        +SimpleResult(T c1, T c2, MatchOutcome outcome)
+        +getCompetitor1(): T
+        +getCompetitor2(): T
+        +getOutcome(): MatchOutcome
+
+    }
+
+    RankingHandler <|-- SimpleRankingHandler
+    Result <|-- SimpleResult
+}
+
+@enduml

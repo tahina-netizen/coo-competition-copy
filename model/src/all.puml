@@ -1,0 +1,9 @@
+@startuml all
+!include "competitions.puml"
+!include "competitors.puml"
+!include "displayers.puml"
+!include "match.puml"
+!include "observer.puml"
+!include "ranking.puml"
+!include "strategies.puml"
+@enduml

@@ -1,0 +1,17 @@
+@startuml displayers
+
+package displayers {
+    interface Displayer {
+        displayMessage(String msg)
+    }
+
+    class StdoutDisplayer {
+        -StdoutDisplayer()
+        +displayMessage(String msg)
+        +getInstance(): StdoutDisplayer
+    }
+
+    Displayer <|-- StdoutDisplayer
+}
+
+@enduml

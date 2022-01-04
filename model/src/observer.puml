@@ -1,0 +1,144 @@
+@startuml observer
+
+package java.util {
+
+    class EventObject
+
+    class EventListener
+
+}
+
+package observer {
+
+    package event {
+
+        class MatchEvent<T extends Competitor> {
+            - c1: T
+            - c2: T
+            - outcome: MatchOutcome
+            + MatchEvent(Competition<T>, T, T, MatchOutcome)
+            + getCompetitor1(): T
+            + getCompetitor2(): T
+            + getOutcome(): MatchOutcome
+            + getWinner(): Optional<T>
+        }
+
+        class CompetitionStartEvent<T extends Competitor> {
+            - competitionId: String
+            - participants: List<T>
+            + CompetitionStartEvent(Competition<T>, String, List<T>)
+            + getCompetitionId(): String
+            + getParticipants(): List<T>
+        }
+
+        class CompetitionEndEvent<T extends Competitor> {
+            - competitionId: String
+            - scores: Map<T, Integer>
+            + CompetitionEndEvent(Competition<T>, String, Map<T, Integer>)
+            + getCompetitionId(): String
+            + getScores(): Map<T, Integer>
+        }
+
+        class GroupsFormedEvent<T extends Competitor> {
+            - groups: Collection<List<T>>
+            + GroupsFormedEvent(Competition<T>, Collection<List<T>>)
+            + getGroups(): Collection<List<T>>
+        }
+
+        class QualifiedCompetitorsSelectedEvent<T extends Competitor> {
+            - qualified: List<T>
+            - scores: Collection<Map<T, Integer>>
+            + QualifiedCompetitorsSelectedEvent(Competition<T>, List<T>, Collection<Map<T, Integer>>)
+            + getQualified(): List<T>
+            + getScores(): Collection<Map<T, Integer>>
+        }
+
+        class TournamentPhaseStartedEvent<T extends Competitor> {
+            - phase: int
+            + TournamentPhaseStartedEvent(Competition<T>, int)
+            + getPhase(): int
+        }
+
+        EventObject <|-- MatchEvent
+        EventObject <|-- CompetitionStartEvent
+        EventObject <|-- CompetitionEndEvent
+        EventObject <|-- GroupsFormedEvent
+        EventObject <|-- QualifiedCompetitorsSelectedEvent
+        EventObject <|-- TournamentPhaseStartedEvent
+
+    }
+
+    package listener {
+
+        interface CompetitionListener<T extends Competitor> {
+            + matchPlayed(MatchEvent<T>): void
+            + competitionStarted(CompetitionStartEvent<T>): void
+            + competitionEnded(CompetitionEndEvent<T>): void
+            + groupsFormed(GroupsFormedEvent<T>): void
+            + qualifiedCompetitorsSelected(QualifiedCompetitorsSelectedEvent<T>): void
+            + tournamentPhaseStarted(TournamentPhaseStartedEvent<T>): void
+        }
+
+        class Journalist<T extends Competitor> {
+            - displayer: Displayer
+            + Journalist(Displayer)
+            + matchPlayed(MatchEvent<T>): void
+            + competitionStarted(CompetitionStartEvent<T>): void
+            + competitionEnded(CompetitionEndEvent<T>): void
+            + groupsFormed(GroupsFormedEvent<T>): void
+            + qualifiedCompetitorsSelected(QualifiedCompetitorsSelectedEvent<T>): void
+            + tournamentPhaseStarted(TournamentPhaseStartedEvent<T>): void
+        }
+
+        class Bookmaker<T extends Competitor> {
+            - displayer: Displayer
+            - odds: Map<T, Float>
+            {static} MIN_ODD: float
+            {static} MAX_ODD: float
+            {static} START_ODD: float
+            {static} INCREMENT: float
+            + Bookmaker(Displayer)
+            + matchPlayed(MatchEvent<T>): void
+            + competitionStarted(CompetitionStartEvent<T>): void
+            + competitionEnded(CompetitionEndEvent<T>): void
+            + groupsFormed(GroupsFormedEvent<T>): void
+            + qualifiedCompetitorsSelected(QualifiedCompetitorsSelectedEvent<T>): void
+            + tournamentPhaseStarted(TournamentPhaseStartedEvent<T>): void
+            + getCompetitorOdd(T): Optional<Float>
+            - incrementOdd(T): void
+            - decrementOdd(T): void
+            - addCompetitorIfUnknown(T): void
+        }
+
+        class Speaker<T extends Competitor> {
+            - displayer: Displayer
+            - {static} GROUP_DESC: String
+            - {static} GROUP_DESC_LEN: int
+            + Speaker(Displayer)
+            + matchPlayed(MatchEvent<T>): void
+            + competitionStarted(CompetitionStartEvent<T>): void
+            + competitionEnded(CompetitionEndEvent<T>): void
+            + groupsFormed(GroupsFormedEvent<T>): void
+            + qualifiedCompetitorsSelected(QualifiedCompetitorsSelectedEvent<T>): void
+            + tournamentPhaseStarted(TournamentPhaseStartedEvent<T>): void
+            - longestNameLength(Collection<T>): int
+            - printGroupDescription(int, int): void
+            - printNextCompetitor(ListIterator<T>, int): void
+            - printNextCompetitorStart(ListIterator<T>, List<T>, padTo)
+            - getSortedGroups(Collection<Map<T, Integer>>): List<List<T>>
+            - printSpaces(int): void
+            - printSeparator(): void
+            - printNewline(): void
+        }
+
+        EventListener <|-- CompetitionListener
+
+        CompetitionListener <|.. Journalist
+        CompetitionListener <|.. Bookmaker
+        CompetitionListener <|.. Speaker
+
+    }
+
+}
+
+@enduml

@@ -1,0 +1,58 @@
+@startuml competitions
+
+package competitions {
+    abstract class Competition<T extends Competitor> {
+        -competitors: List<T>
+        -rankingHandler: RankingHandler<T>
+        +Competition(Match<T> m, List<T> cs, RankingHandler<T> rh)
+        play()
+        #play(List<T> cs)
+        #playMatch(T c1, T c2)
+        +ranking(): Map<T, Integer>
+        #getMatch():Match<T>
+        #getCompetitors(): List<T>
+        #getRankingHandler(): RankingHandler<T>
+    }
+
+    class Tournament<T extends Competitor> {
+        -victoryPoints: Int
+        -defeatPoints: Int
+        -tiePoints: Int
+        +Tournament(Match<T> m, List<T> cs, int victoryPoints, int defeatPoints, int tiePoints)
+        #play(List<T> cs)
+        -play(List<T> cs, int nbVictory, int winRequiredInEachStep)
+        -displayTrace(T c1, T c2, MatchOutcome outcome)
+        #playMatch(T c1, T c2)
+        #updateRanking(T c1, T c2, MatchOutcome outcome)
+        -isPowerOfTwo(int n): boolean
+    }
+
+    class League<T extends Competitor> {
+        League(Match<T> m, List<T> cs, int victoryPoints, int defeatPoints, int tiePoints)
+        #play(List<T> cs)
+        -displayTrace(T c1, T c2, MatchOutcome outcome)
+        #playMatch(T c1, T c2)
+        #updateRanking(T c1, T c2, MatchOutcome outcome) 
+    }
+
+    class Master<T extends Competitor> {
+        -victoryPoints: int
+        -defeatPoints: int
+        -tiePoints: int
+        +Master(Match<T> m, List<T> cs, GroupingStrategy gs, FilteringStrategy fs, SortingStrategy ss, int victoryPoints, int defeatPoints, int tiePoints)
+        #play(List<T> cs)
+        #playMatch(T c1, T c2)
+        +ranking(): Map
+        +groupPhaseRankings(): Collection<Map<T, Integer>>
+        -prepareFirstPhase(List<T> competitors): Collection<List<T>>
+        -playFirstPhase(Collection<List<T>> groups): Collection<Map<T, Integer>>
+        -prepareSecondPhase(Collection<Map<T, Integer>> rankings): List<T>
+        -playSecondPhase(List<T> qualifiedCompetitors)
+    }
+
+    Competition <|-- Tournament
+    Competition <|-- League
+    Competition <|-- Master
+}
+
+@enduml

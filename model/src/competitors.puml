@@ -1,0 +1,11 @@
+@startuml competitors
+
+package competitors {
+    class Competitor {
+        #name: String
+        +Competitor(String)
+        +getName():String
+    }
+}
+
+@enduml
